@@ -1,0 +1,18 @@
+@startuml
+
+left to right direction
+
+actor Usuario as u
+actor Administrador as a 
+actor Contador as c
+
+rectangle System{
+  (Autenticación) as auth
+  (Gestión de clientes) as gestion
+}
+
+u --> gestion
+a --> auth
+c --> gestion
+c --> auth
+@enduml
