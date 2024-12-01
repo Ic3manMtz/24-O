@@ -1,0 +1,53 @@
+%%%%%%   TIPO DE DOCUMENTO: Artículo   %%%%%%
+\documentclass[letterpaper,11pt,twoside]{report}
+
+\usepackage[spanish]{babel} %Idioma
+\usepackage{graphicx} %Imágenes
+\usepackage[utf8]{inputenc} %Acentos
+\usepackage{hyperref} %Links
+\usepackage{xspace}
+
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{amsmath, amssymb}
+\usepackage{amsmath}
+\usepackage[active]{srcltx}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{makeidx}
+\usepackage{amsthm}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\renewcommand{\baselinestretch}{1}
+\setcounter{page}{1}
+\setlength{\textheight}{21.6cm}
+\setlength{\textwidth}{14cm}
+\setlength{\oddsidemargin}{1cm}
+\setlength{\evensidemargin}{1cm}
+\pagestyle{myheadings}
+\thispagestyle{empty}
+\markboth{\small{Segunda Actividad T\'ecnica 1, Jorge Mart\'inez.}}{\small{.}}
+\date{}
+
+\begin{document}
+	\centerline{\bf Redes de Computadoras, \today}
+	\centerline{}
+	\begin{center}
+		\Large{\textsc{Retardo nodal y lenguaje AWK}}
+	\end{center}
+	
+	\centerline{}
+	\centerline{\textbf{Mart\'inez Buenrostro Jorge Rafael}}
+	\centerline{}
+	
+	\centerline{$correo, molap96@gmail.com$}
+	
+        \centerline{Universidad Aut\'onoma Metropolitana} 
+	\centerline{Unidad Iztapalapa, M\'exico}
+	
+	\bigskip
+	\input{appletRetardo}
+    \input{appletFila}
+    \input{notacion}
+    \input{awk}
+\end{document}

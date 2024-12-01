@@ -1,0 +1,729 @@
+ Introduction
+- [Occupy The Web] A fellow in Poland wrote me a message that he said, "I just ordered your book and it just arrived,
+but I'm not gonna have a chance to read it because I have a 15-year-old Ukrainian refugee
+who just came and is living in my house. And he wants nothing more than to retaliate
+against the Russia, so I gave him your book." If my identity were known,
+it would put myself and my family at risk. (upbeat music)
+️ Occupy The Web Introduction + background
+- Hey everyone, it's David Bombal, back with a very special guest. He's the author of this book and other books,
+and I'll let him introduce himself. - [Occupy The Web] Hi, this is, Occupy The Web. - It's great because you don't wanna give us your real name,
+and I understand about that. So perhaps you can give us a bit of your history and then explain why you very careful
+giving us your real name. - Well, first of all, I used to teach at the university.
+I taught computer science and cybersecurity. and then I started teaching the US military,
+and intelligence, and cybersecurity, and hacking. And along the way,
+I have done a number of different projects, and I've continue to do a number of projects,
+where if my identity were known, it would put myself and my family at risk,
+including the current project to try to help save Ukraine from Putin's malicious army.
+I can only feel comfortable doing this as I'm doing now, if I remain anonymous,
+but it's been other projects along in the past, that also requires my anonymity.
+- Before we talk about your latest project, I did a bit of research. You gotta tell us, how did you get into hacking and how long ago was that?
+- [Occupy The Web] Gosh, it's been almost 20 years now. So it just seemed, in all honesty,
+I was working in the university and it seemed to me
+that the most important thing in the world was hacking. (both laughing)
+And that was my estimation, and I think the events of a recent years tell us that was accurate.
+In my view that the hacking is the most important skillset of the 21st century,
+and I've said that over and over again. And I think that events of the last few days,
+the last few weeks have emphasized that. And I think one of the things that we can do is,
+to try to slow down the Russian army, is to make it very uncomfortable in the homeland
+by shutting down their internet access. And we've largely done that for the last two weeks.
+I mean, almost all of the internal websites inside of Russia are inaccesible right now.
+- So I wanted to ask you, and I mean, this is a very direct question, so you and a group of you are hacking Russia at the moment.
+️ Hacking Russia
+Is that right? - [Occupy The Web] Let me be clear. When I say we, I'm not necessarily talking about me.
+I'm talking about the hackers of the world, all right? And there's probably-
+- Good way to put it, yeah. - [Occupy The Web] Yeah, so let's be clear, when I say we, it's the hackers of the world.
+And so there's maybe 100,000 of us, who are working on this.
+Russia recently, I think it was on Friday, released that they had identified 17,000 IP addresses
+that were hacking them. I think there's a lot more than that. I can tell you almost for sure,
+there's a lot more than that, but they've identified 17,000. That's a huge number. That's a huge number.
+- [David Bombal] It is. - [Occupy The Web] And I think that Russia never expected the response from the hacker community
+that they've got that many hackers join in this operation, like nothing has ever happened in the history of the world.
+️ Cyber-war
+- Yeah, I mean, the world's changed, hasn't it? Because I mean, we all connected and it's... I mean, I'll let you just discuss it, but I mean, rather than just fighting in the physical world,
+if you like, it looks like there's a huge amount of stuff happening in the virtual world. - [Occupy The Web] There's a lot going on
+in the virtual world, and it was kind of spontaneous. People communicated and they said,
+"We have the skills, we have to do something. Let's go and do whatever we can
+to be able to save the Ukrainian people." And I would make the case
+that we're not only saving Ukrainian people, we're saving Europe, okay? And maybe even beyond those borders of Europe.
+Because Putin has set out to recreate, he has said this himself,
+he's trying to recreate the Russian empire, okay? And that goes long beyond the borders of Ukraine.
+And so if we allow him to take Ukraine, he will continue to take.
+And he has continued to take in the last 10 years, obviously. I mean, he took parts of Ukraine in 2014.
+He's taken Syria essentially, right? He's taken Chechnya.
+At some point we have to stop him and say, "Enough. You have to go back beyond inside your borders
+and leave us in peace." And since we can't, most of us cannot,
+go to Ukraine and fight physically, and actually, maybe our skills are actually more valuable
+than our skills as a soldier to be able, we've been attacking internally into Russia.
+And it's largely been at this stage, early stage is a massive DDoS attack, a massive DDoS attack,
+that has shut down everything but that's not gonna last, that's a very simple brute force attack
+and Russia's responding now, okay? So they are responding and it's pretty easy to stop a massive DDoS attack,
+it's a simple brute force attack, lots of, that's part of their identifying the 17,000 IP addresses,
+they're gonna start blocking them. And they're in the process right now of putting a perimeter around Russia,
+so they're gonna block anything coming in or out of Russia. So we have to go to plan B, okay?
+Stage two of this attack. - And I mean, you're not gonna share that, I'm assuming that, I mean, of course.
+- [Occupy The Web] I'm not gonna find that. - So no, it wouldn't be wise.
+️ Hacking accomplishments
+So from your point of view, so tell me, can you give some examples of stuff that you've been able to accomplish?
+I'm just looking at your website now, and on your website, hackersarise.com, you've got, "Become a cyber warrior. Stop, Putin, now."
+And I see you've got articles where you're talking about like radios, you talking about like, DDoS-ing,
+can you give us some examples? And then I wanna come back to this, like definition of what is a white hat hacker.
+- [Occupy The Web] Well, I mean, once again, I'm gonna say, we, in meaning everybody, okay?
+I'm not talking necessarily about myself. I'm talking about that almost 100,000 hackers
+who have participated in this event. We, okay, have been able to hack Russia today,
+the TV station, and been able to put up information on that TV station to try to inform the people of Russia
+that what they're getting internally is not true. What they're getting...
+I've had Russian send me what they're getting on television, okay? What they're getting on television is that Russia
+is the hero and is saving the people of Ukraine
+from the Nazis who are running Ukraine. That's what they're being told, that Russia is saving them.
+And they're being shown images of right wing groups
+who apparently are attacking Russian speakers within Ukraine.
+Now I'm not denying that that has taken place, but I mean, that takes place in every country, right?
+I mean, it takes place in the US, it takes place in England, it takes place in South Africa.
+Right wing groups do crazy things, right? - They do, yeah. - [Occupy The Web] They do. But that's not a rationale
+for basically turning Ukraine into rubble, and that's what they're doing.
+They're gonna do to Ukraine what they did in Chechnya, in Syria,
+they just basically flattened the whole country. And they've started that process.
+And the rest of the world has to respond, and we are doing what we can
+to get the information to the Russian people, and also to make it as difficult for Putin
+and his thugs to be able to continue their war in Ukraine.
+- So it's a lot of DDoS-ing? Is it like defacing website, stuff like that? - [Occupy The Web] Yeah, there's been a defacing,
+️ DDos Russian websites
+but there's also been DDoS-ing, because of both things have been taking place. Because of the DDoS,
+and it was so massive that you can't really hack a system that you can't connect to.
+- Yeah. Yeah. - Right? - That's a good point. - [Occupy The Web] So the whole country has been DDoS like 98%, okay?
+We can't even, we, I mean, once again, the hacker collective can't even connect to these systems
+to be able to hack them. But once the DDoS subsides, then the next level comes in,
+the next round comes through. I would say that round one, that we won round one, okay?
+But round one doesn't mean you win the fight, there's gonna be a lot of rounds here.
+Round one was a massive DDoS, and now round two begins. Now Russia is responding, and responding in a smart way.
+I mean, they've got good people, and they're basically gonna put a fence entirely around Russia and not allow in or out anything.
+️ Russian "Iron Curtain"
+You know, that's not that hard to do, but it's gonna take them a little while to do it, all right?
+And right now they're trying to block the IP addresses that are involved in the DDoS attack, okay?
+And they're effectively doing that. They're slowly, you're starting to see the websites in Russia beginning to come back online, so.
+- So you think it's gonna be like the Great Wall of China type thing? - [Occupy The Web] I think it's gonna be very much like the Great Wall of China,
+or Iran, or what have you. It's not only gonna be content filtering, it's gonna be IP filtering.
+So they're gonna, basically say, any IP that is not inside Russia
+is not gonna be allowed to access these websites. But there's ways around that, we won't go into any details,
+but there are ways to get past that, obviously. I mean, people in China get past it,
+people from outside China get past it, right? It's not the end of the game. - Yeah, I mean, so let's talk about DDoS,
+and then I wanna get to this white hat hacker thing. I saw on your website,
+️ Hackers Arise DDos tutorial
+you were like giving some articles about like how to DDoS and helping us.
+And specifically saying, like use specific websites or specific IP addresses. Is that right?
+So it doesn't get filtered as a external IP address. - [Occupy The Web] Right, so one of the tutorials
+I have on there is using Zmap, which is a very powerful scanner that sends out huge volumes of packets very quickly.
+And it's been used to be able to scan the entire internet in 45 minutes. Literally you can scan the entire internet
+in 45 minutes through Zmap. So what I'm asking people to do is to use that tool
+to go in and send the traffic into Russia,
+and then use a spoofed IP address, a Russian IP address, to send the traffic back to.
+So what you're doing is you're basically amplifying a really powerful tool
+and you're just creating a lot of traffic inside their networks. So if you were to use this tool, for instance,
+in your local area network, you would shut down your local area network, so that's how powerful it is,
+you would DoS everybody on your network. By sending it all out into the Russian IP addresses,
+and then having them all respond to one of the important IP addresses, like the Moscow stock exchange,
+or some of the military sites, those military sites are just getting massive amounts of traffic.
+Basically, it's just a scan response, but it's too much traffic for the servers to handle.
+And essentially we're just making them unaccesible. - And this is why they're gonna build that wall
+to stop external IP addresses or external traffic getting into the country? - [Occupy The Web] Right. That's what they're gonna do.
+Now, we'll have to see, because that technique that I put on my website
+is actually using a spoofed IP address. And one of the beauties of using a scanner tool
+or a DDoS scanner tool is that you can spoof the IP address. So it comes into their network
+looking like it's coming from inside their network, it has a return IP address that's inside their network.
+So we'll see how well they can go ahead and block that kind of traffic. - So, I mean, on your website,
+️ What is a white hat hacker?
+it's a really interesting article. You've got this thing, "What is a white hack hacker?" And your definition is I would say different
+to the sort of normal definition or well-known definition. So could you give us your definition
+and why you see it this way? - [Occupy The Web] Well, I've long held that the textbook definition of a white hat hacker
+is pretty limited. And I think it grows out of the early days of hacking.
+So in early days of hacking, most people associated hacking with an illegal activity.
+And so people began to make a distinction and say, "Well, I'm not an illegal hacker.
+I'm a white hat hacker, I'm a good guy." And I agree that if you're doing pen testing
+or bug bounty hunting, what have you, that you are a white hat hacker. But if you have these skills which very few people have,
+it's a really small number of people in the world who have these skills.
+You have a responsibility that comes with that. And part of the responsibility that comes with being a white hat hacker,
+and having these skills which are very unique on the planet, you have a responsibility to work for freedom of information, for anti aggression,
+for keeping the internet open and free. And obviously I would put in the category
+of stopping the aggression of the Russians in Ukraine. I think that if you have those skills, you can't say,
+"Oh gosh, I'm busy." - Yep. - You know. - Yep. - [Occupy The Web] You have a responsibility
+to help save the world with your skills, and I really seriously mean that, I mean, save the world.
+I think, and if you will just allow me a little bit to talk about politics, Putin is the greatest threat
+to the stability of the world as we know it, to our freedoms, and we can't sit still,
+I don't think that any of us should be sitting still, this is that important. I have been following this man intensely
+for his entire career. Well, his entire career - For a long time, yeah.
+- [Occupy The Web] Yeah, his entire career as the president's premier of Russia.
+And he is set about to be able to rebuild the Ukrainian
+and the Russian empire and beyond. I think he definitely, if he gets Ukraine,
+he'll go after Moldova, Poland, all of people- - Estonia, some of those countries, yeah? - [Occupy The Web] Estonia, Lafayette, yeah, exactly.
+All of countries that had previously been part of the Soviet block behind the iron curtain,
+and he may very well go beyond that. We have to stop him here. We have to stop him now.
+I think that the Russian people are good people. I'm in the US, I have lots of Russian friends,
+they're good people, but Putin is not a good people. Putin is a psychopathic killer and he has to be stopped.
+️ Urgency of stopping Putin
+I think that the urgency of this is on par with the urgency of stopping Hitler in 1939.
+And I've never said that before 'cause I don't want- - I'm glad you're sharing it with us. Sorry, go on.
+- [Occupy The Web] I don't like Hitler type of analogies because everybody's, "Oh, this is bad as Hitler."
+And then everybody's kinda goes over their head and rolls their eyes. This is as important as Hitler in 1939.
+️ Responsibility of hackers
+And in 1939, they allowed Hitler to take part of Austria, and then take Poland, and everybody kind of said,
+"Well, okay, that's all right. That's all he wants, is those little pieces."
+And then of course we know the rest of the story. That's the rest of the story here, if we don't act now.
+- I mean, I understand it's like, and I mean, I don't wanna put words in your mouth, but it's a manifesto or a way of belief to say,
+you as a hacker are responsible with your skills, you've been given these skills, you need to use it for good.
+And you see this as really important to counter what's happening, yeah? Is that right?
+- [Occupy The Web] I do, I think that summarizes my beliefs perfectly. - So, I mean, on your website,
+️ Hackers Arise manuals
+do you like teaching people to do things? Is that for like the Ukrainians, or is that for like just general people around the world?
+I mean, you've got a lot of great content on your website. - [Occupy The Web] Thank you. Well, it's both. I mean, we're trying to help the people
+who are on the outside who want to participate in doing what they can, okay?
+I mean, a lot of people have approached me, I get emails every day, "What can I do to help?"
+And so I'm trying to put some simple tutorials on there that this is what you can do to help.
+I've also started now directing tutorials towards the Ukrainian people.
+We did one on how to DDoS a wireless AP last week. - Yeah.
+- [Occupy The Web] But this week we're gonna have one on how to jam the communications of the Russian military,
+so look for that, we'll be jamming their military signals. And it's not that hard to do
+with a relatively inexpensive piece of equipment. We'll be using the HackRF, and we'll be jamming their communication signals.
+So this is something that somebody who's stuck in Kyiv or Mariupol or whatever,
+and they have to have electricity though. That might be a big if, right? I mean, if they don't have electricity, they can't do this,
+but I'm assuming that if they have electricity, this is something we can do. We can jam their signals,
+and make it impossible for them to communicate locally within Kyiv and other places in Ukraine.
+️ Using SDR to jam communications
+- I was gonna say, I'm sure I saw that some way where you were talking about using SDR software defined radios to like listen in
+or confuse the signals, is that right? - [Occupy The Web] Right. That's what we'll be doing.
+Right now, listening in is a little more complex because most of it is encrypted,
+so you would have to decrypt the signal, right? But jamming it is pretty easy to do. It's once again, it's kind of like a DoS attack,
+It's kind of a brute force. You just send out a bunch of noise on their frequencies,
+so that those signals never make it to their destination.
+️ Ukrainian government asking hackers for help
+- It's interesting because I saw the Ukrainian government, if I'm correct, was asking hackers around the world
+to rise up and sort of follow and do what you're doing, is that correct? - [Occupy The Web] That is correct. One of the first things that happened when the war started
+is the Ukrainian government actually asked the hackers of the world, and the hackers of the world have responded, okay?
+And they actually have an IT army, they call it the Ukrainian IT army that they are recruiting people to help with.
+And they're, a lot of Ukrainians with good IT skills have gone back to Ukraine to helping this effort.
+And then there's literally tens of thousands of hackers around the world who are helping Ukrainian people.
+- So I mean, us IT people aren't necessarily the best on like the battlefield, like fighting with guns and stuff,
+but we've got these skills. So because the Ukrainians ask for help, hackers around the world like yourself, and I mean, we,
+a whole bunch of hackers around the world have risen to this challenge and are helping the Ukrainians by DoS-ing Russia,
+doing things to cause disruption, is that correct? In Ukraine and in Russia?
+- [Occupy The Web] Yeah, that's exactly what's going on, is that the Ukrainians asked for our help, and there's probably
+never been in the history of the world, a cyber war. I can pretty much say with certainty,
+there's never been a cyber war like this, in the history of the world. And there's never been a time when the hackers of the world
+have been so united against the common enemy. - What do your Russian friends say about this?
+️ What Russians think
+And I mean, you can just talk generally, but I mean, like you say you got Russian friends and stuff. How do they feel about you hacking their country?
+It's a tough one, eh? - [Occupy The Web] Well, not all honesty. I haven't discussed that with them.
+(both laughs) But in general, the people who have left, and I say Russian friends, okay?
+So I have have friends in Russia who I no longer can talk to, okay? And they're the ones who came out
+and immediately said to me, "You're wrong. This is a defensive, this is a self defense action."
+Is what they're telling me. And this is Putin and his people are justified
+in this self defense, that's what the Russians have been saying to me. In the United States,
+the Russians generally don't like Putin, okay? That's one of the reasons they're in the United States
+and not in Russia, is they have left there because of they felt like Russia
+has become an authoritarian regime, which I think you can probably confirm that.
+That it's an authoritarian regime, and Putin would like to put Ukraine and the others
+in a authoritarian regime, like he's done to say, Belarusia or other places.
+- I heard an interview a while back where, I think you were talking about this book that you wrote,
+and I think you mentioned, so I'm gonna ask you about what happened to you. And then I just wanted to like talk about
+️ Risk of being visited by a government agency
+like general people. Have you ever been visited by like a three letter agency and worried about your safety,
+like in the stuff that you've done? - [Occupy The Web] Yes. Yes. - So there's a risk isn't there?
+So isn't there risk, let's say I'm some guy at home or someone at home,
+and I've decided, okay, I wanna help, and I started attacking Russia. Isn't there a huge risk to me and my family. And if there is, how do I mitigate that?
+- [Occupy The Web] Okay, well, usually I would say, yes, there is a huge risk,
+but right now most of the governments around the world
+are we're all on the same side. I sincerely doubt that there's gonna be a risk to me
+and to others from our internal law enforcement. Now, there might be a risk if Russia wins this war, right?
+If Russia wins the war, then the soldiers who participated, us, okay?
+We then are under risk from Russia. That's why the beauty of the DDoS attack, okay?
+That I've put up on Hackers-Arise, is you spoofed, in other words, you use a different IP address, okay?
+So if you use a different IP address, then it's gonna be traced back to that IP address
+and not your own. - All of ISPs around the world, blocking your traffic and stuff, or was it like, everything's just going through.
+I mean, I know Russia trying to block it, but have you heard anything like if I decided to do this from the UK
+and just like start launching an attack, let's say the US 'cause you're based in the us, is it just going through, yeah?
+- [Occupy The Web] Right now it is. Right now it is. Before I published that article couple days ago,
+whatever it was, I tested it and it was going right through. But I haven't because of circumstances
+that you are aware of, I was outta town this weekend and I haven't had time to test it today,
+so I can't update you. I know that they're trying to block the IP addresses.
+I know they're trying to put this fence around Russia, but I haven't tested it yet today.
+So I can't say for certain. Well, a DDoS attack, you don't have to have your IP address,
+you don't have to use your IP address 'cause you don't want the traffic to come back to you, so that's the beauty of a DDoS attack.
+And that's why it was so effective, I think in this case. I think it overwhelmed, Russia had no idea.
+It had no idea and they were not expecting this type of DDoS attack but they are now.
+So that's where we have to go to phase two and phase three. How do you- - One thing that I'm-
+- Sorry, sorry, please go on. - [Occupy The Web] Yeah, one thing I am concerned about and I keep on emphasizing to people,
+️ Russian back doors
+is that the Russians have back doors into thousands of machines in the west, okay?
+We know that they have been hacking these systems, and they've got back doors, and they haven't used them yet,
+so we have to be careful. We have to be on alert that these systems could start going down
+or be used for malicious purposes. And some of them are inside of industrial control systems.
+We know they're inside these industrial control system, so far, they haven't done it, they haven't done anything yet.
+And I think that's kind of like a nuclear option that they have, that they can start taking down the electricity grid,
+the water systems, the manufacturing plants, the chemical plants, the refineries.
+I think that's very real risk, but so far, and we can probably say a prayer that they don't,
+because it could get really mean and nasty. Now they've done this to Ukraine. I mean, a lot of people don't know
+that the Russians have been hacking the industrial control systems of Ukraine for 10 years.
+Okay, they turned off the lights, okay? They've turned off the ATMs.
+They've been doing this for almost 10 years now in Ukraine,
+and they haven't yet done it in any large scale in the rest of the west.
+But I think if they begin to lose this war,
+and I think they will, that they will use that option. - So when you say the war, you talking about the cyber war or the physical war or both?
+- [Occupy The Web] Well I think it's one war with different elements of it, I mean any war has multiple elements to it.
+So when I say the war, I've begun to refer to this as the great cyber war of 2022,
+but it's only really one element of an overall conflict,
+In any war, there's multiple elements that are contending against each other, and we are the cyber war.
+Now, I should also point at out that the intelligence agencies are not sitting still.
+I mean, they've been very quietly doing their thing. And we're gonna begin to see their actions as well, so.
+- Yeah, so let's talk about two things. So I mean, you talking about like the industrial systems being at risk. I also saw you had a good article,
+we talking about like finding outdated and vulnerable systems in Russia. So I think you said that like Putin's using an XP computer or something,
+️ Vulnerable systems in Russia
+or that's, something like that. - [Occupy The Web] He is, he is.
+- Very secure then. - [Occupy The Web] Yeah, and of course XP is not been updated for a while.
+But there's also a lot of people don't know that there's a lot of old systems around the world.
+People, you know, because those of us who are in this industry, we tend,
+and I'm not one of 'em though, I will tend to always get the latest and greatest,
+and always update and always do secure updates, what have you, but not everybody in the world does, okay?
+And that's part of what that article was to trying to demonstrate is that don't assume
+that they're running Windows 11, right? If they're running Windows XP or Windows 7,
+those are very insecure systems, right? And if you can connect to 'em,
+they're not that hard to take out. No, it doesn't take a expert hacker
+to take out an XP system. An XP system can be taken out by just about anybody.
+- So, I mean, on your website, you've got these training manuals, is what I'd probably call them, about things that people can do,
+like attacking XP computers or old computers. DoS-ing, doing things like that.
+But there's a risk isn't there, like you said of escalation, like if everyone's attacking Russia, they could start like doing lots of attacks on the west.
+️ Russian hackers escalation
+I mean, I suppose you could say to that, and I don't wanna answer the question, I'll let you do it, but like they've meaning that already, yeah?
+- [Occupy The Web] We haven't seen any significant attacks coming outta Russia. I think they really got caught by surprise.
+They got caught by surprise. They had no idea. Putin is basically taken down
+the head of the FSB on Friday or Saturday. And he did that in part,
+because he was given poor intelligence, okay? This massive DDoS attack, Russian did not expect.
+And so we haven't seen much in response yet, but we are likely to see it.
+That's why I keep on emphasizing this to people 'cause you're likely to see a response soon, all right?
+Be alert. Be aware. Especially, if you're in the industrial control systems,
+you have to be vigilant at this point, okay? We're counting on you, okay? We can't go, we can't fight a war without electricity.
+If they turn off the light, we can't do our job. So, and of course this applies to Ukraine as well, but yeah,
+I think the next round, we're gonna see a significant retaliation by the Russians.
+It may not be SCADA, ICS, industrial control systems, because I think they know
+that that's kind of nuclear option, right? Because if they do that, we will go after their industrial control systems, right?
+And my assessment having done industrial control systems for some time is I've been watching,
+I test the systems remotely all the time. And I notice in the last,
+especially in the last three or four years that the Russian systems have gotten more and more secure.
+And I meant to publish that when I found, when I did that research,
+I never did like a tied up with other things, and really at that time, nobody really cared, right?
+- No they didn't - It was not important. Yeah, now they do, right? But the Russian industrial control systems
+are far more secure than they are in the west. - Oh wow. Okay.
+- [Occupy The Web] You can punch holes in European and the US systems really easily.
+It's harder you find very fewer systems in Russia that you can easily punch a hole in, okay?
+And it's been a process that they've been going through for about three or four years,
+maybe a little longer than that. But now when I test those systems, I see very few insecure systems in Russia.
+I see a lot of insecure systems. I mean, I'll give you an example,
+Poland has a lot of insecure systems, okay? - Uh-huh, yeah. - [Occupy The Web] I've tested Polish systems,
+and there's a lot of insecure systems, with a lot of vulnerabilities in.
+I'm sure, I'm not letting, telling Russians anything they don't already know.
+But they could turn out the lights in Poland. Russia could turn out the lights in Poland pretty easily.
+- That's scary, yeah, yeah. - [Occupy The Web] It is scary, and especially since kinda Poland's on the front lines here
+and they're taking millions of refugees. So I had a really nice message
+from somebody in Poland the other day, I just wanted to recount and a fellow in Poland
+wrote me a message that he said, "I just ordered your book and it just arrived,
+but I'm not gonna have a chance to read it because I have a 15-year-old Ukrainian refugee
+who just came and is living in my house. And he wants nothing more
+than to retaliate against the Russia, so I gave him your book."
+- That's a cool story. Which book is that? Is that the "Linux Basics For Hackers," Or is it your newer book? - [Occupy The Web] No, it's a "Linux Basics For Hackers,"
+that's the place to start. If you're trying to become a hacker that's the place, though you gotta master Linux first, right?
+️ Linux basics for hackers book
+You really can't do much. I mean, people often say, "Well, what can I do with windows?" Well, not much, is the answer, right?
+So that's why I wrote that book because, the reason I wrote that book, it grew out of my teaching military
+and intelligence hackers, and many times these are very intelligent people
+who have no experience with Linux. - It's amazing, yeah. - [Occupy The Web] Yeah, I'd go into a situation
+where I was training people and they had maybe a little bit of experience or no experience with Linux.
+So it became really clear to me that when I would go do a training, I'd spend the first day just doing a quick and dirty,
+this is Linux, this is how it works, right? - [David Bombal] Yep. - [Occupy The Web] And then they would be,
+it would work a lot better. And so the book kind of grew out of my quick and dirty Linux lessons that I would do for the military when I was doing trainings.
+And the good folks at No Starch Press, which I have to really give kudos to,
+because they saw the value of that as well and asked me if I would turn it into a book,
+and it's been a great seller. - It's a great book, I like it a lot. It's a good book.
+- Thanks. Thank you. - It's all recommended, yeah. Sorry, go on. - Great. So anyways, No Starch Press saw the value in it,
+asked me if I make a book out of it and I did. That's the end of the story. - No, no, I mean,
+it's we're going on a tangent here which is great. I love it when we just flow. I wanted to, let's ask this and then I'll come back
+to some of the other questions. So if you wanna be a hacker, let's say you wanna hack Russia or whatever,
+or you decide that you want, this is the field that you want to get into. First thing you'd recommend is learn Linux, yeah?
+- [Occupy The Web] Yeah, I think the first thing is learn Linux because almost all of the hacking tools are Linux based.
+There's a good reason for that, because Linux being an open source operating system
+allows us transparency to the operating system that we can use the tools to access the operating system,
+that kinda access that we wouldn't get in other operating systems. And so that's why it's crucial that you need to use Linux.
+Now, there are some tools that are out there and that can work in a windows environment,
+but they're pretty limited. I mean, it's like five or 10 tools, right?
+And that's fine if you wanna just do one or two things, but if you really want to become proficient in this field,
+you really need to master Linux first. I mean, I don't mean to be self-promotion,
+but my little "Linux Basics for Hackers" book
+is only a small fraction of Linux skills and knowledge.
+And I basically condensed it down into a very key areas of what you absolutely need to know, right?
+- That's good, it's only like 200 pages, so- - It's only like 200 pages, - So long, yeah. - [Occupy The Web] And that was our goal, our goal was to keep it under 250 pages,
+and to make it accessible. I mean, we all know there's books probably on your shelf behind you there that are a thousand-page books than Linux, right?
+- Yeah. - [Occupy The Web] But nobody ever reads those books. - That's the problem, yeah. - [Occupy The Web] You might use it as a reference
+to go look up something once in a while, but nobody ever reads them, and I have 'em on my shelf too. So the idea we went into is writing the book,
+was let's make it small and concise and accessible, so that we just provided the information
+that you need to get started rather than using, putting everything about Linux into it
+which nobody's gonna end up reading it. - No, I like it. It's a good book. And it's exactly, as you say, I mean, it covers a lot of stuff like bash,
+scripting, stuff like that. I'd recommend this book myself. So Linux, and then? - [Occupy The Web] Gosh.
+(both laughing) - It's a hard one. I mean, I'm gonna ask you, lemme ask you a question, because I've heard you give your opinion on this.
+What's your opinion of CH?. - [Occupy The Web] My opinion of CH? - CH, yeah. - Is that what you ask?
+️ Opinion about CEH
+- The certified ethical hacker, sorry. - [Occupy The Web] Oh, CEH. - Sorry, CEH, yeah. My bad accent, yeah.
+- [Occupy The Web] One of the first I just got done saying is that you need to master Linux first.
+And the CEH is everything is done in Windows, right?
+And a person can earn the CEH without ever knowing anything about Linux.
+And in all honesty, CEH really doesn't test your hacking skills,
+it tests your knowledge about hackers and hacking.
+It doesn't, you don't have to hack anything to earn a CEH, you just have to memorize the answers to some questions
+and be able to identify some tools. Personally, if somebody came to me and said,
+"I have a CEH, and I want a job as a hacker." I would say, "You're not ready."
+You know of hacking, you don't know how to hack. - So give us your path
+or any certs that you like or any books. I mean, let's say your recommendations start with this Linux basics for hacking,
+or for hackers should I say, what would you recommend next? So this let's use this example, I think you said 15-year-old in Poland from the Ukraine.
+️ Advice for young hackers
+He wants to get into it now. What would you advise? - [Occupy The Web] Well, I mean, I certainly would advise, mastering Linux first, obviously,
+I've got a lot of, I mean, I can promote my own website. - You can promote anything you want, so go for it.
+- [Occupy The Web] Okay, so I would say, find yourself a good website with good tutorials.
+One of them is gonna be Hackers-Arise. I have another book out called
+"Getting Started Becoming a Master Hacker." I have another book coming out, it's called,
+"Network Basics for Hackers" is gonna be similar to "Linux Basics for Hackers," except it's gonna just cover networking
+and the flaws and weaknesses in those networking protocols that a hacker can exploit.
+I also should point out that "Getting Started Becoming a Master Hacker" is being, we're redoing it with No Starch Press, okay?
+- Good. - [Occupy The Web] So it's gonna come out and it's gonna be updated, and it's gonna come out later this year
+from No Starch Press, probably a different name, we haven't settled on a title for it yet, so look for that.
+Those two will both be coming out later this year. But there's one of the things that you need to do
+as a hacker is to be able to play as I call it,
+you need to play, you need to practice your skills, so there's a number of sites online that have CTFs
+that you can practice your skills with. - Hack The Box, TryHackMe, that kind of thing, yeah? - [Occupy The Web] Exactly, and there's also,
+you can put up a vulnerable virtual machine, so you can try hacking that,
+but that's kind of important to be able to not just read stuff in a book and pass exams,
+but actually do it because there's nothing like doing it. But you need to have some background first,
+you need to do some reading, do some studying, but then you need to hone your skills on virtual machines
+or TryHackMe or other places that have these machines that can be hacked.
+Of course, there's also all of those, many of those systems you can actually download
+and create a virtual machine and then hack them on your own local system whenever you want. So I really emphasize that they need to hone their skills
+by actually doing and that's really the biggest problem with the CEH is there's no requirement that you have,
+you can hack anything. There's no requirement that you hack anything,
+just you need to know the right terminology. That's basically all it is, is terminology of hacking and white hat hacking,
+penetration testing, what have you. - Yeah, I mean, so it's not practical. I know they've got a practical cert out now
+that the original or CEH isn't practical. What about OSCP? What do you think of that?
+- [Occupy The Web] OSCP is a good certification. I think it's one of the most valuable certs out there, so.
+- So if you were hiring, let's say theoretically, and someone who had an OSCP, you would look at them, yeah? - [Occupy The Web] I would look at them seriously, yeah.
+️ Opinion on OSCP
+And OSCP is much more practical certification and it would definitely get my attention, okay?
+So this is a person who's invested significantly in developing their skills, because the OSCP is not something
+that you go to a class for a weekend and then you pass the exam on Monday, right? You're investing significant amounts of time and energy
+into passing the OSCP. - Any other certs that you'd recommend? 'Cause some people would,
+as a first cert OSCP might be a bit scary. - [Occupy The Web] It is. - EJBT or like net Security+,
+️ Other certs CompTIA Security+ or eJPT
+I mean, people would complain some of those, or EJBT is more practical but like a Security+ isn't? - [Occupy The Web] Well, Security+ is concepts also,
+and there's no practical, but it's a good place to get, if you're looking at the security concepts, right?
+- To start, yeah. - [Occupy The Web] Yeah, you're just starting out. Security+ is a good place to go because you're suddenly gonna be thrown
+into this world of security if you're not familiar with it, about at least from the defensive side,
+how are people securing their systems? And of course, if you're gonna be able to be able actually hack systems,
+you have to understand the defenses that are in place. So if you're playing football or you're playing basketball,
+you're not gonna have a whole lot of success at offense if you don't understand the other team's defense, right?
+- Yeah. - [Occupy The Web] So, and vice versa, right? So if you're playing defense, so if you're out there
+and you're trying to defend your systems against attack, the first thing you need to know,
+is you need to know how are the people on the other side, how are they attacking me?
+What are they trying to do? If I know those things, I can better defend my systems.
+And that's one of the things that I recommend to people who are on the defensive side. You need to understand at least some of this,
+so that you can better defend these systems. And quite frankly, I see an awful lot of people on the defensive side,
+and the security side, who really don't understand hacking, and they're just following cookbook procedures and protocols
+with their firewall and their IDS and what have you. And they don't really understand the process
+that the hacker is undertaking to get inside their system, which would help them better defend their systems.
+- It's a great thing to say, and that gets us sort of back to what I was gonna ask you earlier which was,
+I wrote this question down, has the west been asleep? - [Occupy The Web] Has the west been asleep? - Yeah, like to what's going on. 'Cause you said like the Russia's been improving
+️ Has the West been asleep
+their security in the last say, I think you said three to four years, something like that on their control systems, but the west or like Poland is hasn't.
+So, I mean, I'd just say generally have a lot of countries like the US, UK, others been a bit lax.
+- Well, I think, yes, I think all of us have been a bit lax. And I think all of us underestimated the evil of Putin.
+And I say Putin, and I don't say Russia because I don't think Russians in general are bad people.
+I think Putin is a bad guy. I think Putin's people are bad people, okay?
+But not necessarily the Russians. And so I think we all were taken by surprise
+by how aggressive and how brutal Putin's army
+has been in Ukraine. So I think we haven't taken enough defensive measures against them,
+but I think, hopefully we are now. But Putin knew, this was part of a plan, all right?
+And so I started noticing three or four years ago that their industrial control systems
+got more and more secure. So this was part of a not, this didn't just happen overnight,
+he's been planning this for some time. We need to be on alert now, and be vigilant,
+but unfortunately there's already back doors, shell code,
+whatever you wanna call it inside these systems, they're already there. And so if you haven't gone in
+and started extracting these back doors and shell code, you're gonna get hammered here soon,
+you likely to get hammered here soon. Remember solar winds, right? - Good example, yeah. - Solar winds
+was just a year ago, right? And administrators across the board, many, I don't, but many use solar winds.
+Luckily I don't use solar winds, okay? But solar winds turns out good products, I'm not gonna knock that, I just don't use it.
+Solar winds turns out good products. And so everybody who's using solar winds suddenly has a Russian back door implanted in their system.
+And if you haven't gone in looking for it, and extracted it, or blocked it, you're at risk.
+- I mean, it's worrying, sorry go on. - [Occupy The Web] No, that's thousands of systems, that's thousands of systems, and they're largely large corporations and government.
+They're not mom-and-pop. Mom-and-pop are not using solar winds, right? Who's using solar winds
+are the big corporations and government. And so those are the people who likely have access
+to the Russians right now. - It's a wake up call, isn't it? I mean, Germany changed tact dramatically
+with what's happened, I mean, shipping- - mom-and-pop Shipping arms for the first time. - Yeah, exactly.
+️ Germany on the frontlines
+And also like increasing the spending dramatically. - [Occupy The Web] Right. - Go on. - I mean,
+Germany, is awakened. And Germany, that's a good thing, obviously, 'cause they're right on the front lines, right?
+You and I are not on the front lines, Germany is on the front lines and they have,
+Germany has long relied upon the belief that if they were attacked
+that the rest of NATO would respond, and that's probably true, right? And plus they have
+a significant number of US military installations, going back to World War II.
+But at the same time, it's being on the front lines sharpens your focus
+and they've begun to spend more on defense. Now I probably should explain, and I wanna make sure that listeners
+don't see me as a war monger because I'm basically, I'm a pacifist. (laughs)
+I mean, (laughs) - Until now. - [Occupy The Web] I am a pacifist, okay? But I have an old friend, this is a long time ago,
+now an old friend who was a conscientious objector during World War II.
+And one of the things he used to say to me is he says, "I still struggle. I still struggle with that decision
+to have chosen to not fight during World War II. I still struggle and it's always stuck in my mind
+that there are some times that you have to fight, there's sometimes where you have to fight
+when evil enters your backyard, you have to fight." Right? And that's the case now,
+we have evil who has entered our backyard and we have to fight even the pacifists among us
+have to fight now. - I understand the rally called to, and why you're doing this and why. Like you said, 100,000 other people are doing it.
+I think it's shocked many, many people, especially in Europe. I think a lot of people in Europe were very taken back by this.
+️ Russian/Ukraine war escalating cyber-security
+And I mean, the Germany response is a fine example of that. - [Occupy The Web] Right. - So do you see, let's look at this from like an individual point of view,
+there's been this huge sort of interest in cybersecurity, whatever you wanna call it, cyber in the last few years.
+Do you see this is only escalating that? - [Occupy The Web] Yes, I think this emphasizes how important and as this war goes on,
+I think we're gonna see more cyber, as I've said before, we're gonna see more cyber. And it's gonna become really clear.
+I've been publishing articles for a while now in different places about the fact that we should expect a cyber war, okay?
+We should expect that, I don't see how you could not expect it to take place. And so in reality,
+we've been involved in a quiet cyber war
+between all the major groups in the world, right? I mean, Russia hacks Western Europe.
+The US, whoever they feel, they can gain some advantage from.
+China's hacking everybody. US is hacking darn near everybody, right?
+(both laughs) I mean, I acknowledge that the US is one of those actors out there, right?
+- Yep. - [Occupy The Web] As the NSA and the CIA, and others that a cyber command are out there hacking
+whenever they feel like they need to hack, right? So this has been going on for a while. This is not anything new, but it's been done quietly.
+And especially if you're an American citizen, you don't hear anything about American hacking,
+but I will reassure you that the Americans are hacking and that there are some really, really good hack
+working for US intelligence, okay? That kind of grows out of a comment
+that a discussion I had with a friend this weekend at the funeral, he was like,
+"Well, I don't think the American hackers are up to fighting the Russians or whoever."
+And I said, "You're wrong." The American hackers are really good, okay?
+But they do their work quietly, and you will see if this thing escalates, how good they are.
+I think Russia knows how good the US intelligence agencies hackers are.
+And that if they were to pull the trigger on the industrial control systems,
+they would see the response by the American and Western hackers, not just the US,
+that they would obliterate the industrial control systems of Russia, okay? And that they don't want.
+They know that if they, it's kinda like a nuclear weapon, right? So if you launch a nuclear weapon,
+you can be sure that you're gonna get a response of a nuclear weapon, so you don't launch a nuclear weapon.
+That's the same with the industrial control systems. If Russia chooses to launch that weapon,
+the response is gonna be overwhelming to their industrial control systems.
+They know that, and so right now they're not launching 'em, but we still have to be vigilant that they may.
+- What happens when the great wall of Russia is built, as an example? - [Occupy The Web] Well, the great wall of Russia, I mean, any wall as you know,
+any wall can be gone around, gone over, go under, or gone through.
+So we just have to find which one of those paths is the easiest, around, over, or through.
+So we'll figure out a way. - So tell me this, because let's say I'm interested in doing this, but I'm worried.
+How do you stay anonymous online, or how do you cover your tracks? I mean, DDoS is easy.
+️ How to stay anonymous online
+Like you said, you change your IP address or whatever. Like what tools do you use or recommendations do you have? Is it Thor? What do you use to stay anonymous or hide?
+- [Occupy The Web] Well, in this case, Thor works pretty well when you're attacking Russia,
+so Thor works. Thor within the United States is risky
+because the NSA has exit nodes in the United States
+and they can trace those exit nodes. - I've heard it, yep. - [Occupy The Web] Yeah, they do. I can tell you this, this is a story.
+- Go for it. I like stories go on. - [Occupy The Web] I was doing a training at one of those three letter agencies.
+- Yeah. - [Occupy The Web] This is a few years back, okay? And I haven't done any trainings for them
+in five or six years now. So as I one of the three letter agencies, and I had been playing on the dark web,
+and from my location, using Thor is pretty slow, and I don't know what other people have experienced, okay?
+'Cause basically you're using a fraction of somebody else's computer that's working as a router.
+And depending upon how much bandwidth there's being allowed through, it can be pretty slow. It's a good masking technique, but it can be slow.
+So I was at this three letter agency and I wanted to do a demonstration
+on what's available on dark web. And so I load up my Thor browser and it zooms,
+I mean, it's going so fast. (both laughs) It's like, wow, this is faster than my regular internet.
+And that was my first wake up call that the three letter agencies have exit nodes
+and entry notes on the Thor network. So you have to be aware of that.
+If it's something that will get you in trouble, with the three letter agencies in your home country
+then Thor may not be the best, okay? Usually the best way to be able to stay anonymous
+is to use a proxy from outside of your country. Now it used to be the best proxies, were in Russia.
+(both laughs) - Oops. - [Occupy The Web] The best proxy, and Ukraine,
+those were the two countries who had the best proxies, because they, for whatever reason,
+the Russians made these proxies available probably for data gathering, who knows why they did,
+but there was all these proxies available in Russia and in Ukraine that you could use
+to carry on your activities on the net. And it always would be traced back to a proxy
+in those countries and not to your home country. And so that's why attribution in any kind of hack
+becomes really difficult because you'll get an IP address that links to say Russia or Ukraine,
+but it doesn't mean that that attack is coming from that country. And it's really hard then to go past and through the proxy,
+although if the proxy gets a subpoena, or the FBI shows up at their door,
+or some other law enforcement shows up at their door, and they can then, if there's logs, if there are logs,
+they can go through the logs and see what IP address is associated with that IP address leaving the proxy.
+But if the proxy is sitting in the country where your nation has no jurisdiction,
+like in the past, Russia, is still true today, your nation's law enforcement
+is gonna have any jurisdiction in Russia, those proxies that were pretty safe. So if you have to do hacking, those proxies are the best,
+they have been the best. I can't say about the future right now. - When you say proxy, are you talking about a VPN,
+just to make sure everyone understands. You're talking about like opening up a VPN via that proxy. Is that right?
+- [Occupy The Web] It's very similar to a VPN, right? So basically proxy is you are connecting
+to another system in another country, in another location. And like of VPN,
+it then uses its IP address for the traffic that leaves it. - Which software you're using?
+Just so if someone's interested in doing this. 'Cause I mean, my big point about this is let's say, someone's interested in this and are they...
+You've kind of told people be careful of Thor, so that was like the first thing. What do they use? - [Occupy The Web] I think I actually include it
+in "Linux Basics For Hackers." I gave them a warning against Thor as well. Well I would use Proxychains.
+- Yep. - [Occupy The Web] Proxychains' a very simple tool. It allows you to go ahead and connect to proxies.
+And all you gotta do, it has a configuration file, a simple configuration file that you just need to one,
+put in the IP addresses of your proxies, and you need to tell it what kind of chain you're building.
+And that's basically all you have to do, it's pretty simple to use. - Oh, that's great. 'Cause I think a lot of people, that's the first thing they're gonna gonna say is,
+"Okay, I'll use Thor, but if Thor's dodgy, then I'll use Proxychains." So I'm glad you've mentioned like specifically.
+And is there anything else that you would recommend doing? - [Occupy The Web] No, I would say that Thor is pretty safe in this cyber war against Russia.
+So that caveat about Thor doesn't really apply in this situation. In this situation,
+you're gonna be pretty anonymous on the Thor network, that means that NSA might know what you're doing,
+but that's okay 'cause NSA's on your side, we're on the same side in this fight, right?
+In general, I would say in this circumstance, you're not gonna have to fear the NSA or the CIA or the FBI.
+I mean, I think that... I was talking to some hacker friends the other day and we were kind of reveling
+that this is the first time in our life that we get to hack and not have to worry about law enforcement.
+(both laughs) We can do anything we want now, just throw the whole kitchen sink at 'em, it's our time.
+- But I read somewhere or heard somewhere that you got into hacking originally because you did something in your teens
+or when you were young, is that right? That got you into trouble. Is that correct? - [Occupy The Web] Well.
+️ Occupy The Web history
+- That was sort of your way to get into hacking? - [Occupy The Web] No, actually that's the way...
+I know the interview you're talking about. - [David Bombal] Yeah. - [Occupy The Web] So without telling, saying too much,
+is that I actually got myself into trouble. - [David Bombal] When you were younger. - [Occupy The Web] When I was younger.
+And so it's one of the reasons I stay anonymous. - Sure, sure. - [Occupy The Web] Yeah, I end up going in some places
+that I shouldn't have been, let's put it that way, and without taking necessary precautions against protecting my identity.
+And as result, bad things happened. And so it's one of the reasons
+that I'm particularly cognizant of trying to remain anonymous.
+And I think that this war has once again emphasized why it's important to maintain anonymity
+because nobody wants to have a cruise missile landing in their yard. You don't want the Russian army or the Chinese army
+knocking on your door. They may be look like local folks, but they have ill intent.
+And yeah, I go to great links to maintain my anonymity for that reason.
+- So Proxychains, any other advice then to maintain that? - [Occupy The Web] No, I think that for most people
+that's gonna work. In this case, Thor's gonna work for you. You only once again, that if you're using Thor to DDoS,
+remember that you have limited bandwidth on Thor, so you're not gonna be as effective using Thor
+to do a DDoS attack, right? So you want as much bandwidth as you can get to do a DDoS
+that's part of what you're trying to create so much traffic if you're using Thor and you have really limited bandwidth,
+that's not probably the tool you want to use. Which case then you wanna use something like Proxychains
+- And would you recommend like installing Linux on a computer and using that as your main computer,
+or what would you recommend? - [Occupy The Web] Well, for people who are learning, I recommend that they use something like VirtualBox,
+️ Install Linux on hardware? What version of Linux? Kali?
+or VMware Workstation. They work pretty well. These virtual machines have come a long way
+- They have, yeah. - In recent years. I mean, used to be, they were really bulky, and hard to work with, and now they're pretty transparent
+and pretty easy to work with. So the beauty of using them is that one, if you're a Windows user,
+and you're trying to learn Linux, you don't have to convert maybe your only system over to Linux before you're ready to.
+So, and you don't have to move your files and all your applications.
+So you can go ahead and just download VirtualBox from Oracle's website, it's free.
+VMware Workstation is probably preferable if you're willing to spend $300, I think it works better.
+But VirtualBox is free and Oracle does a pretty good job with it, it has some quirks like any software does.
+And then you can run your Kali or whatever operating system you want in a virtual machine
+while still maintaining your Windows 10, Windows 11 system. You don't have to make the conversion immediately.
+And actually you can use that virtual machine to do a DDoS attack, it works pretty well,
+even from a virtual machine. What happens is the virtual machine then connects through your wired or wireless connection,
+and it almost works seamlessly from the virtual machine
+out to your internet connection. - Yeah, that's really good these days. Yeah, sorry, go ahead.
+- [Occupy The Web] Yeah, they work really good these days. Yeah, so you don't have to go ahead and say, "Oh, I'm gonna go all Linux right now." Which it's hard for some people to do
+because they got applications, they got data all in their Windows machine,
+go ahead and download VirtualBox, then download a Linux operating system,
+I prefer Kali and I'll just use others, and get yourself familiar with these Linux operating systems,
+and that's the first step, right? And if you wanna participate, and you can participate even from a virtual machine, so.
+- That's great. I mean, I was gonna ask you the next question I was gonna ask you, is which operating system, and you've already answered that. So Kali's your favorite, yeah?
+- [Occupy The Web] Well, I like Debian a lot, and I've been using Debian for, I don't know, 15 years.
+So, I mean, I've used other Unix operating systems over the years. So, back in the '90s, I actually was on IRIX and HP-UX, HP.
+You know IRIX? - I've heard of it, I haven't used it. - [Occupy The Web] IRIX is still around.
+It's the operating system of the Silicon graphics machines. - Yes. - [Occupy The Web] So my first use of Unix
+was actually on Silicon graphics machines. - Wow. - [Occupy The Web] Way back, way back. And so HP-UX, little bit of BSD,
+and then when Linux started growing, I've been a dedicated Debian user.
+And I like Debian, I like it simple, it's clean, lightweight, relatively lightweight,
+it's not as lightweight as some others. And it works well for, I think hacking. So Kali is built on Debian for those who aren't familiar,
+Kali's built on Debian and you can put any tool you want basically into it.
+It comes pre-built with tools, but you can download and install any tools that you want
+into Kali if there's something else that you really like. There's a lot of tools in the repository
+that aren't built directly in the Kali, and of course you can always get a bunch of tools off GitHub, so.
+- I'm gonna ask you some quick fire questions, and I appreciate you taking so much time.
+"Am I too old to get into hacking if I'm in my 30s or 40s?" I get this question a lot. - [Occupy The Web] I get the question a lot too.
+️ "Am I too old for hacking?"
+And I have many people that I work with who started in their 40s.
+- Wow, yeah. - Okay, so yeah, people often assume that it's only a profession
+for very young people, and it's not, okay? I would say, yes, 30s and 40s is just fine.
+I actually have a guy right now who just started in his 50s so. - Oh, wow. Yeah, yeah.
+- [Occupy The Web] But he has an IT background, right? And he's coming to hacking in his 50s, so lots of people in their 30s and 40s I don't think,
+I mean, I would make the case that's never, you never too old to become a hacker, so.
+- You mean you have this mystique about it, don't you? Is it like Mr. Robot and stuff like that? This young guy and you're doing all these crazy things.
+But I mean, from what you're saying, there's a lot of opportunities, is that right? Even if you're a bit older.
+- [Occupy The Web] Yeah, there's a lot of opportunities. Sometimes when you're older, it's harder to commit the time and energy
+that requires to become really good at it. But if you are, I don't see any reason why any age
+cannot make the transition to white hat hacking, as we'll call it. - Yes. (both laughing)
+Stay there for now. - [Occupy The Web] So yes, I don't see age as a detriment at all, okay?
+Although, generally the mystique and the image that people have of a hacker is the hoodie wearing,
+young person in their mother's basement, in the dark. But that's not the case.
+- Yeah, it's interesting, 'cause I mean, you've got a lot of friends in this community and they're all different ages, different types of people.
+Is that right? - [Occupy The Web] Yes, and they're from lots of different backgrounds. - Yep. - [Occupy The Web] Ages from, I mean,
+I have teenagers to in their 50s. Nobody in their 60s, I don't think, but up from lots of,
+there's an awful lot of young people who wanna become hackers, right? And they want it right now.
+(both laughs) That's the drawback of being 15, 16 years old,
+and going into hacking is that they want it now, okay? And not necessarily realize
+that it's really a multiyear commitment to become really good at it and make it into a career.
+Generally, the older students are a little more patient with it, and they're willing to commit the time that it takes
+to become really good at it. So there's advantages to being very young, your mind is quick and nimble
+and you can grasp things very quickly, but the older hackers tend to be more committed
+and realize that it's not all gonna happen right now. I mean, they've been around for a while, they know to become good at things.
+I mean, there's that old adage that Malcolm Gladwell, I think is the one who popularized,
+and he popularized this notion that it takes 10,000 hours to become an expert at anything.
+So 10,000 hours is about five years, right? So if you really wanna become a great hacker,
+or you wanna be great at anything, you have to commit 10,000 hours. That's not me saying, that's other experts saying it.
+And I would say, that's probably true. That's five years of full-time work, okay?
+Now some people might be able to do it in three years, and some people might take 'em six years, okay? But it gives you a ballpark,
+if you wanted to become an expert, it doesn't mean it's gonna take that long to help in this war.
+I mean, in this war, you could put up some tools in a matter of hours or days
+and learn how to use them and participate in this war. But if you wanna become an expert,
+then think about 10,000 hours. I mean, that's a good ballpark of what it takes.
+- So tell me about Hackers-Arise because you've got a lot of fantastic articles, a lot of information there. Let's say I'm someone who's now really interested,
+and I wanna get some information. I can read a lot of your articles, but what about some of the courses and stuff that you have there?
+️ Hacker Arise courses
+Can you tell us about what kind of things you offer? - [Occupy The Web] Yeah, well, we just introduced just recently a program
+where people can come in and pay 32.99 a month and take live courses, okay?
+So that's one of the options and that's been real popular. - That's from you, yeah? - [Occupy The Web] Yep. that's from Hackers-Arise. - I mean, would you be presenting that
+or have you got a group of people presenting it? - [Occupy The Web] No, I'd be presenting it. There's a few us here, but I do most of the teaching.
+So that's 32.99 for live courses. We have a cybersecurity starter bundle
+which is books and intro videos for $149.
+We have a subscriber package, where for $750 you get all 25 courses,
+are of like intro to intermediate courses over three years. So you can choose to come to live courses,
+you can get the videos, you can do either one of those two. So if you really like just watching videos,
+you can do that or you can come to the live courses. And the advantage of the live courses of course, is that you get to ask questions.
+- Yeah, yeah. - [Occupy The Web] If you're just watching a video, you don't have any options. "Oh, well, I don't understand that."
+Where is in the live courses, you can ask me, I'll tell you, how do we do that.
+And then we have the subscriber pro, which is more advanced classes that is $1,500 over three years,
+these are prices for three years. We try to keep it affordable. I know for some people that even that's gonna be a bit much,
+so it all depends upon your circumstances, but we're try to create packages that will fit most people's budgets
+so they can at least get started. You know, 32.99 a month works out to, about a buck a day.
+If you're not willing to invest a dollar a day into your career, then it probably isn't important to you.
+So we just introduced that just in the last month or so. And I think that's, it's become very popular,
+I wanna encourage people that if you want, you're considering making a career in cybersecurity hacking,
+a dollar a day, I think is reasonable, be able to make that investment and then invest the time.
+So a dollar a day. - Time is a problem. - [Occupy The Web] Time is a problem. Time is almost sometimes more difficult
+than the dollar a day, right? A dollar a day, and then invest the time to study and come to classes.
+- And your courses are really practical, it's like, it's pure, like red teaming, proper hacking type stuff,
+it's not like theoretical things, is that right? - [Occupy The Web] Well, we have both. There are some theoretical courses,
+but we try to keep it practical. Even when we're doing a theoretical course, we try to apply it to real world circumstances, right?
+So we try to give a mix, and sometimes you have to have some theory
+to be able to be effective because the world changes.
+So if I teach you how to do something today, it may not work tomorrow, okay? It's cause the world changes.
+But if you have the theory behind it, then you can adapt. And then make that tool, make the changes to the tool,
+understand the defenses that are now up and play, and how I can get around it. Without that theory, you can't adapt.
+You can't just go in and say, "I'm gonna learn a bunch of tools and a bunch of techniques." That's good. That's a good place to start.
+But you still need to understand the theory so that you can grow beyond that. The theory allows you to develop your own tools,
+your own techniques. - You're on Twitter as well, is that right? - [Occupy The Web] I am. - And it's what occupytheweb or three cube,
+that's the handle, yeah? - [Occupy The Web] It's occupytheweb@threecube. - Okay, and so people can follow you there,
+️ Occupy The Web twitter and others
+'cause I see you post a lot of stuff. Are there any other accounts, like people that you'd recommend
+that someone who's wanting to get into this follows? - Yeah, I like both @hacks4pancakes and Dave Kennedy,
+both of 'em are really good. Dave Kennedy has TrustedSec, he works for TrustedSec.
+And @hacks4pancakes is actually what's her name? She works for Dragos, the big industrial control system.
+It's a Lesley, what's her name? Lesley Carhart? And she's at Dragos?
+I also, I mean, I think @evacide has a lot of really good insights and she's very funny.
+@evacide is head of cybersecurity for the freedom foundation, what's it called, FFS?
+I think she has a lot of good insights. If you're interested in general and freedom of information,
+she is at EFF, I'm sorry, at EFF, Electronic Frontier Foundation. She's head of cybersecurity there.
+Recommend her as well. There's there's actually a lot of good people on Twitter, but those are three. - Good place to start, yeah.
+- [Occupy The Web] Those are the people that I follow. Okay, that I like. Okay, and I think they have some interesting insights.
+- Any closing thoughts? do you wanna give us your manifesto if you like for, I don't wanna use that word, but like what you believe,
+and why this is important? - [Occupy The Web] Well, I've long maintained that hacking is the most important skillset
+️ Closing thoughts and manifesto
+of the 21st century. I put it into all my books. I wanna emphasize that. And I think that Russia now, Putin now,
+just emphasizes why that is so important. And this is 2022, in 2032, it'll be even more important, all right?
+So right now it's very important, but each year it gets more and more important.
+And so that's kind of my manifesto, is hacking is really, really important.
+It is the ultimate martial art. The true meaning of that word is martial,
+meaning fighting art. Hacking is just as much a martial art as any of the others,
+as say, we could go through history and go through all the martial arts.
+But this is the most contemporary and most advanced of the martial arts.
+Right now, it is the ultimate martial art, meaning the last, the most important, it may not always be,
+but it is now and foreseeable future it will. I can close with those thoughts.
+- I really wanna thank you, Occupy The Web. Thank you so much for sharing what you believe in, but also giving people like a roadmap
+or some ideas if they really wanna get into this, so really wanna appreciate, well, I really wanna thank you for your time.
+Thanks so much. - [Occupy The Web] Thanks for having me, David. I appreciate it. - Cheers. (upbeat music)

@@ -1,18 +1,10 @@
 @startuml
-
 left to right direction
-
-actor Usuario as u
-actor Administrador as a 
-actor Contador as c
-
-rectangle System{
-  (Autenticación) as auth
-  (Gestión de clientes) as gestion
+actor "Usuario" as u
+rectangle Sistema {
+  usecase "Seleccionar sistema de archivos" as UC1
+  usecase "Buscar archivo de audio" as UC2
 }
-
-u --> gestion
-a --> auth
-c --> gestion
-c --> auth
+u --> UC1
+u --> UC2
 @enduml

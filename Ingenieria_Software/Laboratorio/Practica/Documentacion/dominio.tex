@@ -1,0 +1,21 @@
+%%%% Modelo de dominio %%%%
+
+\section*{Modelo de dominio}
+
+\begin{figure}[h]
+	\centering
+  \begin{plantuml}
+    @startuml
+    object sistemaDeArchivos
+    object archivoMP3
+    object baseDatos
+    object consulta
+  
+    sistemaDeArchivos "0..*" - "1" archivoMP3 : proporciona
+    archivoMP3 "0..*" - "1" baseDatos : almacena
+    consulta "1" - "1" baseDatos : realiza
+    baseDatos "1" - "1" consulta : devuelve
+    @enduml
+  \end{plantuml}
+	\caption{Modelo de dominio}
+\end{figure}

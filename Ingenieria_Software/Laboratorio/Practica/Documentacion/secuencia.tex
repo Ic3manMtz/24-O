@@ -1,0 +1,47 @@
+%%%% Diagrama de secuencia %%%%
+
+\section*{Diagrama de secuencia}
+
+\begin{figure}[H]
+	\centering
+  \begin{plantuml}
+    @startuml
+
+    actor Usuario as User
+    participant "Sistema" as System
+    participant "Sistema de Archivos" as FS
+    database "Base de Datos" as DB
+    
+    User -> System : Seleccionar Elegir directorio
+    System -> User : Solicitar ubicación del directorio
+    User -> System : Proporcionar ruta del directorio
+    System -> FS : Verificar si el directorio existe
+    FS --> System : Confirmación de directorio válido
+    System -> DB : Almacenar configuración del directorio
+    System -> User : Confirmar que el directorio ha sido registrado
+    
+    @enduml
+  \end{plantuml}
+	\caption{Diagrama de secuencia CU1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+  \begin{plantuml}
+    @startuml
+
+    actor Usuario as User
+    participant "Sistema" as System
+    database "Base de Datos" as DB
+    
+    User -> System : Seleccionar Realizar consulta
+    System -> User : Solicitar criterios de búsqueda
+    User -> System : Proporcionar criterios
+    System -> DB : Consultar datos con los criterios
+    DB --> System : Devolver resultados
+    System -> User : Mostrar resultados de la búsqueda
+    
+    @enduml
+  \end{plantuml}
+	\caption{Diagrama de secuencia CU2}
+\end{figure}
