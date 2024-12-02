@@ -1,50 +1,39 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.1)  1 DEC 2024 17:41
- restricted system commands enabled.
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.12.1)  1 DEC 2024 18:05
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
 **/home/kasm-user/Desktop/24-O/Redes_Computadoras/Practicas/Segunda/Reporte/portada.tex
 (/home/kasm-user/Desktop/24-O/Redes_Computadoras/Practicas/Segunda/Reporte/portada.tex
 LaTeX2e <2021-11-15> patch level 1
-[\directlua]:1: module 'luaotfload-main' not found:
-	no field package.preload['luaotfload-main']
-	[kpse lua searcher] file not found: 'luaotfload-main'
-Error in luaotfload: reverting to OT1 L3 programming layer <2022-01-21>
-Inserting `tracingstacklevels' at position 1 in `input_level_string'. (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 54.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
-\c@part=\count183
-\c@chapter=\count184
-\c@section=\count185
-\c@subsection=\count186
-\c@subsubsection=\count187
-\c@paragraph=\count188
-\c@subparagraph=\count189
-\c@figure=\count190
-\c@table=\count191
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen137
+\bibindent=\dimen138
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/01/26 3.70 The Babel package
- (/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def
+\babel@savecnt=\count194
+\U@D=\dimen139
+\l@unhyphenated=\language7
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\l@dumylang=\language2
-Package babel Info: Non-standard hyphenation setup on input line 118.
-\l@nohyphenation=\language3
-\babelcatcodetablenum=\catcodetable12
-\bbl@pattcodes=\catcodetable13
-)
-\babel@savecnt=\count192
-\U@D=\dimen138
-\l@unhyphenated=\language4
- (/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def
-\bbl@attr@locale=\attribute1
-)
+\bbl@dirlevel=\count195
 
-! Package babel Error: Unknown option 'spanish'. Either you misspelled it
+
+/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty:4254: Package babel Error: Unknown option 'spanish'. Either you misspelled it
 (babel)                or the language definition file spanish.ldf was not found.
 
 See the babel package documentation for explanation.
@@ -52,25 +41,1031 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.4254 \ProcessOptions*
-                     
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.4254 \ProcessOptions*
-                     
+                       
 Valid options are, among others: shorthands=, KeepShorthandsActive,
 activeacute, activegrave, noconfigs, safe=, main=, math=
 headfoot=, strings=, config=, hyphenmap=, or a language name.
 
+Package babel Info: You haven't specified a language. I'll use 'nil'
+(babel)             as the main language. Reported on input line 4299.
+(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2022/01/26 3.70 Nil language
+\l@nil=\language8
+))
+
+/home/kasm-user/Desktop/24-O/Redes_Computadoras/Practicas/Segunda/Reporte/portada.tex:4: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage[spanish]{babel} $
+                                 %Idioma
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:29: Missing $ inserted.
+<inserted text> 
+                $
+l.29 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:42: You can't use `\spacefactor' in vertical mode.
+\@->\spacefactor 
+                 \@m {}
+l.42 \@
+       makeother\"%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:42: Missing $ inserted.
+<inserted text> 
+                $
+l.42 \@
+       makeother\"%
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
-Here is how much of LuaTeX's memory you used:
- 1266 strings out of 477805
- 100000,383344 words of node,token memory allocated 347 words of node memory still in use:
-   2 hlist, 1 rule, 1 dir, 48 glue_spec, 3 if_stack, 1 write nodes
-   avail lists: 2:9,3:2,4:1,5:1,7:2,9:3
- 22026 multiletter control sequences out of 65536+600000
- 15 fonts using 633019 bytes
- 40i,0n,47p,239b,82s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:42: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \@
+       makeother\"%
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 42.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:43: Missing number, treated as zero.
+<to be read again> 
+                   \global 
+l.43 \catcode
+             `\*=11
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:43: Missing number, treated as zero.
+<to be read again> 
+                   \global 
+l.43 \catcode
+             `\*=11
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:43: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.43 \catcode
+             `\*=11
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:43: Missing { inserted.
+<to be read again> 
+                   \catcode 
+l.43 \catcode
+             `\*=11
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:43: Missing number, treated as zero.
+<to be read again> 
+                   \egroup 
+l.43 \catcode
+             `\*=11
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:43: Missing number, treated as zero.
+<to be read again> 
+                   \egroup 
+l.43 \catcode
+             `\*=11
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:44: You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.44 \@
+       makeother\!%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:45: You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.45 \@
+       makeother\:%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:47: You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.47 \providecommand\Grot@start{\@
+                                  latex@error{Rotation not supported}\@ehc
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:47: You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.47 ...rt{\@latex@error{Rotation not supported}\@
+                                                  ehc
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:50: You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.50 \providecommand\Gscale@start{\@
+                                    latex@error{Scaling not supported}\@ehc
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:50: You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.50 ...art{\@latex@error{Scaling not supported}\@
+                                                  ehc
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:64: Use of \Gin doesn't match its definition.
+l.64 \newif\ifGin@setpagesize\Gin@s
+                                   etpagesizetrue
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg:2: Missing $ inserted.
+<inserted text> 
+                $
+l.2 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg:2: Missing } inserted.
+<inserted text> 
+                }
+l.2 
+    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (534.87201pt too wide) in paragraph at lines 42--2
+[]$[]\OML/cmm/m/it/10.95 makeother[]$ 
+ []
+
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg:27: Undefined control sequence.
+l.27     \ifnum\luatexversion
+                             >85
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg:27: Missing number, treated as zero.
+<to be read again> 
+                   >
+l.27     \ifnum\luatexversion>
+                              85
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:108: You can't use `\spacefactor' in vertical mode.
+\@->\spacefactor 
+                 \@m {}
+l.108   \@
+          ifundefined{ver@\Gin@driver}{\input{\Gin@driver}}{}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108   \@
+          ifundefined{ver@\Gin@driver}{\input{\Gin@driver}}{}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:108: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108   \@
+          ifundefined{ver@\Gin@driver}{\input{\Gin@driver}}{}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:67: Missing number, treated as zero.
+<to be read again> 
+                   @
+l.67 \chardef\main@
+                   pdfcolorstack=0 %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:68: You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.68 \@
+       ifundefined{@pdfcolorstack}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:144: Missing $ inserted.
+<inserted text> 
+                $
+l.144 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:144: Missing } inserted.
+<inserted text> 
+                }
+l.144 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (79.48491pt too wide) in paragraph at lines 108--144
+[]$[]\OML/cmm/m/it/10.95 ifundefined[][]$ 
+ []
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:149: Use of \@ doesn't match its definition.
+<recently read> g
+                 
+l.149   \expandafter\@g
+                       obble
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:149: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149   \expandafter\@go
+                        bble
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:152: Use of \@ doesn't match its definition.
+l.152  \@i
+          fl@t@r\fmtversion{2020/10/01}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:159: Undefined control sequence.
+l.159     \g
+            @addto@macro\@kernel@before@shipout@background
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:159: Use of \@ doesn't match its definition.
+l.159     \g@addto@macro\@k
+                           ernel@before@shipout@background
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:161: Undefined control sequence.
+l.161       \ifGPT
+                  @pagecolor
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:167: Use of \@ doesn't match its definition.
+<argument> \pdfcolorstack \@p
+                             dfcolorstack push{\current @page@color}\aftergr...
+l.167           }
+                 %
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:167: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.167           }
+                 %
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:167: Color stack action is missing.
+<to be read again> 
+                   d
+l.167           }
+                 %
+The expected actions for \pdfcolorstack:
+    set, push, pop, current
+I'll ignore the color stack command.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:167: Undefined control sequence.
+<argument> ...stack \@pdfcolorstack push{\current 
+                                                  @page@color}\aftergroup \r...
+l.167           }
+                 %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:167: Undefined control sequence.
+<recently read> \reset 
+                       
+l.167           }
+                 %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (67.83855pt too wide) in paragraph at lines 149--193
+[]\OT1/cmr/m/n/10.95 obble fl@t@r2021-11-152020/10/01 @addto@macroernel@before@shipout@background
+ []
+
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:243: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.243 \let\Gin@a
+                ttr@hash\@empty
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:243: Use of \@ doesn't match its definition.
+l.243 \let\Gin@attr@hash\@e
+                           mpty
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:244: Use of \@ doesn't match its definition.
+l.244 \@i
+         fundefined{Gin@decode}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:245: Use of \@ doesn't match its definition.
+l.245   {\let\Gin@decode\@e
+                           mpty}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:247: Use of \@ doesn't match its definition.
+l.247 \@i
+         fundefined{Gin@log}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:248: Missing { inserted.
+<to be read again> 
+                   }
+l.248   {\let\Gin@log\wlog}
+                           
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:250: Use of \@ doesn't match its definition.
+l.250 \@i
+         fundefined{Gin@page}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:251: Use of \@ doesn't match its definition.
+l.251   {\let\Gin@page\@e
+                         mpty}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:254: Use of \@ doesn't match its definition.
+l.254 \@i
+         fundefined{Gin@pagebox}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:258: Use of \@ doesn't match its definition.
+l.258 \@i
+         fundefined{Gin@interpolate}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:399: Use of \GPT doesn't match its definition.
+l.399 \GPT@v
+            iewporttrue
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:554: Use of \@ doesn't match its definition.
+l.554 \@i
+         fundefined{ifGin@setpagesize}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:558: Undefined control sequence.
+l.558 \ifGin
+            @setpagesize
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:590: Use of \@ doesn't match its definition.
+l.590 \@n
+         amedef{Gin@rule@.jpg}#1{{jpg}{.jpg}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:590: You can't use `macro parameter character #' in horizontal mode.
+l.590 \@namedef{Gin@rule@.jpg}#
+                               1{{jpg}{.jpg}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:590: You can't use `macro parameter character #' in horizontal mode.
+l.590 \@namedef{Gin@rule@.jpg}#1{{jpg}{.jpg}{#
+                                              1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:591: Use of \@ doesn't match its definition.
+l.591 \@n
+         amedef{Gin@rule@.jpeg}#1{{jpg}{.jpeg}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:591: You can't use `macro parameter character #' in horizontal mode.
+l.591 \@namedef{Gin@rule@.jpeg}#
+                                1{{jpg}{.jpeg}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:591: You can't use `macro parameter character #' in horizontal mode.
+l.591 \@namedef{Gin@rule@.jpeg}#1{{jpg}{.jpeg}{#
+                                                1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:592: Use of \@ doesn't match its definition.
+l.592 \@n
+         amedef{Gin@rule@.JPG}#1{{jpg}{.JPG}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:592: You can't use `macro parameter character #' in horizontal mode.
+l.592 \@namedef{Gin@rule@.JPG}#
+                               1{{jpg}{.JPG}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:592: You can't use `macro parameter character #' in horizontal mode.
+l.592 \@namedef{Gin@rule@.JPG}#1{{jpg}{.JPG}{#
+                                              1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:593: Use of \@ doesn't match its definition.
+l.593 \@n
+         amedef{Gin@rule@.JPEG}#1{{jpg}{.JPEG}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:593: You can't use `macro parameter character #' in horizontal mode.
+l.593 \@namedef{Gin@rule@.JPEG}#
+                                1{{jpg}{.JPEG}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:593: You can't use `macro parameter character #' in horizontal mode.
+l.593 \@namedef{Gin@rule@.JPEG}#1{{jpg}{.JPEG}{#
+                                                1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:594: Use of \@ doesn't match its definition.
+l.594 \@n
+         amedef{Gin@rule@.jb2}#1{{jbig2}{.jb2}{#1}}%
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:594: You can't use `macro parameter character #' in horizontal mode.
+l.594 \@namedef{Gin@rule@.jb2}#
+                               1{{jbig2}{.jb2}{#1}}%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:594: You can't use `macro parameter character #' in horizontal mode.
+l.594 \@namedef{Gin@rule@.jb2}#1{{jbig2}{.jb2}{#
+                                                1}}%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:595: Use of \@ doesn't match its definition.
+l.595 \@n
+         amedef{Gin@rule@.jbig2}#1{{jbig2}{.jbig2}{#1}}%
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:595: You can't use `macro parameter character #' in horizontal mode.
+l.595 \@namedef{Gin@rule@.jbig2}#
+                                 1{{jbig2}{.jbig2}{#1}}%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:595: You can't use `macro parameter character #' in horizontal mode.
+l.595 ...edef{Gin@rule@.jbig2}#1{{jbig2}{.jbig2}{#
+                                                  1}}%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:596: Use of \@ doesn't match its definition.
+l.596 \@n
+         amedef{Gin@rule@.png}#1{{png}{.png}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:596: You can't use `macro parameter character #' in horizontal mode.
+l.596 \@namedef{Gin@rule@.png}#
+                               1{{png}{.png}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:596: You can't use `macro parameter character #' in horizontal mode.
+l.596 \@namedef{Gin@rule@.png}#1{{png}{.png}{#
+                                              1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:597: Use of \@ doesn't match its definition.
+l.597 \@n
+         amedef{Gin@rule@.PNG}#1{{png}{.PNG}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:597: You can't use `macro parameter character #' in horizontal mode.
+l.597 \@namedef{Gin@rule@.PNG}#
+                               1{{png}{.PNG}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:597: You can't use `macro parameter character #' in horizontal mode.
+l.597 \@namedef{Gin@rule@.PNG}#1{{png}{.PNG}{#
+                                              1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:598: Use of \@ doesn't match its definition.
+l.598 \@n
+         amedef{Gin@rule@.mps}#1{{mps}{.mps}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:598: You can't use `macro parameter character #' in horizontal mode.
+l.598 \@namedef{Gin@rule@.mps}#
+                               1{{mps}{.mps}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:598: You can't use `macro parameter character #' in horizontal mode.
+l.598 \@namedef{Gin@rule@.mps}#1{{mps}{.mps}{#
+                                              1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:599: Use of \@ doesn't match its definition.
+l.599 \@n
+         amedef{Gin@rule@.pdf}#1{{pdf}{.pdf}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:599: You can't use `macro parameter character #' in horizontal mode.
+l.599 \@namedef{Gin@rule@.pdf}#
+                               1{{pdf}{.pdf}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:599: You can't use `macro parameter character #' in horizontal mode.
+l.599 \@namedef{Gin@rule@.pdf}#1{{pdf}{.pdf}{#
+                                              1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:600: Use of \@ doesn't match its definition.
+l.600 \@n
+         amedef{Gin@rule@.PDF}#1{{pdf}{.PDF}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:600: You can't use `macro parameter character #' in horizontal mode.
+l.600 \@namedef{Gin@rule@.PDF}#
+                               1{{pdf}{.PDF}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:600: You can't use `macro parameter character #' in horizontal mode.
+l.600 \@namedef{Gin@rule@.PDF}#1{{pdf}{.PDF}{#
+                                              1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:601: Use of \@ doesn't match its definition.
+l.601 \@n
+         amedef{Gin@rule@.eps}#1{{eps}{.eps}{#1}}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:601: You can't use `macro parameter character #' in horizontal mode.
+l.601 \@namedef{Gin@rule@.eps}#
+                               1{{eps}{.eps}{#1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:601: You can't use `macro parameter character #' in horizontal mode.
+l.601 \@namedef{Gin@rule@.eps}#1{{eps}{.eps}{#
+                                              1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+)
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:115: Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.115 \let
+          \Gin@nat@height\leftmarginvi
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:115: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.115 \let
+          \Gin@nat@height\leftmarginvi
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:258: Use of ^^AGread doesn't match its definition.
+l.258 \newif\ifGread@\Gread@t
+                             rue
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:308: Use of ^^A@ doesn't match its definition.
+l.308 \let\Gin@decode\@e
+                        mpty
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:310: Use of ^^A@ doesn't match its definition.
+l.310 \let\Gin@page\@e
+                      mpty
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:314: Missing { inserted.
+<to be read again> 
+                   ^^Alet 
+l.314 \let
+          \Gin@req@sizes\relax
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+)
+Runaway text?
+^^Alet ^^AGin @req@sizes^^Arelax ^^Adef ^^AGin @scalex{1}^^Alet ^^AGin ^^AETC.
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: File ended while scanning text of ^^Awrite.
+<inserted text> 
+                }
+l.32 \define@key
+                {Gin}{bb}
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Use of ^^A@ doesn't match its definition.
+<write> ...^^Arelax ^^Adef ^^AGin @nosize##1{^^A@l
+                                                  atex@error {Cannot determi...
+l.32 \define@key
+                {Gin}{bb}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Use of ^^A@ doesn't match its definition.
+<write> ...raphic in ##1 (no size specified)}^^A@e
+                                                  hc} ^^Anewif ^^AifGin @bbo...
+l.32 \define@key
+                {Gin}{bb}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Incomplete ^^Aiffalse; all text was ignored after line 32.
+<inserted text> 
+                ^^Afi 
+l.32 \define@key
+                {Gin}{bb}
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Incomplete ^^Aiffalse; all text was ignored after line 32.
+<inserted text> 
+                ^^Afi 
+l.32 \define@key
+                {Gin}{bb}
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Incomplete ^^Aiffalse; all text was ignored after line 32.
+<inserted text> 
+                ^^Afi 
+l.32 \define@key
+                {Gin}{bb}
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Incomplete ^^Aiffalse; all text was ignored after line 32.
+<inserted text> 
+                ^^Afi 
+l.32 \define@key
+                {Gin}{bb}
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Incomplete ^^Aiffalse; all text was ignored after line 32.
+<inserted text> 
+                ^^Afi 
+l.32 \define@key
+                {Gin}{bb}
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Incomplete ^^Aiffalse; all text was ignored after line 32.
+<inserted text> 
+                ^^Afi 
+l.32 \define@key
+                {Gin}{bb}
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Incomplete ^^Aiffalse; all text was ignored after line 32.
+<inserted text> 
+                ^^Afi 
+l.32 \define@key
+                {Gin}{bb}
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+Runaway text?
+^^Alet ^^AGin @req@sizes^^Arelax ^^Adef ^^AGin @scalex{1}^^Alet ^^AGin ^^AETC.
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: Forbidden control sequence found while scanning text of ^^Awrite.
+<inserted text> 
+                }
+l.32 \define@key
+                {Gin}{bb}
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+^^Alet ^^AGin @req@sizes^^Arelax ^^Adef ^^AGin @scalex{1}^^Alet ^^AGin @scaley^^AGin @exclamation ^^Alet ^^AGin @req@height^^AGin @nat@height ^^Alet ^^AGin @req@width^^AGin @nat@width ^^Alet ^^AGin @viewport@code^^Arelax ^^Adef ^^AGin @nosize##1{atex@error {Cannot determine size of graphic in ##1 (no size specified)}hc} ^^Acount@ ^^Aescapechar ^^Aescapechar ^^Am@ne ^^Alet  
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32: TeX capacity exceeded, sorry [input stack size=5000].
+^^Agraphics.sty-h@@k ->^^Agraphics.sty-h@@k 
+                                            ^^Aexpandafter ^^Alet ^^Acsname ...
+l.32 \define@key
+                {Gin}{bb}
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
+
+ 
+Here is how much of TeX's memory you used:
+ 1402 strings out of 480171
+ 22908 string characters out of 5894489
+ 325958 words of memory out of 5000000
+ 19404 multiletter control sequences out of 15000+600000
+ 471998 words of font info for 37 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 5000i,4n,62p,318b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:32:  ==> Fatal error occurred, no output PDF file produced!
