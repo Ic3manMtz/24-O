@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @startuml
 left to right direction
 actor "Usuario" as u
@@ -7,4 +8,15 @@ rectangle Sistema {
 }
 u --> UC1
 u --> UC2
+=======
+@startuml
+left to right direction
+actor "Usuario" as u
+rectangle Sistema {
+  usecase "Seleccionar sistema de archivos" as UC1
+  usecase "Buscar archivo de audio" as UC2
+}
+u --> UC1
+u --> UC2
+>>>>>>> 24-O-Repo/main
 @enduml

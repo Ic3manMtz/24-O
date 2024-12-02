@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 %%%% Casos de Uso %%%%
 
 \section*{Casos de uso}
@@ -22,3 +23,29 @@ en la siguiente figura:
 	\caption{Modelo de casos de uso}
 \end{figure}
 
+=======
+%%%% Casos de Uso %%%%
+
+\section*{Casos de uso}
+
+\noindent Para este servicio solo va a interactuar un actor llamado \emph{Usuario} como se puede ver
+en la siguiente figura:
+
+\begin{figure}[h]
+	\centering
+	\begin{plantuml}
+		@startuml
+		left to right direction
+		actor "Usuario" as u
+		rectangle Sistema {
+			usecase "Seleccionar sistema de archivos" as UC1
+			usecase "Buscar archivo de audio" as UC2
+		}
+		u --> UC1
+		u --> UC2
+		@enduml
+	\end{plantuml}
+	\caption{Modelo de casos de uso}
+\end{figure}
+
+>>>>>>> 24-O-Repo/main

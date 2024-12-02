@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 @startuml
 object gestorCancion
 object cancion
 
 gestorCancion "1" <-- "n" cancion
+=======
+@startuml
+object gestorCancion
+object cancion
+
+gestorCancion "1" <-- "n" cancion
+>>>>>>> 24-O-Repo/main
 @enduml

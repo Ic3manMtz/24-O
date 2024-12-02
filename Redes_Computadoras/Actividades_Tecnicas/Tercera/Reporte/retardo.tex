@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \section*{Experimentación con ping}
 
 El primer paso para este experimento es escoger los destinos en otros continentes. Los destinos seleccionados son:
@@ -20,4 +21,28 @@ El primer paso para este experimento es escoger los destinos en otros continente
 	\includegraphics[width=0.5\textwidth]{img/foto}
 	\caption{Descripción de la imagen}
 	\label{fig:etiqueta_imagen}
+=======
+\section*{Experimentación con ping}
+
+El primer paso para este experimento es escoger los destinos en otros continentes. Los destinos seleccionados son:
+
+\begin{description}
+	\item[Europa] IP de algún servidor de la Universidad Técnica de Berlín, Alemania (\emph{130.149.17.21})
+	\item[Asia] IP de algún servidor de la Universidad de Tokio, Japón (\emph{133.11.11.11})
+\end{description}
+
+\begin{lstlisting}[language=Bash, caption=Pings con 300 muestras guardando la salida, label=lst:pings]
+	ping -c 300 www.unam.mx > unam_full.dat
+	ping -c 300 130.149.17.21 > alemania_full.dat
+	ping -c 300 133.11.11.11 > tokio_full.dat
+\end{lstlisting}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/foto}
+	\caption{Descripción de la imagen}
+	\label{fig:etiqueta_imagen}
+>>>>>>> 24-O-Repo/main
 \end{figure}
