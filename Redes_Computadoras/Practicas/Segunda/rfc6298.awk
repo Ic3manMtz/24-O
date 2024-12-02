@@ -1,23 +1,50 @@
-# Load the data from hop02.txt
-NR == 1 {
-  # Skip header row
-  next
+BEGIN {
+    # Inicialización de parámetros
+    alpha = 1/8    # Suavizado para SRTT
+    beta = 1/4     # Suavizado para RTTVAR
+    K = 4          # Factor para RTTVAR
+    G = 1          # Valor mínimo para RTTVAR
+    RTO = 1        # Valor inicial de RTO
+    firstRTT = 1   # Bandera para la primera medición RTT
+    sample_count = 0  # Contador de muestras procesadas
+    start_sample = 200  # Comenzar a partir de la muestra 200
+    max_samples = 30     # Tomar solo 30 muestras
 }
 
-# Process rows 200-299
-NR >= 200 && NR <= 299 {
-  # Calculate sampleRTT
-  sampleRTT = $1
-  
-  # Calculate EstimatedRTT (assuming it's the average of last 3 samples)
-  prev_sampleRTT = ($1 + $2 + $3) / 3
-  EstimatedRTT = prev_sampleRTT
-  
-  # Calculate TimeoutInterval (assuming it's 4 times EstimatedRTT)
-  TimeoutInterval = EstimatedRTT * 4
-  
-  # Print to separate files
-  printf "%.2f\n", sampleRTT > "sampleRTT.txt"
-  printf "%.2f\n", EstimatedRTT > "EstimatedRTT.txt"
-  printf "%.2f\n", TimeoutInterval > "TimeoutInterval.txt"
+{
+    # Incrementar el contador de muestras
+    sample_count++
+
+    # Solo procesar muestras a partir de la muestra 200
+    if (sample_count >= start_sample && sample_count < start_sample + max_samples) {
+        # RTT_value es el único valor por línea
+        RTT = $1
+
+        # Primer RTT
+        if (firstRTT == 1) {
+            SRTT = RTT
+            RTTVAR = RTT / 2
+            RTO = SRTT + (K * RTTVAR > G ? K * RTTVAR : G)
+            firstRTT = 0
+        } else {
+            # RTT subsecuentes
+            RTTVAR = (1 - beta) * RTTVAR + beta * (SRTT > RTT ? SRTT - RTT : RTT - SRTT)
+            SRTT = (1 - alpha) * SRTT + alpha * RTT
+            RTO = SRTT + (K * RTTVAR > G ? K * RTTVAR : G)
+        }
+
+        # Escribir en los archivos de salida
+        print RTT >> "sampleRTT"
+        print SRTT >> "estimatedRTT"
+        print RTO >> "timeoutInterval"
+    }
+
+    # Si ya se procesaron 30 muestras, terminamos el script
+    if (sample_count >= start_sample + max_samples) {
+        exit
+    }
+}
+
+END {
+    print "Proceso completado. Los archivos de salida son: sampleRTT, EstimatedRTT, TimeoutInterval."
 }
