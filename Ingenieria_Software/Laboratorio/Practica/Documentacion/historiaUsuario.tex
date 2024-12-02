@@ -1,0 +1,65 @@
+%%%% Historias de usuario %%%%
+
+\section*{Casos de uso}
+
+\subsection*{CU1 - Seleccionar sistema de archivos}
+\begin{itemize}
+  \item \textbf{Actor principal:} Usuario
+\end{itemize}
+
+\subsubsection*{Descripción}
+Permitir que el usuario seleccionar el directorio que contiene los archivos MP3 
+para ser indexados
+
+\subsubsection*{Flujo principal}
+\begin{enumerate}
+  \item El usuario selecciona la opción \textit{\textquotedblleft Elegir directorio\textquotedblright}
+  \item El sistema solicita la ubicación del directorio donde se encuentran los
+  archivos MP3
+  \item El usuario introduce la ruta del directorio
+  \item El sistema verifica si el directorio existe y si contiene archivos MP3
+  \item El sistema almacena la configuración para su uso posterior
+\end{enumerate}
+
+\subsubsection*{Precondiciones}
+\begin{itemize}
+  \item El directorio debe exisitir y ser accesible
+\end{itemize}
+
+\subsubsection*{Postcondiciones}
+\begin{itemize}
+  \item El directorio queda registrado para su uso posterior
+  \item El sistema extrae los metadatos de todos los archivos MP3 dentro del directorio
+  \item El sistema almacena los metadatos en la base de datos
+  \item El sistema informa al usuario que el proceso de indexación ha finalizado
+\end{itemize}
+
+\bigskip
+
+\subsection*{CU2 - Buscar archivo de audio}
+\begin{itemize}
+  \item \textbf{Actor principal:} Usuario
+\end{itemize}
+
+\subsubsection*{Descripción}
+Permitir que el usuario realice consultas para buscar archivos MP3 utilizando uno o más
+atributos como criterios
+
+\subsubsection*{Flujo principal}
+\begin{enumerate}
+  \item El usuario selecciona la opción \textit{\textquotedblleft Realizar consulta\textquotedblright}
+  \item El sistema solicita los criterios de búsqueda
+  \item El usuario introduce uno o más criterios
+  \item El sistema consulta la base de datos con los criterios proporcionados
+  \item El sistema muestra al usuario los resultados de la búsqueda
+\end{enumerate}
+
+\subsubsection*{Precondiciones}
+\begin{itemize}
+  \item La base de datos debe estar poblada con información indexada
+\end{itemize}
+
+\subsubsection*{Postcondiciones}
+\begin{itemize}
+  \item El sistema muestra al usuario una lista de archivos que cumplen con los criterios
+\end{itemize}

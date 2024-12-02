@@ -1,0 +1,6 @@
+@startuml
+object gestorCancion
+object cancion
+
+gestorCancion "1" <-- "n" cancion
+@enduml

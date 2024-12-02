@@ -1,0 +1,21 @@
+%%%% Requerimientos %%%%
+
+\section*{Requerimientos}
+
+\subsection*{Funcionales}
+\begin{itemize}
+	\item El sistema debe extraer y procesar metadatos de archivos MP3 utilizando el 
+	estándar ID3 v2.4
+	\item Los datos indexados deben almacenarse en una base de datos
+	\item El servicio deberá proporcionar un mecanismo de consulta para encontrar 
+	cualquier archivo o colección basado en los valores de alguno de sus atributos o 
+	todas las combinaciones posibles
+\end{itemize}
+
+\subsection*{No Funcionales}
+\begin{itemize}
+	\item Se deberá emplear como base de datos MySQL, MariaDB o SQLite
+	\item Las consultas deben ser procesadas en un tiempo menor a dos segundos en
+	condiciones razonables
+	\item Los datos deben persistir incluso después de un fallo del sistema
+\end{itemize}
