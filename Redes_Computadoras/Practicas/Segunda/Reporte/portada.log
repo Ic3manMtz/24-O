@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.12.3)  3 DEC 2024 19:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.12.3)  3 DEC 2024 22:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,6 +332,10 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 ) (./portada.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
+
+
+LaTeX Warning: Label `fig:execScript' multiply defined.
+
 )
 \openout1 = `portada.aux'.
 
@@ -444,26 +448,33 @@ LaTeX Info: Redefining \% on input line 51.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.51 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier (name{figure.0.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.51 \end{document}
                    ] (./portada.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `portada.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13483 strings out of 480247
- 207429 string characters out of 5896151
- 1013121 words of memory out of 5000000
- 31170 multiletter control sequences out of 15000+600000
+ 13523 strings out of 480247
+ 207889 string characters out of 5896151
+ 1013160 words of memory out of 5000000
+ 31196 multiletter control sequences out of 15000+600000
  477451 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,6n,64p,438b,1574s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt0900.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmitt10.540pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmtt9.600pk> </usr/share/texlive/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsl10.pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmti10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.720pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmr10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmmi10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmti12.720pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmcsc10.864pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx10.657pk>
-Output written on portada.pdf (3 pages, 95079 bytes).
+Output written on portada.pdf (3 pages, 98727 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 75 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

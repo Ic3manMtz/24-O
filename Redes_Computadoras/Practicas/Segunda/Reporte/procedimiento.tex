@@ -92,5 +92,28 @@ ejecuci\'on
 \noindent Como se puede ver en la \textit{Figura \ref*{fig:scriptAWK}} al ejecutar el script se generan tres trazas: 
 \textbf{sampleRTT}, \textbf{estimatedRTT} y \textbf{timeoutInterval}. El siguiente paso es crear las instrucciones en 
 \textit{Octave} para poder visualizar en una sola gr\'afica: la traza original y las trazas generadas por el script. 
-A continuaci\'on se muestran las instrucciones propuestas junto con las gr\'aficas generadas.
+A continuaci\'on se muestran las instrucciones propuestas, a reserva del nombre de los ejes y el titulo que cambiar\'a
+al graficar cada una de las trazas. Adem\'as veremos las gr\'aficas creadas por defecto.
+
+\begin{figure}[H]
+    \centering
+    \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+        columns=flexible, tabsize=2, showstringspaces=fals] 
+        load estimatedRTT;
+        load timeoutInterval;
+        plot(sampleRTT, '--*', 'Color', 'b', 'LineWidth', 0.5, 'MarkerSize', 8);
+        hold on;
+        plot(estimatedRTT, '--*', 'Color', 'k', 'LineWidth', 0.5, 'MarkerSize', 8);
+        plot(timeoutInterval, '--*', 'Color', 'r', 'LineWidth', 0.5, 'MarkerSize', 8);
+        legend('sampleRTT','estimatedRTT','timeoutInterval');
+        grid on;
+        xlabel('Eje x');
+        ylabel('Eje y');
+        title('Erro incurrido');
+        print -dpng "traza.png";
+    \end{lstlisting}
+    \caption{Ejecuci\'on del script para la traza \textit{hop02.txt}}
+    \label{fig:execScript}
+\end{figure}
+
 
