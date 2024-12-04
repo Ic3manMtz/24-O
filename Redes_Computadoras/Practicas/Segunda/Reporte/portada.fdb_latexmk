@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1733277303 "/home/kasm-user/Desktop/24-O/Redes_Computadoras/Practicas/Segunda/Reporte/portada.tex" "portada.pdf" "portada" 1733277304
+["pdflatex"] 1733285035 "/home/kasm-user/Desktop/24-O/Redes_Computadoras/Practicas/Segunda/Reporte/portada.tex" "portada.pdf" "portada" 1733285036
   "/etc/texmf/web2c/texmf.cnf" 1733270952 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt0900.600pk" 1733275955 8308 b201179b887f01c6125e3dca1ecfb48c ""
   "/home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx10.657pk" 1733272342 12764 2c0fdb658e56c2feaf760877a8f67454 ""
@@ -116,10 +116,10 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "introduccion.tex" 1733270153 359 bccdd09194030b194856be10a382810e ""
-  "portada.aux" 1733277304 1366 cec57f676e75f3c24aa1744b4c1ad669 "pdflatex"
-  "portada.out" 1733277304 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "portada.aux" 1733285036 1642 ebf323a596d952043f34fcd2ac366a19 "pdflatex"
+  "portada.out" 1733285036 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "portada.tex" 1733270153 1338 b3d4161bd213e5f726d21721001c3ce9 ""
-  "procedimiento.tex" 1733277303 3985 b6d6f2c8a22b4142eb615825e155950a ""
+  "procedimiento.tex" 1733285035 4962 05dcd98439aa8abc582ba805b685da41 ""
   (generated)
   "portada.aux"
   "portada.log"
