@@ -25,7 +25,6 @@ son las secciones 2.1 a 2.3 del \textbf{RFC 6298}. En la figura siguiente se pue
             alpha = 1/8    # Suavizado para SRTT
             beta = 1/4     # Suavizado para RTTVAR
             K = 4          # Factor para RTTVAR
-            G = 1          # Valor minimo para RTTVAR
             RTO = 1        # Valor inicial de RTO
             firstRTT = 1   # Bandera para la primera medicion RTT
             sample_count = 0  # Contador de muestras procesadas
@@ -46,13 +45,13 @@ son las secciones 2.1 a 2.3 del \textbf{RFC 6298}. En la figura siguiente se pue
                 if (firstRTT == 1) {
                     SRTT = RTT
                     RTTVAR = RTT / 2
-                    RTO = SRTT + (K * RTTVAR > G ? K * RTTVAR : G)
+                    RTO = SRTT + K * RTTVAR
                     firstRTT = 0
                 } else {
                     # RTT subsecuentes
                     RTTVAR = (1 - beta) * RTTVAR + beta * (SRTT > RTT ? SRTT - RTT : RTT - SRTT)
                     SRTT = (1 - alpha) * SRTT + alpha * RTT
-                    RTO = SRTT + (K * RTTVAR > G ? K * RTTVAR : G)
+                    RTO = SRTT + K * RTTVAR
                 }
         
                 # Escribir en los archivos de salida
@@ -120,30 +119,47 @@ al graficar cada una de las trazas. Adem\'as veremos las gr\'aficas creadas por 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/trazaHop02.png}
+	\includegraphics[width=0.8\textwidth]{img/alpha18/trazahop02.png}
 	\caption{Gr\'afica de las trazas de las muetras hop02}
     
-	\includegraphics[width=0.7\textwidth]{img/trazaHop04.png}
+	\includegraphics[width=0.8\textwidth]{img/alpha18/trazaHop04.png}
 	\caption{Gr\'afica de las trazas de las muetras hop04}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/trazaHop21.png}
+	\includegraphics[width=0.8\textwidth]{img/alpha18/trazaHop21.png}
 	\caption{Gr\'afica de las trazas de las muetras hop21}
 	\label{fig:hop21Graph}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/trazaHop29.png}
+	\includegraphics[width=0.8\textwidth]{img/alpha18/trazaHop29.png}
 	\caption{Gr\'afica de las trazas de las muetras hop29}
 	\label{fig:hop29Graph}
 \end{figure}
 
+\newpage
 \subsection*{Cuestionario}
 
 \begin{enumerate}
-    \item Se puede observar un proceso suave
-    \item Aplique 
+    \item ¿Se observa un proceso suave en el proceso de estimaci\'on (\textit{EstimatedRTT}) con
+    respecto a las muestras del RTT (\textit{SampleRTT}) tal como propone Jacobson?
+    \item[] Si, el proceso de estimaci\'on de \textit{EstimatedRTT} deber\'ia ser suave con respectoa
+    a las muestras de \textit{SampleRTT}, como lo propone el algoritmo de Jacobson
+    
+    \item Las f\'ormulas de Van Jacobson para el c\'alculo del RTO son las siguientes:
+    $$EstimatedRTT = (1-\alpha) * EstimatedRTT + \alpha * R^\prime$$
+    $$VariacionRTT = (1-\beta) * VariacionRTT + \beta * |EstimatedRTT-R^\prime|$$
+    $$TimeoutInterval = EstimatedRTT + max(G, K*VariacionRTT)$$
+    \item[] Los valores por defecto son \(\alpha=1/8\) y \(\beta=1/4\) son ampliamente utilizados
+    en la pr\'actica debido a que equilibran adecuadamente la estabilidad de la estimaci\'on de RTT
+    y la sensibilidad a las fluctuaciones de la red.
+    \item[] \(\alpha\) controla que tan r\'apido se adapra el \textit{EstimatedRTT} a nuevos valores
+    de \textit{SampleRTT}. Si el RTT flut\'ua constantemente debido a cambios r\'apidos en la red, es
+    posible que se quiera una estimaci\'on m\'as precisa con menor error. \(\alpha\) podr\'ia ser
+    ajustado ligeramente a un valor m\'as bajo, por ejemplo, \(\alpha=1/16\) para hacer la estimaci\'on
+    m\'as conservadora y menos sensible a fluctuaciones grandes, pero esto har\'a que el \textit{EstimatedRTT}
+    sea menos reactivo.
 \end{enumerate}

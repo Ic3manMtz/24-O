@@ -3,7 +3,6 @@ BEGIN {
     alpha = 1/8    # Suavizado para SRTT
     beta = 1/4     # Suavizado para RTTVAR
     K = 4          # Factor para RTTVAR
-    G = 1          # Valor mínimo para RTTVAR
     RTO = 1        # Valor inicial de RTO
     firstRTT = 1   # Bandera para la primera medición RTT
     sample_count = 0  # Contador de muestras procesadas
@@ -24,13 +23,13 @@ BEGIN {
         if (firstRTT == 1) {
             SRTT = RTT
             RTTVAR = RTT / 2
-            RTO = SRTT + (K * RTTVAR > G ? K * RTTVAR : G)
+            RTO = SRTT + K * RTTVAR
             firstRTT = 0
         } else {
             # RTT subsecuentes
             RTTVAR = (1 - beta) * RTTVAR + beta * (SRTT > RTT ? SRTT - RTT : RTT - SRTT)
             SRTT = (1 - alpha) * SRTT + alpha * RTT
-            RTO = SRTT + (K * RTTVAR > G ? K * RTTVAR : G)
+            RTO = SRTT + K * RTTVAR
         }
 
         # Escribir en los archivos de salida
