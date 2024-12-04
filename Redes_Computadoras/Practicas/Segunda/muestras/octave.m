@@ -1,0 +1,13 @@
+load sampleRTT;
+load estimatedRTT;
+load timeoutInterval;
+plot(sampleRTT, '--*', 'Color', 'b', 'LineWidth', 0.5, 'MarkerSize', 8);
+hold on;
+plot(estimatedRTT, '--*', 'Color', 'k', 'LineWidth', 0.5, 'MarkerSize', 8);
+plot(timeoutInterval, '--*', 'Color', 'r', 'LineWidth', 0.5, 'MarkerSize', 8);
+legend('sampleRTT','estimatedRTT','timeoutInterval');
+grid on;
+xlabel('Vuelta de transmision');
+ylabel('Eje y');
+title('Alpha 1/8');
+print -dpng "traza.png";
