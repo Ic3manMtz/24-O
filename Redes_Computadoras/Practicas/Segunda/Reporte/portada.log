@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.12.3)  3 DEC 2024 22:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.12.3)  3 DEC 2024 22:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -440,19 +440,65 @@ LaTeX Info: Redefining \% on input line 78.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.78 
-     ])
+     ]
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.119 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name{figure.0.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.119 \newpage
+              ]
+<img/trazaHop02.png, id=99, 875.27pt x 656.4525pt>
+File: img/trazaHop02.png Graphic file (type png)
+<use img/trazaHop02.png>
+Package pdftex.def Info: img/trazaHop02.png  used on input line 123.
+(pdftex.def)             Requested size: 278.83578pt x 209.12752pt.
+<img/trazaHop04.png, id=100, 875.27pt x 656.4525pt>
+File: img/trazaHop04.png Graphic file (type png)
+<use img/trazaHop04.png>
+Package pdftex.def Info: img/trazaHop04.png  used on input line 126.
+(pdftex.def)             Requested size: 278.83578pt x 209.12752pt.
+<img/trazaHop21.png, id=101, 875.27pt x 656.4525pt>
+File: img/trazaHop21.png Graphic file (type png)
+<use img/trazaHop21.png>
+Package pdftex.def Info: img/trazaHop21.png  used on input line 132.
+(pdftex.def)             Requested size: 278.83578pt x 209.12752pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.0.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.136 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.0.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.136 
+       <./img/trazaHop02.png (PNG copy)> <./img/trazaHop04.png (PNG copy)>]
+<img/trazaHop29.png, id=108, 875.27pt x 656.4525pt>
+File: img/trazaHop29.png Graphic file (type png)
+<use img/trazaHop29.png>
+Package pdftex.def Info: img/trazaHop29.png  used on input line 139.
+(pdftex.def)             Requested size: 278.83578pt x 209.12752pt.
+)
 :<-
 LaTeX Info: Redefining \. on input line 51.
 LaTeX Info: Redefining \% on input line 51.
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2}) has been already used, duplicate ignored
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.0.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.51 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier (name{figure.0.3}) has been already used, duplicate ignored
+                   pdfTeX warning (ext4): destination with the same identifier (name{figure.0.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.51 \end{document}
-                   ] (./portada.aux
+                    <./img/trazaHop21.png (PNG copy)> <./img/trazaHop29.png (PNG copy)>] (./portada.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
@@ -463,18 +509,18 @@ Package rerunfilecheck Info: File `portada.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13523 strings out of 480247
- 207889 string characters out of 5896151
- 1013160 words of memory out of 5000000
- 31196 multiletter control sequences out of 15000+600000
- 477451 words of font info for 58 fonts, out of 8000000 for 9000
+ 13567 strings out of 480247
+ 208649 string characters out of 5896151
+ 1013294 words of memory out of 5000000
+ 31225 multiletter control sequences out of 15000+600000
+ 478056 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,6n,64p,438b,1574s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt0900.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmitt10.540pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmtt9.600pk> </usr/share/texlive/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsl10.pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmti10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.720pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmr10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmmi10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmti12.720pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmcsc10.864pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx10.657pk>
-Output written on portada.pdf (3 pages, 98727 bytes).
+ </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt0900.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmitt10.540pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmtt9.600pk> </usr/share/texlive/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsl10.pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmti10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.720pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmr10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmmi10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmti12.720pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmcsc10.864pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx10.657pk>
+Output written on portada.pdf (5 pages, 297428 bytes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 75 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 500 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

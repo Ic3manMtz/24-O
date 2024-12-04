@@ -1,8 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1733285035 "/home/kasm-user/Desktop/24-O/Redes_Computadoras/Practicas/Segunda/Reporte/portada.tex" "portada.pdf" "portada" 1733285036
+["pdflatex"] 1733287394 "/home/kasm-user/Desktop/24-O/Redes_Computadoras/Practicas/Segunda/Reporte/portada.tex" "portada.pdf" "portada" 1733287395
   "/etc/texmf/web2c/texmf.cnf" 1733270952 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt0900.600pk" 1733275955 8308 b201179b887f01c6125e3dca1ecfb48c ""
   "/home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx10.657pk" 1733272342 12764 2c0fdb658e56c2feaf760877a8f67454 ""
+  "/home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.600pk" 1733287340 14156 642e38f24e90a91b9b0b1d116061b5e9 ""
   "/home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.720pk" 1733272336 17912 9f852b2c86720a66884248557dda47e0 ""
   "/home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmcsc10.864pk" 1733272341 17672 d65cec129ac30edce2a688d5ee622fac ""
   "/home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmitt10.540pk" 1733276019 10312 3802505fe0097e925caeffc9fe818165 ""
@@ -115,11 +116,15 @@
   "/usr/share/texlive/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "img/trazaHop02.png" 1733286809 49235 cd34e410e8452c1735440b18288c5733 ""
+  "img/trazaHop04.png" 1733286779 51733 e8e641444b9f6944d9391c0967b55121 ""
+  "img/trazaHop21.png" 1733286739 45241 84f493de901d816d79ba909eb6ebe071 ""
+  "img/trazaHop29.png" 1733286834 46813 5b0603a8a247f00d2b528372a714d9eb ""
   "introduccion.tex" 1733270153 359 bccdd09194030b194856be10a382810e ""
-  "portada.aux" 1733285036 1642 ebf323a596d952043f34fcd2ac366a19 "pdflatex"
-  "portada.out" 1733285036 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "portada.aux" 1733287394 2458 86ecb74734cf595dfcc69951d4bcb876 "pdflatex"
+  "portada.out" 1733287394 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "portada.tex" 1733270153 1338 b3d4161bd213e5f726d21721001c3ce9 ""
-  "procedimiento.tex" 1733285035 4962 05dcd98439aa8abc582ba805b685da41 ""
+  "procedimiento.tex" 1733287394 5741 8259eb8154327cdfa538a858cf31d858 ""
   (generated)
   "portada.aux"
   "portada.log"
