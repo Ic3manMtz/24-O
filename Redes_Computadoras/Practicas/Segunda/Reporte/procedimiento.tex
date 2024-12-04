@@ -2,8 +2,8 @@
 
 \section*{Procedimiento}
 
-\noindent Para poder comenzar con esta pr\'actica selecione cuatro trazas al azar de los sets
-proporcionados, dichas trazas son:
+\noindent Para poder comenzar con esta pr\'actica selecione cuatro trazas al azar de los sets proporcionados,
+ dichas trazas son:
 
 \begin{description}
     \item[SetA] - hop02
@@ -11,4 +11,86 @@ proporcionados, dichas trazas son:
     \item[SetG] - hop21
     \item[SetF] - hop29 
 \end{description}
+
+\noindent El siguiente paso es crear un script en AWK para generar las trazas del proceso RTT (\emph{sampleRTT}),
+su estimaci\'on (\emph{estimatedRTT}) y el valor del temporizador (\emph{TimeoutInterval}). La base para este script 
+son las secciones 2.1 a 2.3 del \textbf{RFC 6298}. En la figura siguiente se puede ver el c\'odigo del script
+
+\begin{figure}[H]
+    \centering
+    \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+        columns=flexible, tabsize=2, showstringspaces=false, language=AWK] 
+        BEGIN {
+            # Inicializacion de parametros
+            alpha = 1/8    # Suavizado para SRTT
+            beta = 1/4     # Suavizado para RTTVAR
+            K = 4          # Factor para RTTVAR
+            G = 1          # Valor minimo para RTTVAR
+            RTO = 1        # Valor inicial de RTO
+            firstRTT = 1   # Bandera para la primera medicion RTT
+            sample_count = 0  # Contador de muestras procesadas
+            start_sample = 200  # Comenzar a partir de la muestra 200
+            max_samples = 30     # Tomar solo 30 muestras
+        }
+        
+        {
+            # Incrementar el contador de muestras
+            sample_count++
+        
+            # Solo procesar muestras a partir de la muestra 200
+            if (sample_count >= start_sample && sample_count < start_sample + max_samples) {
+                # RTT_value es el unico valor por linea
+                RTT = $1
+        
+                # Primer RTT
+                if (firstRTT == 1) {
+                    SRTT = RTT
+                    RTTVAR = RTT / 2
+                    RTO = SRTT + (K * RTTVAR > G ? K * RTTVAR : G)
+                    firstRTT = 0
+                } else {
+                    # RTT subsecuentes
+                    RTTVAR = (1 - beta) * RTTVAR + beta * (SRTT > RTT ? SRTT - RTT : RTT - SRTT)
+                    SRTT = (1 - alpha) * SRTT + alpha * RTT
+                    RTO = SRTT + (K * RTTVAR > G ? K * RTTVAR : G)
+                }
+        
+                # Escribir en los archivos de salida
+                print RTT >> "sampleRTT"
+                print SRTT >> "estimatedRTT"
+                print RTO >> "timeoutInterval"
+            }
+        
+            # Si ya se procesaron 30 muestras, terminamos el script
+            if (sample_count >= start_sample + max_samples) {
+                exit
+            }
+        }
+        
+        END {
+            print "Proceso completado. Los archivos de salida son: sampleRTT, EstimatedRTT, TimeoutInterval."
+        }
+        
+    \end{lstlisting}
+    \caption{Script para extraer los datos requeridos}
+    \label{fig:scriptAWK}
+\end{figure}
+
+\noindent Una vez creado lo ejecutamos para cada una de las trazas seleccionadas, a continuaci\'on se muestra la forma de
+ejecuci\'on 
+
+\begin{figure}[H]
+    \centering
+    \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+        columns=flexible, tabsize=2, showstringspaces=fals] 
+        awk -f rfc6298.awk hop02.txt
+    \end{lstlisting}
+    \caption{Ejecuci\'on del script para la traza \textit{hop02.txt}}
+    \label{fig:execScript}
+\end{figure}
+
+\noindent Como se puede ver en la \textit{Figura \ref*{fig:scriptAWK}} al ejecutar el script se generan tres trazas: 
+\textbf{sampleRTT}, \textbf{estimatedRTT} y \textbf{timeoutInterval}. El siguiente paso es crear las instrucciones en 
+\textit{Octave} para poder visualizar en una sola gr\'afica: la traza original y las trazas generadas por el script. 
+A continuaci\'on se muestran las instrucciones propuestas junto con las gr\'aficas generadas.
 
