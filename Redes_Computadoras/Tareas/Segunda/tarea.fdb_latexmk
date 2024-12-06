@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1733470534.83111 "d:/UAM/24-O/24-O/Redes_Computadoras/Tareas/Segunda/tarea.tex" "tarea.pdf" "tarea" 1733470536.97208 0
+["pdflatex"] 1733503967.4731 "d:/UAM/24-O/24-O/Redes_Computadoras/Tareas/Segunda/tarea.tex" "tarea.pdf" "tarea" 1733503970.9213 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -106,12 +106,13 @@
   "C:/Program Files/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/molap/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730768229 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/molap/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730768519 24215272 32a051b7e405a488cd8ef04fa7b9bca5 ""
-  "checks.tex" 1733470534 8824 d18fbd8834675a0570a6a5392614b441 ""
+  "checks.tex" 1733503968 10602 8b022cacb102e4287baad9fc595e1265 ""
   "d:/UAM/24-O/24-O/Redes_Computadoras/Tareas/Segunda/tarea.tex" 1733465364 1325 068576703117b99fa598eea7177d7403 ""
   "ejercicios.tex" 1733465364 34 c749a0a5b2cf4156cda1a3b1722135a8 ""
   "img/3.3.9.jpg" 1733465364 135587 feaa4e04c6d6d9d82549a60e524d4b6b ""
-  "tarea.aux" 1733470538 427 e718dee71cbb228d37e8ca8995a1faa1 "pdflatex"
-  "tarea.out" 1733470538 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "img/3.4.13.jpg" 1733503586 443208 4d20fed073064ff98926a586e1432249 ""
+  "tarea.aux" 1733503972 507 1d670d290aee9b31daecb34206ca2859 "pdflatex"
+  "tarea.out" 1733503970 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "tarea.tex" 1733465364 1325 068576703117b99fa598eea7177d7403 ""
   (generated)
   "tarea.aux"

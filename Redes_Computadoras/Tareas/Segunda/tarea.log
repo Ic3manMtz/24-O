@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.4)  6 DEC 2024 01:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.4)  6 DEC 2024 10:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -425,7 +425,15 @@ LaTeX Info: Redefining \% on input line 80.
  [3 <./img/3.3.9.jpg>]
 LaTeX Info: Redefining \. on input line 110.
 LaTeX Info: Redefining \% on input line 110.
- [4])
+ [4]
+<img/3.4.13.jpg, id=48, 1511.6475pt x 1058.95625pt>
+File: img/3.4.13.jpg Graphic file (type jpg)
+<use img/3.4.13.jpg>
+Package pdftex.def Info: img/3.4.13.jpg  used on input line 157.
+(pdftex.def)             Requested size: 199.16928pt x 139.5112pt.
+LaTeX Info: Redefining \. on input line 159.
+LaTeX Info: Redefining \% on input line 159.
+ [5])
 :<-
 Package srcltx Info: Expanded filename `ejercicios' to `ejercicios.tex' on input line 49.
 :<+ ejercicios.tex
@@ -434,11 +442,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [5])
+ [6 <./img/3.4.13.jpg>])
 :<-
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
-[6] (tarea.aux
+[7] (tarea.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -450,17 +458,17 @@ Package rerunfilecheck Info: File `tarea.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13439 strings out of 474485
- 205785 string characters out of 5753549
+ 13451 strings out of 474485
+ 205981 string characters out of 5753549
  1935542 words of memory out of 5000000
- 35493 multiletter control sequences out of 15000+600000
+ 35504 multiletter control sequences out of 15000+600000
  565756 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,593b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tarea.pdf (6 pages, 285290 bytes).
+Output written on tarea.pdf (7 pages, 734509 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

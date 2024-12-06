@@ -128,10 +128,42 @@
     The answer is 10 packets
 
     \subsubsection*{Pipelining}
+    \noindent The next statements are true about pipelining:
+    \begin{itemize}
+        \item A pipelined sender can have trasmitted multiple packets for which the sender has yet to receive an ACK from the
+        receiver
+        \item With a pipelined sender, there may be transmitted packet "in flight" - propagating through the channel - packets
+        that the sender has sent but that the receiver has not yet received
+    \end{itemize}
+
     \subsubsection*{Packet buffering in Go-Back-N}
+    \noindent What are some reasons for discarding received-but-out-of-sequence packets at the receiver in GBN?
+    \begin{itemize}
+        \item The sender will resedn that packet in any case
+        \item The implementation at the receiver is simpler
+    \end{itemize}
+
     \subsubsection*{Packet buffering in Go-Back-N (more)}
+    \noindent What are some reasons for \textit{not} discarding received-but-out-of-sequence packets at the receiver in GBN?
+    \begin{itemize}
+        \item Even though that packet will be retransmitted, its next retransmission could be corrupted, so don't discard
+        a perfectly well-received packet
+    \end{itemize}
+
     \subsubsection*{Receiver operation in Selective Repeat}
+    \noindent In the SR receiver window (see diagram below), why haven't the red packets been delivered yet?
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{img/3.4.13.jpg}
+        \label{fig:SR}
+    \end{figure}
+    There is a packet with a lower sequence number than any of the red packets that has yet to be received, so in-order dalivery
+    of data in the red packets up to the application layer is not possible
+
     \subsubsection*{Receiver operation in Selective Repeat (more)}
+    \noindent In SR, why does the receiver have to acknowledge packets with sequence numbers that are less than those in its 
+    window, which starts at \textit{rcv-base}
+    Because the sender may not have received an ACK for that packet yet
 
 
 \subsection*{Connection-oriented Transport: TCP}
