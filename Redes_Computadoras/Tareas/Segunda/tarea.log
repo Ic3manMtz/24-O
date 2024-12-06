@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.12.5)  5 DEC 2024 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.12.5)  5 DEC 2024 22:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/kasm-user/Desktop/24-O/Redes_Computadoras/Practicas/Segunda/Reporte/portada.tex
-(/home/kasm-user/Desktop/24-O/Redes_Computadoras/Practicas/Segunda/Reporte/portada.tex
+**/home/kasm-user/Desktop/24-O/Redes_Computadoras/Tareas/Segunda/tarea.tex
+(/home/kasm-user/Desktop/24-O/Redes_Computadoras/Tareas/Segunda/tarea.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -329,15 +329,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count303
 \l__pdf_internal_box=\box56
-) (./portada.aux
+) (./tarea.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
-
-
-LaTeX Warning: Label `fig:execScript' multiply defined.
-
 )
-\openout1 = `portada.aux'.
+\openout1 = `tarea.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -391,280 +387,76 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 32.
 LaTeX Info: Redefining \pageref on input line 32.
 LaTeX Info: Redefining \nameref on input line 32.
- (./portada.out) (./portada.out)
+ (./tarea.out) (./tarea.out)
 \@outlinefile=\write3
-\openout3 = `portada.out'.
+\openout3 = `tarea.out'.
 
 \c@lstlisting=\count311
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/it' instead on input line 36.
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package srcltx Info: Expanded filename `introduccion' to `introduccion.tex' on input line 49.
+Package srcltx Info: Expanded filename `checks' to `checks.tex' on input line 48.
 
-:<+ introduccion.tex
-(./introduccion.tex)
-:<-
-Package srcltx Info: Expanded filename `procedimiento' to `procedimiento.tex' on input line 50.
-:<+ procedimiento.tex
-(./procedimiento.tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 23.
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 42.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [1
+:<+ checks.tex
+(./checks.tex [1
 
 
 
 pdfTeX warning: pdflatex (file pdftex.map): cannot open font map file
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.80 
-     ]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.118 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name{figure.0.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.118 \newpage
-              ]
-<img/alpha18/trazahop02.png, id=98, 1204.5pt x 903.375pt>
-File: img/alpha18/trazahop02.png Graphic file (type png)
-<use img/alpha18/trazahop02.png>
-Package pdftex.def Info: img/alpha18/trazahop02.png  used on input line 122.
-(pdftex.def)             Requested size: 318.67207pt x 239.00728pt.
-<img/alpha18/trazaHop04.png, id=99, 1204.5pt x 903.375pt>
-File: img/alpha18/trazaHop04.png Graphic file (type png)
-<use img/alpha18/trazaHop04.png>
-Package pdftex.def Info: img/alpha18/trazaHop04.png  used on input line 125.
-(pdftex.def)             Requested size: 318.67207pt x 239.00728pt.
-<img/alpha18/trazaHop21.png, id=100, 1204.5pt x 903.375pt>
-File: img/alpha18/trazaHop21.png Graphic file (type png)
-<use img/alpha18/trazaHop21.png>
-Package pdftex.def Info: img/alpha18/trazaHop21.png  used on input line 131.
-(pdftex.def)             Requested size: 318.67207pt x 239.00728pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.0.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.135 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.0.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.135 
-       <./img/alpha18/trazahop02.png (PNG copy)> <./img/alpha18/trazaHop04.png (PNG copy)>]
-<img/alpha18/trazaHop29.png, id=107, 1170.3725pt x 915.42pt>
-File: img/alpha18/trazaHop29.png Graphic file (type png)
-<use img/alpha18/trazaHop29.png>
-Package pdftex.def Info: img/alpha18/trazaHop29.png  used on input line 138.
-(pdftex.def)             Requested size: 318.67207pt x 249.24796pt.
-LaTeX Info: Redefining \. on input line 143.
-LaTeX Info: Redefining \% on input line 143.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.0.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.143 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name{figure.0.7}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.143 \newpage
-               <./img/alpha18/trazaHop21.png (PNG copy)> <./img/alpha18/trazaHop29.png (PNG copy)>])
+<img/3.3.9.jpg, id=19, 376.40625pt x 304.13625pt>
+File: img/3.3.9.jpg Graphic file (type jpg)
+<use img/3.3.9.jpg>
+Package pdftex.def Info: img/3.3.9.jpg  used on input line 48.
+(pdftex.def)             Requested size: 199.16928pt x 160.93155pt.
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+ [2 <./img/3.3.9.jpg>]
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+ [3])
 :<-
-Package srcltx Info: Expanded filename `entregables' to `entregables.tex' on input line 51.
-:<+ entregables.tex
-(./entregables.tex
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
- [6]
-Overfull \hbox (17.9784pt too wide) in paragraph at lines 42--46
-[]\OT1/cmr/m/n/10.95 A con-tin-uaci^^Son se pre-sen-tan las gr^^Safi-cas de los tres pro-ce-sos: $[]$, $[][]$
- []
-
-File: img/alpha18/trazahop02.png Graphic file (type png)
-<use img/alpha18/trazahop02.png>
-Package pdftex.def Info: img/alpha18/trazahop02.png  used on input line 49.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
-File: img/alpha18/trazaHop04.png Graphic file (type png)
-<use img/alpha18/trazaHop04.png>
-Package pdftex.def Info: img/alpha18/trazaHop04.png  used on input line 53.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
-[7]
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.0.8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.58 \newpage
-             pdfTeX warning (ext4): destination with the same identifier (name{figure.0.9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.58 \newpage
-             ]
-File: img/alpha18/trazaHop21.png Graphic file (type png)
-<use img/alpha18/trazaHop21.png>
-Package pdftex.def Info: img/alpha18/trazaHop21.png  used on input line 61.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
-File: img/alpha18/trazaHop29.png Graphic file (type png)
-<use img/alpha18/trazaHop29.png>
-Package pdftex.def Info: img/alpha18/trazaHop29.png  used on input line 65.
-(pdftex.def)             Requested size: 298.75392pt x 233.67345pt.
-<img/alpha14/trazaHop02.png, id=145, 1204.5pt x 903.375pt>
-File: img/alpha14/trazaHop02.png Graphic file (type png)
-<use img/alpha14/trazaHop02.png>
-Package pdftex.def Info: img/alpha14/trazaHop02.png  used on input line 73.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
-<img/alpha14/trazaHop04.png, id=146, 1204.5pt x 903.375pt>
-File: img/alpha14/trazaHop04.png Graphic file (type png)
-<use img/alpha14/trazaHop04.png>
-Package pdftex.def Info: img/alpha14/trazaHop04.png  used on input line 77.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
-
+Package srcltx Info: Expanded filename `ejercicios' to `ejercicios.tex' on input line 49.
+:<+ ejercicios.tex
+(./ejercicios.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.0.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.82 \newpage
-             pdfTeX warning (ext4): destination with the same identifier (name{figure.0.11}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.82 \newpage
-             ]
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.0.12}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.82 \newpage
-             pdfTeX warning (ext4): destination with the same identifier (name{figure.0.13}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.82 \newpage
-              <./img/alpha14/trazaHop02.png (PNG copy)> <./img/alpha14/trazaHop04.png (PNG copy)>]
-<img/alpha14/trazaHop21.png, id=159, 1170.3725pt x 878.28125pt>
-File: img/alpha14/trazaHop21.png Graphic file (type png)
-<use img/alpha14/trazaHop21.png>
-Package pdftex.def Info: img/alpha14/trazaHop21.png  used on input line 85.
-(pdftex.def)             Requested size: 298.75392pt x 224.19328pt.
-<img/alpha14/trazaHop29.png, id=160, 1204.5pt x 903.375pt>
-File: img/alpha14/trazaHop29.png Graphic file (type png)
-<use img/alpha14/trazaHop29.png>
-Package pdftex.def Info: img/alpha14/trazaHop29.png  used on input line 89.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
-<img/alpha116/trazaHop02.png, id=161, 1204.5pt x 903.375pt>
-File: img/alpha116/trazaHop02.png Graphic file (type png)
-<use img/alpha116/trazaHop02.png>
-Package pdftex.def Info: img/alpha116/trazaHop02.png  used on input line 97.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
-<img/alpha116/trazaHop04.png, id=162, 1204.5pt x 903.375pt>
-File: img/alpha116/trazaHop04.png Graphic file (type png)
-<use img/alpha116/trazaHop04.png>
-Package pdftex.def Info: img/alpha116/trazaHop04.png  used on input line 101.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [4]
+Overfull \vbox (130.73639pt too high) has occurred while \output is active []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.0.14}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.106 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name{figure.0.15}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.106 \newpage
-               <./img/alpha14/trazaHop21.png (PNG copy)> <./img/alpha14/trazaHop29.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.0.16}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.106 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name{figure.0.17}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.106 \newpage
-               <./img/alpha116/trazaHop02.png (PNG copy)> <./img/alpha116/trazaHop04.png (PNG copy)>]
-<img/alpha116/trazaHop21.png, id=175, 1204.5pt x 903.375pt>
-File: img/alpha116/trazaHop21.png Graphic file (type png)
-<use img/alpha116/trazaHop21.png>
-Package pdftex.def Info: img/alpha116/trazaHop21.png  used on input line 109.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
-<img/alpha116/trazaHop29.png, id=176, 1204.5pt x 903.375pt>
-File: img/alpha116/trazaHop29.png Graphic file (type png)
-<use img/alpha116/trazaHop29.png>
-Package pdftex.def Info: img/alpha116/trazaHop29.png  used on input line 113.
-(pdftex.def)             Requested size: 298.75392pt x 224.065pt.
-LaTeX Info: Redefining \. on input line 126.
-LaTeX Info: Redefining \% on input line 126.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.0.18}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.126     \item U
-                 n valor mayor de \( \alpha \), como \( \alpha_1 = \frac{1}{...pdfTeX warning (ext4): destination with the same identifier (name{figure.0.19}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.126     \item U
-                 n valor mayor de \( \alpha \), como \( \alpha_1 = \frac{1}{... <./img/alpha116/trazaHop21.png (PNG copy)> <./img/alpha116/trazaHop29.png (PNG copy)>])
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [5])
 :<-
-LaTeX Info: Redefining \. on input line 52.
-LaTeX Info: Redefining \% on input line 52.
-[14] (./portada.aux
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+[6] (./tarea.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `portada.out' has not changed.
+Package rerunfilecheck Info: File `tarea.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13657 strings out of 480247
- 210898 string characters out of 5896151
- 983008 words of memory out of 5000000
- 31282 multiletter control sequences out of 15000+600000
- 478056 words of font info for 60 fonts, out of 8000000 for 9000
+ 13092 strings out of 480247
+ 203193 string characters out of 5896151
+ 502111 words of memory out of 5000000
+ 30802 multiletter control sequences out of 15000+600000
+ 476773 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,6n,64p,438b,1574s stack positions out of 5000i,500n,10000p,200000b,80000s
- </usr/share/texlive/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr8.pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmex10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmmi8.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmsy8.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmsy10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt0900.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmitt10.540pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmtt9.600pk> </usr/share/texlive/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsl10.pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmti10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.720pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmr10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmmi10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmti12.720pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmcsc10.864pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx10.657pk>
-Output written on portada.pdf (14 pages, 1457571 bytes).
+ 60i,7n,63p,336b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </usr/share/texlive/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsl10.pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.600pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx12.720pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmr10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmmi10.657pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmcsc10.864pk> </home/kasm-user/.texlive2021/texmf-var/fonts/pk/ljfour/public/cm/cmbx10.657pk>
+Output written on tarea.pdf (6 pages, 209974 bytes).
 PDF statistics:
- 664 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 111 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

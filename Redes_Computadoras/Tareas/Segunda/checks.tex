@@ -1,0 +1,136 @@
+\section*{Knowledge Checks}
+
+\subsection*{Connectionless Transport: UDP}
+    \subsubsection*{UDP header files}
+    \begin{itemize}
+        \item Which fields are in a UDP segment header?
+        \item[] Source port, destination port, length (of UDP header plus payload),
+        internet 
+        \item Why is the UDP header length field needed?
+        \item[] Because the payload section can be of variable length, and this lets UDP know where the
+        segment ends
+        \item Over what set of bytes is the checksum field in the UDP header computed over?
+        \item[] The entire UDP segment, except the checksum field itself, and the IP senders and receive
+        address fields
+        \item The next statements are true about a checksum:
+        \begin{itemize}
+            \item A checksum is computed at a sender by considering each byte within a packet
+            as a number, and then adding these numbers (each number representing a bytes)
+            together to compute a sum (which is known as a checksum)
+            \item The sender-computed checksum value is often included in a checksum field
+            within a packet header
+            \item The receiver of a packet with a checksum field will add up the received
+            bytes, just as the sender did, and compare this locally-computed checksum with the
+            checksum value in the packet header. If these two values are \textbf{different}
+            then the receiver \textbf{knows} that one of the bits in the received packet has been changed
+            during transmission from sender to receiver.
+        \end{itemize}
+        \item Compute the Internet checksum for these two 16-bit words: 11110101 11010011 and 10110011 01000100
+        \item[] To compute the Internet checksum of a set of 16-bit words, we compute the one's complement sum 
+        of the two words. That is, we add the two numbers together, making sure that any carry into the 17th bit
+        of this initial sum is added back into the 1's place of the resulting sum); we then take the one's
+        complement of the result. This means that the Internet checksum is \textbf{01010110 11100111}
+        \item Compute the Internet checksum for these two 16-bit words: 01000001 11000100 and 00100000 00101011
+        \item[] To compute the Internet checksum of a set of 16-bit words, we compute the one's complement sum 
+        of the two words. That is, we add the two numbers together, making sure that any carry into the 17th bit
+        of this initial sum is added back into the 1's place of the resulting sum); we then take the one's
+        complement of the result. This means that the Internet checksum is \textbf{10011110 00010000}
+        \item[NOTE] https://traductordebinario.com/calculadora-de-sumas-binario/ 
+        \item[NOTE] https://www.allmath.com/es/calculadora-del-complemento-a-uno.php
+        \item When computing the Internet checksum for two numbers, a single flipped bit (i.e., in just one of
+        the two numbers) will always result in a changed checksum
+        \item When computing the Internet checksum for two numbers, a single flipped bit (i.e., in just one of
+        the two numbers) will NOT result in a changed checksum.
+        \item Now consider the UDP datagram (and the IP datagram that will encapsulate it) sent in reply by the
+        application on host 128.119.40.186  to the original sender host, labeled B in the figure above.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{img/3.3.9.jpg}
+            \label{fig:UDP}
+        \end{figure}
+        \begin{itemize}
+            \item The source port number of the UDP segment (B) sent in reply is: \textbf{3546}
+            \item The source IP address of the IP datagram containing the UDP segment (B) sent in reply is: \textbf{128.119.40.186}
+            \item The destination port number of the UDP segment (B) sent in reply  is: \textbf{4829}
+            \item The destination IP address of the IP datagram containing the UDP segment (B) sent in reply is: \textbf{60.54.75.24}
+        \end{itemize}
+    \end{itemize}
+
+    \subsubsection*{UDP segment length field}
+    \begin{itemize}
+        \item Why is the UDP header length field needed?
+        \item[] Because the payload section can be of variable length, and this lets UDP know where the segment ends
+        \item Over what set of bytes is the checksum field in the UDP header computed over?
+        \item[] The enire UDP segment, except the checksum field itself, and the IP sender and recieve address fields
+        \item The next statements are true about a checksum:
+        \begin{itemize}
+            \item A checksum is computed at a sender by considering each byte within a packet as a number, and then
+            adding these numbers (each number representing a bytes) together to compute a sum
+            \item The sender-computed checksum value is often included in a checksum field within a packet header
+            \item The receiver of a packet with a checksum field will add up the received bytes, just as the sender did,
+            and compare this locally-computed checksum with the checksum value in the packet header. If these two
+            values are \textbf{different} then the receiver \textbf{knows} that one of the bits in the received packet
+            has been changed during transmission from sender to receiver
+        \end{itemize}
+        \item Compute the Internet checksum for these two 16-bit words: 11110101 11010011 and 10110011 01000100
+        \item[] To compute the Internet checksum of a set of 16-bit words, we compute the one's complement sum 
+        of the two words. That is, we add the two numbers together, making sure that any carry into the 17th bit
+        of this initial sum is added back into the 1's place of the resulting sum); we then take the one's
+        complement of the result. This means that the Internet checksum is \textbf{01010110 11100111}
+        \item Compute the Internet checksum for these two 16-bit words: 01000001 11000100 and 00100000 00101011
+        \item[] To compute the Internet checksum of a set of 16-bit words, we compute the one's complement sum 
+        of the two words. That is, we add the two numbers together, making sure that any carry into the 17th bit
+        of this initial sum is added back into the 1's place of the resulting sum); we then take the one's
+        complement of the result. This means that the Internet checksum is \textbf{10011110 00010000}
+        \item When computing the Internet checksum for two numbers, a single flipped bit will always result in a 
+        changed checksum
+        \item When computing the Internet checksum for two numbers, a single flipped bit in each of the two numbers
+        will NOT result in a changed checksum
+    \end{itemize}
+
+    \subsubsection*{Internet Checksum and UDP}
+    \begin{itemize}
+        \item 
+    \end{itemize}
+
+    \subsubsection*{What is checksum?}
+    \subsubsection*{Computing the internet Checksum (1)}
+    \subsubsection*{Computing the internet Checksum (2)}
+    \subsubsection*{UDP Checksum: how good is it?}
+    \subsubsection*{UDP Checksum: how good is it?}
+    \subsubsection*{IP addresses and port numbers in a UDP segment sent in reply}
+
+\subsection*{Principles of Reliable Data Transfer}
+    \subsubsection*{Reliable data transfer protocol mechanisms}
+    \subsubsection*{Cumulative ACK}
+    \subsubsection*{Stop-and-wait: channel utilization}
+    \subsubsection*{Channel utilization with pipelining}
+    \subsubsection*{Channel utilization with pipelining (more)}
+    \subsubsection*{Pipelining}
+    \subsubsection*{Packet buffering in Go-Back-N}
+    \subsubsection*{Packet buffering in Go-Back-N (more)}
+    \subsubsection*{Receiver operation in Selective Repeat}
+    \subsubsection*{Receiver operation in Selective Repeat (more)}
+
+
+\subsection*{Connection-oriented Transport: TCP}
+    \subsubsection*{Reliable data transfer protocol mechanisms}
+    \subsubsection*{Cumulative ACK}
+    \subsubsection*{Stop-and-wait: channel utilization}
+    \subsubsection*{Channel utilization with pipelining}
+    \subsubsection*{Channel utilization with pipelining (more)}
+    \subsubsection*{Pipelining}
+    \subsubsection*{Packet buffering in Go-Back-N}
+    \subsubsection*{Packet buffering in Go-Back-N (more)}
+    \subsubsection*{Receiver operation in Selective Repeat}
+    \subsubsection*{Receiver operation in Selective Repeat (more)}
+
+\subsection*{Principles of Congestion Control}
+    \subsubsection*{Congestion control versus flow control}
+    \subsubsection*{Two congested senders}
+    \subsubsection*{Different approaches towards congestion control}
+
+\subsection*{TCP Congestion Control}
+    \subsubsection*{TCPs AIMD algorithm}
+    \subsubsection*{TCPs AIMD algorithm (2)}
+    \subsubsection*{TCPs Slowstart algorithm}
