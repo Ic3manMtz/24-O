@@ -1,7 +1,7 @@
-PWD d:\UAM\24-O\24-O\Redes_Computadoras\Tareas\Segunda
+PWD d:\UAM\24-O\24-O\Ingenieria_Software\Ejercicios\Cocomo\Resumen
 INPUT C:\Users\molap\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\UAM\24-O\24-O\Redes_Computadoras\Tareas\Segunda\tarea.tex
-OUTPUT tarea.log
+INPUT d:\UAM\24-O\24-O\Ingenieria_Software\Ejercicios\Cocomo\Resumen\portada.tex
+OUTPUT portada.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
@@ -142,10 +142,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\tarea.aux
-INPUT .\tarea.aux
-INPUT tarea.aux
-OUTPUT tarea.aux
+INPUT .\portada.aux
+INPUT .\portada.aux
+INPUT portada.aux
+OUTPUT portada.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -154,14 +154,14 @@ INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\tarea.out
-INPUT .\tarea.out
-INPUT tarea.out
-INPUT tarea.out
-INPUT .\tarea.out
-INPUT .\tarea.out
-OUTPUT tarea.out
-OUTPUT tarea.pdf
+INPUT .\portada.out
+INPUT .\portada.out
+INPUT portada.out
+INPUT portada.out
+INPUT .\portada.out
+INPUT .\portada.out
+OUTPUT portada.out
+OUTPUT portada.pdf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
@@ -188,45 +188,26 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT .\checks.tex
-INPUT .\checks.tex
-INPUT .\checks.tex
-INPUT .\checks.tex
-INPUT checks.tex
+INPUT .\resumen.tex
+INPUT .\resumen.tex
+INPUT .\resumen.tex
+INPUT .\resumen.tex
+INPUT resumen.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\molap\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
-INPUT .\img\3.3.9.jpg
-INPUT .\img\3.3.9.jpg
-INPUT .\img\3.3.9.jpg
-INPUT .\img\3.3.9.jpg
-INPUT .\img\3.3.9.jpg
-INPUT .\img\3.3.9.jpg
-INPUT .\img\3.3.9.jpg
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\img\3.4.13.jpg
-INPUT .\ejercicios.tex
-INPUT .\ejercicios.tex
-INPUT .\ejercicios.tex
-INPUT .\ejercicios.tex
-INPUT ejercicios.tex
-INPUT tarea.aux
-INPUT .\tarea.out
-INPUT .\tarea.out
+INPUT C:\Users\molap\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
+INPUT .\estimacion.tex
+INPUT .\estimacion.tex
+INPUT .\estimacion.tex
+INPUT .\estimacion.tex
+INPUT estimacion.tex
+INPUT portada.aux
+INPUT .\portada.out
+INPUT .\portada.out
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -239,11 +220,11 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb

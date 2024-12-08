@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.4)  8 DEC 2024 11:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.4)  8 DEC 2024 11:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/UAM/24-O/24-O/Redes_Computadoras/Tareas/Segunda/tarea.tex
-(d:/UAM/24-O/24-O/Redes_Computadoras/Tareas/Segunda/tarea.tex
+**d:/UAM/24-O/24-O/Ingenieria_Software/Ejercicios/Cocomo/Resumen/portada.tex
+(d:/UAM/24-O/24-O/Ingenieria_Software/Ejercicios/Cocomo/Resumen/portada.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Program Files\MiKTeX\tex/latex/base\report.cls
@@ -343,11 +343,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
 \l__pdf_internal_box=\box57
-) (tarea.aux
+) (portada.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
-\openout1 = `tarea.aux'.
+\openout1 = `portada.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -389,9 +389,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 32.
- (tarea.out) (tarea.out)
+ (portada.out) (portada.out)
 \@outlinefile=\write3
-\openout3 = `tarea.out'.
+\openout3 = `portada.out'.
 
 \c@lstlisting=\count314
 LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
@@ -402,56 +402,24 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package srcltx Info: Expanded filename `checks' to `checks.tex' on input line 48.
+Package srcltx Info: Expanded filename `resumen' to `resumen.tex' on input line 49.
 
-:<+ checks.tex
-(checks.tex [1
+:<+ resumen.tex
+(resumen.tex [1
 
-{C:/Users/molap/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 52--55
-[][][]$\OT1/cmtt/m/n/10.95 *$[]\OT1/cmr/m/n/10.95 https://traductordebinario.com/calculadora-de-sumas-binario/
- []
-
-<img/3.3.9.jpg, id=21, 376.40625pt x 304.13625pt>
-File: img/3.3.9.jpg Graphic file (type jpg)
-<use img/3.3.9.jpg>
-Package pdftex.def Info: img/3.3.9.jpg  used on input line 70.
-(pdftex.def)             Requested size: 199.16928pt x 160.93155pt.
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
-[2]
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
- [3 <./img/3.3.9.jpg>]
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
- [4]
-<img/3.4.13.jpg, id=48, 1511.6475pt x 1058.95625pt>
-File: img/3.4.13.jpg Graphic file (type jpg)
-<use img/3.4.13.jpg>
-Package pdftex.def Info: img/3.4.13.jpg  used on input line 157.
-(pdftex.def)             Requested size: 199.16928pt x 139.5112pt.
-LaTeX Info: Redefining \. on input line 158.
-LaTeX Info: Redefining \% on input line 158.
- [5]
-File: img/3.4.13.jpg Graphic file (type jpg)
-<use img/3.4.13.jpg>
-Package pdftex.def Info: img/3.4.13.jpg  used on input line 167.
-(pdftex.def)             Requested size: 199.16928pt x 139.5112pt.
-)
-:<-
-Package srcltx Info: Expanded filename `ejercicios' to `ejercicios.tex' on input line 49.
-:<+ ejercicios.tex
-(ejercicios.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [6 <./img/3.4.13.jpg>])
+{C:/Users/molap/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}])
 :<-
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
-[7] (tarea.aux
+[2]
+Package srcltx Info: Expanded filename `estimacion' to `estimacion.tex' on input line 51.
+
+:<+ estimacion.tex
+(estimacion.tex)
+:<-
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
+[3] (portada.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -459,21 +427,21 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `tarea.out' has not changed.
+Package rerunfilecheck Info: File `portada.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13450 strings out of 474485
- 205973 string characters out of 5753549
- 1935542 words of memory out of 5000000
- 35503 multiletter control sequences out of 15000+600000
- 565756 words of font info for 64 fonts, out of 8000000 for 9000
+ 13399 strings out of 474485
+ 205464 string characters out of 5753549
+ 1936542 words of memory out of 5000000
+ 35486 multiletter control sequences out of 15000+600000
+ 565588 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,593b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on tarea.pdf (7 pages, 734503 bytes).
+ 75i,6n,79p,607b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on portada.pdf (3 pages, 144582 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

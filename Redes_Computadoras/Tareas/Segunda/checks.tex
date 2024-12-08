@@ -155,7 +155,6 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\textwidth]{img/3.4.13.jpg}
-        \label{fig:SR}
     \end{figure}
     There is a packet with a lower sequence number than any of the red packets that has yet to be received, so in-order dalivery
     of data in the red packets up to the application layer is not possible
@@ -163,8 +162,11 @@
     \subsubsection*{Receiver operation in Selective Repeat (more)}
     \noindent In SR, why does the receiver have to acknowledge packets with sequence numbers that are less than those in its 
     window, which starts at \textit{rcv-base}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{img/3.4.13.jpg}
+    \end{figure}
     Because the sender may not have received an ACK for that packet yet
-
 
 \subsection*{Connection-oriented Transport: TCP}
     \subsubsection*{Reliable data transfer protocol mechanisms}

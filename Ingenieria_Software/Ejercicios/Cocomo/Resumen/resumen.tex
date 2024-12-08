@@ -1,0 +1,55 @@
+\section*{Resumen}
+
+\subsection*{Introducci\'on}
+\noindent El modelo COCOMO (\textit{Constructive Cost Model}) fue desarrollado por Barry Boehm en 1981 y se utiliza para estimar los costos
+de proyectos de software. Se basa en una familia de modelos de algoritmos de costos y ha evolucionado para reflejar nuevas tecnolog\'ias y
+pr\'acticas de la Ingenier\'ia de Software.
+
+\subsection*{Tipos de modelos COCOMO}
+\begin{description}
+  \item[COCOMO 81] Se divide en tres submodelos:
+  \begin{itemize}
+    \item Modelo b\'asico: Usa una funci\'on simple basada en el tamaño del software (\textit{en miles de l\'ineas de c\'odigo}) para calcular
+    el esfuerzo.
+    \item Modelo intermedio: Agrega 15 controladores de costo que permiten ajustar la estimaci\'on.
+    \item Modelo detallado: Eval\'ua los controladores de costo en cada fase del ciclo de vida del proyecto.
+  \end{itemize} 
+  
+  \item[COCOMO II] Se desarrolla para abordar enfoques modernos de desarrollo de software. Introduce factores de escala y controladores de
+  costo adicionales. Proporciona estimaciones probabil\'isticas en lugar de valores puntuales. Utiliza tres modelos:
+  \begin{itemize}
+    \item Composici\'on de aplicaciones
+    \item Diseño temprano
+    \item Post-arquitectura
+  \end{itemize}
+\end{description}
+
+\subsection*{Modos de desarrollo}
+\begin{description}
+  \item[Org\'anico] Proyetos pequeños, con baja innovaci\'on y sin restricciones.
+  \item[Semi.disjunto] Proyectos de tamaño medio con restricciones parciales.
+  \item[Embebido] Proyectos grandes con alta innovaci\'on y restricciones importantes.  
+\end{description}
+
+\subsection*{Controladores de costo}
+\noindent Se eval\'uan 15 factores clave, entre ellos la confiabilidad (\textit{RELY}), la complejidad del producto (\textit{CPLX}), la
+experiencia en el lenguaje de programaci\'on (\textit{LEXP}), y la disponibilidad de herramientas de software (\textit{TOOL}), cada uno
+con sus respectivos multiplicadores de esfuerzo.
+
+\subsection*{Ecuaciones b\'asicas}
+
+$$ Esfuerzo (MM): MM=a*(KDSI)^b $$
+$$ Tiempo de desarrollo (TDEV): TDEV=2.5*(MM)^c $$
+
+\noindent Los coeficientes a, b y c var\'ian seg\'un el modo de desarrollo.
+
+\subsection*{Ventajas de COCOMO}
+\noindent Transparente y verificable además de facilitar la compresi\'on de los factores que afectan los costos.
+
+\subsection*{Desventajas de COCOMO}
+\noindent Dificultad para estimar con precisi\'on el tamañoo del software antes de comenzar. Alta dependencia de la clasificaci\'on correcta
+del modo de desarrollo. Vulnerabilidad ante la falta de datos hist\'oricos precisos.
+
+\subsection*{Diferencias clave entre COCOMO 81 y COCOMO II}
+\noindent COCOMO II usa KSLOC (\textit{l\'ineas de c\'odigo l\'ogico}) en lugar de KDSI. COCOMO II proporciona estimaciones de rangos de
+probabilidad. COCOMO II  se ajusta mejor a proyctos con reutilizaci\'on de software y reingenier\'ia.
