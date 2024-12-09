@@ -1,1 +1,104 @@
 \section*{Ejercicios interactivos}
+
+\subsection*{Internet checksum}
+\noindent Consider the two 16-bit words below. Recall that to compute the Internet checksum of a set of 16-bit words, we compute the one's complement sum of the two words.
+That is, we add the two numbers together, making sure that any carry into the 17th bit of this initial sum is added back into the 1's place of the resulting sum; we then
+take the one's complement of the result. Compute the Internet checksum value for these 16-bit words:
+\begin{description}
+    \centering
+    \item[10110011 00100111] \textit{this binary number is 45,863 decimal}
+    \item[10011100 11100010] \textit{this binary number is 40,162 decimal} 
+\end{description}
+\begin{enumerate}
+    \item What is the sum of these two 16 bit numbers? \textbf{101000000001010}
+    \item Using the sum from question 1, what is the checksum? \textbf{1010111111110101}
+\end{enumerate}
+
+\subsection*{N\'umeros de secuencia y de ACK, con p\'erdida de segmentos}
+\noindent Consider the figure below in which a TCP senderand receiver communicate over a connection in which the sender->receiver segments may be lost. The TCP sender sends
+an initial window of three segments. Suppose the initial value of the sender->receiver sequence number is 389 and the first three segments each contain 431 bytes. The delay
+between the sender and receiver is seven time units, and so the first segment arrives at the receiver at \(t=8\). As shown in figure below, one of the three segments are lost
+between the segment and receiver.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/tcpls_3b.png}
+\end{figure}
+\begin{enumerate}
+    \item Give the sequence numbers associated with each of the three segments sent by the sender. \textbf{a=389, b=820, c=1251}
+    \item Give the ACK numbers the receiver sends in response to each of the segments. If a segment never arrives use 'x' to detomate it. \textbf{a=820, b=x, c=820}
+\end{enumerate}
+
+\subsection*{RTT y timeout en TCP}
+\noindent Suppose that TCP's current estiamted values for the round trip time (\textit{estimatedRTT}) and deviation in the RTT (\textit{DevRTT}) are 360msec and 25msec,
+respectively. Suppose that the next three measured values of the RTT are 380msec, 400msec, and 220msec respectively.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/TCP_RTT.png}
+\end{figure}
+\noindent Compute TCP's new value of \textit{DevRTT}, \textit{estimatedRTT}, and the TCP timeout value after each of these three measured RTT values is obtained. Use
+the values of \( \alpha=0.125\), and \( \beta=0.25\).
+\begin{enumerate}
+    \item What is the estimatedRTT after the first RTT? \textbf{346.25}
+    \item What is the RTT Deviation for the first RTT? \textbf{42.5}
+    \item What is the TCP timeout for the first RTT? \textbf{516.25}
+    \item What id the estimatedRTT after the second RTT? \textbf{330.47}
+    \item Wht is the RTT Deviation for the second RTT? \textbf{63.44}
+    \item What is the TCP timeout for the second RTT? \textbf{584.22}
+    \item What is the estimatedRTT after the third RTT? \textbf{327.91}
+    \item What is the RTT Deviation for the third RTT? \textbf{52.7}
+    \item What is the TCP timeout for the third RTT? \textbf{538.69}
+\end{enumerate} 
+
+\subsection*{Evoluci\'on de la ventana de congesti\'on de TCP}
+\noindent Consider the figure below, which plots the evolution of TCP's congestion window at the beginning of each time unit (\textit{where the unit of time is equal to the RTT}).
+In the abstract model for this problem, TCP sends a "flight" of packets of size cwnd at the beginning of each time unit. The result of sending that flight of packets is that either:
+\begin{enumerate}
+    \item All packets are ACKed at the end of the time unit
+    \item There is a timeout for the first packet
+    \item There is a triple duplicate ACK for the first packet
+\end{enumerate} 
+\noindent In this problem, you are asked to reconstruct the sequence of events (\textit{ACKs, losses}) that resulted in the evolution of TCP's cwnd shown below.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/grafica.png}
+\end{figure} 
+\noindent Consider the evolution of TCP's congstion window in the example above and answer the following questions. The initial value of cwnd is 1 and the initial
+value od ssthresh is 8.
+\begin{enumerate}
+    \item Give the times at which TCP is in slow start. \textbf{1,2,3,7,8,9,15,16,17,
+    \linebreak 22,23,24,28,29,30,34,35,36,39,40}
+    \item Give the times at which TCP is in congestion avoidance. \textbf{4,5,6,10,11,
+    \linebreak 13,14,18,19,20,21,25,26,27,31,32,33,37,38}
+    \item Give the times at which TCP is in fast recovery. \textbf{12}
+    \item Give the times at which packets are lost via timeout. \textbf{6,14,21,27,33,38}
+    \item Give the times at which packets are lost via \textit{triple ACK}. \textbf{11}
+    \item Give the times at which the value of \textit{ssthresh} changes. \textbf{7,12,15,22,28,39} 
+\end{enumerate}
+
+\subsection*{Retransmisiones en TCP}
+\noindent Consider the figure below in which a TCP sender and receiver communicate over a connection in which the segments can be lost. The TCP sender wants to send
+a total of 10 segments to the receiver and sends an initial window of 5 segments at t = 1, 2, 3, 4, and 5, respectively. Suppose the initial value of the sequence number
+is 11 and every segment sent to the receiver each contains 525 bytes. The delay between the sender and receiver is 7 time units, and so the first segment arrives at the
+receiver at t = 8, and an ACK for this segment arrives at t = 15. As shown in the figure, 3 of the 5 segments is lost between the sender and the receiver, but one of the
+ACKs is lost. Assume there are no timeouts and any out of order segments received are thrown out.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/retransmision.png}
+\end{figure}
+\begin{enumerate}
+    \item What is the sequence number of the segment sent at t=1? \textbf{11}
+    \item What is the sequence number of the segment sent at t=2? \textbf{536}
+    \item What is the sequence number of the segment sent at t=3? \textbf{1061}
+    \item What is the sequence number of the segment sent at t=4? \textbf{1586}
+    \item What is the sequence number of the segment sent at t=5? \textbf{2111}
+    \item What is the value of the ACK sent at t=8? \textbf{536}
+    \item What is the value of the ACK sent at t=9 \textbf{1061}
+    \item What is the value of the ACK sent at t=10 \textbf{x}
+    \item  What is the value of the ACK sent at t=11? \textbf{x}
+    \item What is the value of the ACK sent at t=12? \textbf{x}
+    \item What is the sequence number of the segment sent at t = 15? \textbf{x}
+    \item What is the sequence number of the segment sent at t = 15? \textbf{2636}
+    \item What is the sequence number of the segment sent at t = 17? \textbf{3161}
+    \item What is the sequence number of the segment sent at t = 18? \textbf{x}
+    \item What is the sequence number of the segment sent at t = 19? \textbf{x}
+\end{enumerate}

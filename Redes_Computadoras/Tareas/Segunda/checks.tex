@@ -49,9 +49,9 @@
     of this initial sum is added back into the 1's place of the resulting sum); we then take the one's
     complement of the result. This means that the Internet checksum is \textbf{10011110 00010000}
 
-    \url*{https://traductordebinario.com/calculadora-de-sumas-binario/}
+    \url{https://traductordebinario.com/calculadora-de-sumas-binario/}
     \linebreak
-    \url*{https://www.allmath.com/es/calculadora-del-complemento-a-uno.php}
+    \url{https://www.allmath.com/es/calculadora-del-complemento-a-uno.php}
         
 
     \subsubsection*{UDP Checksum: how good is it?}
@@ -166,26 +166,131 @@
         \centering
         \includegraphics[width=0.5\textwidth]{img/3.4.13.jpg}
     \end{figure}
-    Because the sender may not have received an ACK for that packet yet
+    Because the sender may not have received an ACK for that packet yet.
 
+\newpage
 \subsection*{Connection-oriented Transport: TCP}
-    \subsubsection*{Reliable data transfer protocol mechanisms}
-    \subsubsection*{Cumulative ACK}
-    \subsubsection*{Stop-and-wait: channel utilization}
-    \subsubsection*{Channel utilization with pipelining}
-    \subsubsection*{Channel utilization with pipelining (more)}
-    \subsubsection*{Pipelining}
-    \subsubsection*{Packet buffering in Go-Back-N}
-    \subsubsection*{Packet buffering in Go-Back-N (more)}
-    \subsubsection*{Receiver operation in Selective Repeat}
-    \subsubsection*{Receiver operation in Selective Repeat (more)}
+    \subsubsection*{TCP reliability semantics}
+    \noindent \textbf{[FALSE]} On the sending side, the TCP sender will take each application-layer chunk of data written into a TCP socket and send it 
+    in a distinct TCP segment. And on the receiving side, TCP will deliver a segment's payload into the appropiate socket, preserving
+    the application-defined message boundary.
+
+    \subsubsection*{TCP segment format}
+    \begin{description}
+        \item[Socket port number] This field contains the port number associated with the sending socket for this TCP segment.
+        \item[Data (\textit{or payload})] This field contains application data that was written into a socket by the sender of this TCP segment.
+        \item[Sequence number] This field contains the index in the sender-to-receiver byte stream of the first byte of that data in the payload carried in this segment.
+        \item[ACK number field] This field contains the index in the byte stream of the next in-order byte expected at the receiver.
+        \item[ACK bit] If set, this segment cumulatively ACKs in the byte all data bytes up to, but not including, the byte index in the ACK value field of this segment.
+        \item[Receiver advertised window] This field contains the number of available bytes in the TCP receiver's buffer.
+        \item[Checksum] This field contains the Internet checksum of the TCP segment and selected fields in the IP datagram header.
+        \item[Header length field] This field contains the number of bytes in the TCP header.        
+    \end{description}
+
+    \subsubsection*{TCP sequence numbers and ACKs (1)}
+    \noindent Consider the TCP Telnet scenario below. Why is it that the receiver sends an ACK that is one larger than the sequence number in the received datagram?
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{img/3.5.3.jpg}
+    \end{figure}
+    \noindent Because the send-to receiver segment carries only one byte of data, and after that segment is received, the next expected byte of data is just the next
+    byte (\textit{i.e., has an index that is one larger}) in the data stream.
+
+    \subsubsection*{TCP sequence numbers and ACKs (2)}
+    \noindent Suppose that as shown in the figure below, a TCP sender is sending segments with 100 bytes of payload. The TCP sender sends five segments with sequence
+    numbers 100, 200, 300, 400, and 500. Suppose that the segment with sequence number 300 is lost. The TCP receiver will buffer correctly-received but not-yet-in-order
+    segments for later delivery to the application layer (\textit{once missing segments are later received})
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{img/3.5.4.jpg}
+    \end{figure}
+    \begin{itemize}
+        \item After receiving segment 100, the receiver responds with an ACK with value \textbf{200}.
+        \item After receiving segment 200, the receiver responds with an ACK with value \textbf{300}.
+        \item After receiving segment 500, the receiver responds with an ACK with value \textbf{300, a duplicate ACK}.
+        \item After receiving the retransmitted segment 300, the receiver responds with an ACK with value \textbf{600}.
+        \item The TCP receiver does not respond in the example, with an ACK with value \textbf{400}.
+    \end{itemize}
+
+    \subsubsection*{TCP RTT Estimation: EWMA}
+    \noindent Consider TCP use of an exponentially weighted moving average (\textit{EWMA}) to compute the nth value of the estimated RTT:
+    $$ EstimatedRTT_n ) (1-a)*EstimatedRTT_{n-1} + a*SampleRTT_n $$
+    \noindent \textbf{[FALSE]} with this EWMA algorithm the alue of \(EstimatedRTT_n\) has no dependence on the earlier sample, \( SampleRTT_{n-1}\).
+
+    \subsubsection*{TCP timer management}
+    \noindent Consider the TCP Telnet below. What timer-related action does the sender take on the receipt of ACK 120?
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{img/3.5.6.jpg}
+    \end{figure}
+    \noindent Cancels any running timers.
+
+    \subsubsection*{TCP Flow Control}
+    \noindent With TCP's flow control mechanism, where the receiver tells the sender how much free buffer space it has (\textit{and the sender always limits the amount
+    of outstanding, unACKed, in-flight to less than this amount}), it is not possible for the sender to send more that the receiver has room to buffer.
+
+    \subsubsection*{TCP connection management}
+    \begin{description}
+        \item[SYN MESSAGE] A message from client to server initiating a connection request.
+        \item[SYNACK MESSAGE] A message from server to client ACKing receipt of a SYN message and indicating the willingness of the server to establish a TCP connection with the client.
+        \item[FIN MESSAGE] A message indicating that the sending side is initiating the protocol to terminate a connection.
+        \item[FINBACK MESSGE] A message sent in response to a request to terminate a connection. ACKing that the side receiving this message is algo willing to terminate the connection.
+        \item[RESET MESSAGE] A general purpose error message used during connection set up or tear down to let the other side know that an error has ocurred, and that the referenced connection
+        should be shut down.     
+    \end{description}
+
+    \subsubsection*{TCP Fast Retransmit}
+    \noindent Consider the TCPs Fast Retransmit optmization. Of course, the sender doesn't know for sure that the segment with sequence \#100 is actually lost (\textit{it can't see into the channel}).
+    Can a sender get three duplicate ACKs for a segment that in fact has \textit{not} been lost? The following statements are true. Suppose a channel can lose, but will not corrupt, messages.
+    \begin{itemize}
+        \item If the channel can reorder messages, a triple duplicate ACK can occure even though a message is not lost; since it's possible that a message has just been reordered and has not
+        yet arrived when the three ACKs were generated.
+        \item If the channel cannot reorder messages, a triple duplicate ACK indicates to the sender that a segment loss has happened for sure. Actually (\textit{again assuming the channel cannot
+        corrupt or reorder messages}), even a \textit{single} duplicate ACK would indicate that a segment loss has happend for sure.
+    \end{itemize}
 
 \subsection*{Principles of Congestion Control}
     \subsubsection*{Congestion control versus flow control}
+    \noindent Between the next options a \textbf{a glass overflowing} and \textbf{a talking head} are concepts that need flow control. The others would suggest the need for congestion control
+    \begin{itemize}
+        \item A penguin crowd
+        \item Car traffic
+        \item A crowd of people
+        \item A glass overflowing
+        \item A talking head
+    \end{itemize}
+
     \subsubsection*{Two congested senders}
+    \noindent Consider the figure below, which shows the application-to-application throughput achieved when two senders are competing at a shared bottleneck link. Suppose that then the overall
+    arrival rate, \( lambd_{in}\)(\textit{for each sender}) is closer to R/2, the throughput to the application layer (\textit{at each receiver}), \(lambda_{out}\), is equal to \(0.8*lambda_{in}\).
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{img/3.6.2.jpg}
+    \end{figure}
+    \noindent What fraction of the packets transmitted at the sender are retransmissions? \textbf{0.20}
+
     \subsubsection*{Different approaches towards congestion control}
+    \noindent Here are some options of how the sender detects congestion:
+    \begin{description}
+        \item[End-end] The sender infers segment loss from the absence of an ACK from the receiver.
+        \item[Network-assisted] Bits are set at a congested router in a sender-to-receiver datagram, and bits are in the returned to the sender in a receiver-to-sender ACK, to indicate congestion to
+        the sender.
+        \item[Delay-based] The sender measure RTTs and uses the current RTT measurement in onfer the level of congestion.  
+    \end{description}
 
 \subsection*{TCP Congestion Control}
     \subsubsection*{TCPs AIMD algorithm}
+    \noindent The following statements are true about TCP's Additive-increase-multiplicative-decrease (\textit{AIMD}) algorithm:
+    \begin{itemize}
+        \item AIMD cuts the congestion window size, cwnd, in half whenever loss is detected by a triple duplicate ACK.
+        \item AIMD cuts the congestion window size, cwnd, i to 1 whenever a timeout occurs.
+        \item AIMD is a end-end approach to congestion control
+    \end{itemize}
+
     \subsubsection*{TCPs AIMD algorithm (2)}
+    \noindent How is the sending rate typically regulated in a TCP implementation? By keeping a window size cwnd over the sequence number space, and making sure that no more than cwnd bytes of data
+    are outstanding (\textit{i.e., unACKnowledged}). The size of cwnd ir regulated by AIMD.
+
     \subsubsection*{TCPs Slowstart algorithm}
+    \noindent Consider the transport-layer flows interacting at a congested link. In the face of such congestion, what happens at this link to a transport-layer flow that does not cut back o its sending rate?
+    Nothing different from the other flows crossing the congested link.
