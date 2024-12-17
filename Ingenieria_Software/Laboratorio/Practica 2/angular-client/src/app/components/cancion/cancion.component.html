@@ -1,0 +1,23 @@
+<h1>Gestión de Canciones</h1>
+<h2>Esta es una prueba</h2>
+
+<div>
+  <h2>Buscar Canciones</h2>
+  <input [(ngModel)]="searchParams.title" placeholder="Título" />
+  <button (click)="searchSongs()">Buscar</button>
+</div>
+
+<div>
+  <h2>Indexar Canciones</h2>
+  <input [(ngModel)]="directoryPath" placeholder="Ruta del directorio" />
+  <button (click)="indexSongs()">Indexar</button>
+</div>
+
+<div>
+  <button (click)="deleteAllSongs()">Eliminar Todas las Canciones</button>
+</div>
+
+<h2>Lista de Canciones</h2>
+<ul>
+  <li *ngFor="let song of songs">{{ song.title }} - {{ song.artist }}</li>
+</ul>
