@@ -1,0 +1,94 @@
+\section*{Procedimiento}
+
+\subsection*{Identificaci\'on de las trazas de audio}
+\noindent Para empezar se descargan las trazas y descomprimirlas utilizando los siguientes comando en la terminal de Linux
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+      columns=flexible, tabsize=2, showstringspaces=false, language=bash] 
+    
+    wget http://victor.ramos.online.fr/practica1/traces/1.txt.gz
+    
+    gzip -dk 1.txt.gz
+
+  \end{lstlisting}
+  \caption{Comando para descargas y descomprimir las trazas}
+  \label{fig:commandDownloadExtract}
+\end{figure}
+
+\noindent Para poder caracterizar el retardo de extremo a extremo, la Profra. Sue Moon propone añadir un elemento más a la
+diferencia; dicho elemento es la mínima diferencia de retardo encontrada en toda la traza. Esto significa encontrar
+\( t_{min}=min\{ t^r_i\}-t^t_i, \forall i\). Como las estampas de tiempo est\'an codificadas con el protocolo RTP y han sido
+obtenidas con voz muestreada a 8,000 Hz, finalmente podremos observar el comportamiento del retardo de extremo a extremo
+dentro del paquete \textit{i} con:
+\begin{equation}
+  d^i_{end-to-end}=\frac{t^r_i-t^t_i-t_{min}}{8000}[seg.]
+\end{equation}
+
+\noindent Para encontrar el \textit{tiempo de sesi\'on} para cada paquete, el an\'alisis es id\'entico al de una llamada
+telef\'onica tradicional, el que llama paga. Entonces, el tiempo de sesi\'on estar\'a basado en el reloj del transmisor. Este
+tiempo comenzar\'a a correr a partir de la primera estampara de tiempo \( t^t_i \) hasta la \'ultima \( t^t_N \) dado que
+\textit{N} es el n\'umero total de paquetes en la sesi\'on. Entonces:
+\begin{equation}
+  t^i_{session}=\frac{t^t_i-t^t_i}{8000}[seg]
+\end{equation}
+
+\noindent Para analizar el retardo de extremo a extremo, entonces, se realizar\'an las gr\'aficas de las Ecuaciones (1) y (2)
+para cada una de las seis trazas, a gran escala y a pequeña escala. La ecuaci\'on (1) es para el eje de las \textit{y} y (2)
+para el eje de las \textit{x}.
+
+\subsection*{Manipulaci\'on de trazas con AWK}
+\noindent Para analizar algunas estad\'isticas b\'asicas de las sesiones de VoIP capturadas en las trazas, se relizaron los
+siguientes scripts en AWK:
+\begin{enumerate}
+  \item Script para contar el n\'umero total de frases (\textit{talkspurts}) en una traza de retardo.
+  \begin{figure}[H]
+    \centering
+    \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+        columns=flexible, tabsize=2, showstringspaces=false, language=AWK] 
+      
+    \end{lstlisting}
+    \label{fig:scriptTalksprut}
+  \end{figure}
+
+  \item Script para contar el n\'umero total de paquetes que llegaron al receptor.
+  \begin{figure}[H]
+    \centering
+    \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+        columns=flexible, tabsize=2, showstringspaces=false, language=AWK] 
+  
+    \end{lstlisting}
+    \label{fig:scriptPaquetesRecibidos}
+  \end{figure}
+
+  \item Script para encontrar la diferencia m\'inima entre la estampa de tiempo de receptor menos de la del emisor
+  \begin{figure}[H]
+    \centering
+    \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+        columns=flexible, tabsize=2, showstringspaces=false, language=AWK] 
+  
+    \end{lstlisting}
+    \label{fig:scriptDiferencia}
+  \end{figure}
+
+  \item Script que recibe una traza como entrada y entrega en un archivo dos columnas: tiempo de la sesi\'on en segundos, 
+  y retardo de extremo a extremo a extremo en segundo.
+  \begin{figure}[H]
+    \centering
+    \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+        columns=flexible, tabsize=2, showstringspaces=false, language=AWK] 
+  
+    \end{lstlisting}
+    \label{fig:scriptTiempoSesionRetardoExtremoExtremo}
+  \end{figure}
+
+  \item Script que calula el retardo promedio de extremo a extremo en una sesi\'on
+  \begin{figure}[H]
+    \centering
+    \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+        columns=flexible, tabsize=2, showstringspaces=false, language=AWK] 
+  
+    \end{lstlisting}
+    \label{fig:scriptRetardoExtremoExtremoSesion}
+  \end{figure}
+\end{enumerate}
