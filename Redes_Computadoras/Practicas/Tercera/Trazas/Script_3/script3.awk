@@ -14,6 +14,6 @@ $1 == "D"{  # Solo se calcula la diferencia cuando hay un paquete recibido
 
 END{
     print "Archivo de entrada:", input_file
-    print "Diferencia mínima:", min_diff   
+    print "Diferencia minima:", min_diff   
     print ""
 }

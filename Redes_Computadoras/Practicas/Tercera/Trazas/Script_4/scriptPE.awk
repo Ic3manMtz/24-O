@@ -19,6 +19,7 @@ BEGIN{
     system("rm -f " temp_file)
 
     t1_flag = 0
+    talkspurts = 1
 }
 
 $1 == "D"{
@@ -34,4 +35,12 @@ $1 == "D"{
     session_time = ($3 - t1) / 8000
     end_to_end_delay = ($2 - $3 - tmin) / 8000
     print session_time, end_to_end_delay
+}
+
+
+$1 == "!"{
+  talkspurts++ # Incrementa el contador al encontrar un espacio de silencio
+  if(talkspurts == 11){
+    exit # Termina la ejecucion si encuentra cuatro signos "!"
+  }
 }

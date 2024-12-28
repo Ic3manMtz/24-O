@@ -1,12 +1,18 @@
 # Este script calcula el retardo promedio extremo a extremo.
 BEGIN{
-    total_delay = 0; count = 0
+    tmin = "Inf" # Inicializa con el valor infinito
+    total_delay = 0
     input_file = ARGV[1]
     gsub("../", "", input_file)
 }
 
 $1 == "D"{
-    delay = ($2 - $3) / 8000
+
+    if ($2-$3 < tmin) {
+        tmin = $2-$3
+    }
+    
+    delay = ($2 - $3 - tmin) / 8000
     total_delay += delay
     count++
 }
@@ -20,3 +26,4 @@ END{
     }
     print ""
 }
+

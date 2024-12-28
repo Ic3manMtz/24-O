@@ -160,14 +160,34 @@ siguientes scripts en AWK:
   
         # Este script genera un archivo con dos columnas: tiempo de la sesion y retardo extremo a extremo.
         BEGIN{
-            tmin = "Inf" # Inicializa con el valor infinito
-        }
-
-        $1 == "D"{
-            if ($2 < tmin) {
-                tmin = $2
+            #Llama al script que se encarga de obtener la diferencia minima
+            temp_file = "output.tmp"
+            input_file = ARGV[1]
+            command = "awk -f ../Script_3/script3.awk "input_file " > " temp_file
+            system(command)
+        
+            # Procesa la salida del archivo temporal
+            while ((getline line < temp_file) > 0) {
+                # Procesa cada linea de salida del segundo script
+                if (line ~ /Diferencia minima:/) {
+                    split(line, fields, ":")
+                    tmin = fields[2]
+                }
             }
-            session_time = ($2 - tmin) / 8000
+        
+            # Limpia el archivo temporal
+            system("rm -f " temp_file)
+        
+            t1_flag = 0
+        }
+        
+        $1 == "D"{
+            if (t1_flag == 0){
+                t1 = $3
+                t1_flag = 1
+            }
+        
+            session_time = ($3 - t1) / 8000
             end_to_end_delay = ($2 - $3 - tmin) / 8000
             print session_time, end_to_end_delay
         }
@@ -197,17 +217,23 @@ siguientes scripts en AWK:
   
         # Este script calcula el retardo promedio extremo a extremo.
         BEGIN{
-            total_delay = 0; count = 0
-            input_file = ARGV[1] # Obtiene el nombre del archivo del parametro de la ejeucion
-            gsub("../", "", input_file) # Elimina la parte inicial del parametro para tener nada mas el nombre del archivo  
+            tmin = "Inf" # Inicializa con el valor infinito
+            total_delay = 0
+            input_file = ARGV[1]
+            gsub("../", "", input_file)
         }
-
+        
         $1 == "D"{
-            delay = ($2 - $3) / 8000
+        
+            if ($2-$3 < tmin) {
+                tmin = $2-$3
+            }
+            
+            delay = ($2 - $3 - tmin) / 8000
             total_delay += delay
             count++
         }
-
+        
         END{
             print "Archivo de entrada:", input_file
             if (count > 0) {
@@ -217,11 +243,10 @@ siguientes scripts en AWK:
             }
             print ""
         }
+                
     \end{lstlisting}
     \label{fig:scriptRetardoExtremoExtremoSesion}
   \end{figure}
   \noindent Para la ejecuci\'on de este script usaremos como base la forma vista en el primer punto. 
   Cambiando el nombre del script de \textit{script1.awk} a \textit{script5.awk}
 \end{enumerate}
-
-\subsection*{Comportamiento del retardo de extremo a extremo}
