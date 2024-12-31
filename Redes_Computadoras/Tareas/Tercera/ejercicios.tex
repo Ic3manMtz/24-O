@@ -29,6 +29,39 @@
     \item Suponga que se le ha asignado el bloque de direcciones de red 200.30.1.0/24.
     \begin{enumerate}
         \item Defina un prefijo de red extendido que permita crear 20 estaciones en cada subred.
-        \item 
+        \item ¿Cu\'al es el n\'umero m\'aximo de estaciones que pueden asignarse a cada subred?
+        \item ¿Cu\'al es el n\'umero m\'aximo de subredes que pueden definirse?
+        \item Especifique las subredes de 200.30.1.0/24 en formatos binario y decimal.
+        \item Enliste las direcciones de estaci\'on que pueden asignarse a la subred 6.
+        \item ¿Cu\'al es la direcci\'on de difusi\'on para la subred 2?
+    \end{enumerate}
+
+    \item Se le ha asignado a una organizaci\'on el n\'umero de red 140.20.0.0/16 y \'esta planea desarrollar VLSM. En el primer nivel de jerarqu\'ia,
+    se necesitan configurar ocho subredes. La subred 1 necesita configurar 32 sub-redes y la subred 6 necesita configurar 16 sub-redes. Finalmente, la
+    sub-red 6-14 necesita configurar 8 \(sub^2-subredes\).
+    \begin{enumerate}
+        \item Dibuje el \'arbil que ilustre la jerarqu\'ia necesaria para implementar VLSM.
+        \item Especifique las ocho subredes 140.20.0.0/16.
+        \item Enliste las direcciones de estaci\'on que pueden asignarse a la subred 3.
+        \item Indique la direcci\'on de difusi\'on de la subred 3.
+        \item Indique las 16 sub-redes de la subred 6.
+        \item Enliste las direcciones de estaci\'on que pueden asignarse a la sub-subred 6-3.
+        \item Indentifique la direcci\'on de broadcast para la sub-subred 6-3.
+        \item Especifique las ocho \(sub^2-subredes\) de la sub-subred 6-14.
+        \item Enliste las direcciones de estaci\'on que pueden asignarse en la \(sub^2-subred\) 6-14-2.
+        \item Indentifique la direcci\'on de broadcast de la \(sub^2-subred\) 6-14-2.
+    \end{enumerate}
+
+    \item En el nivel de enlace de datos se utiliza frecuentemente el mecanismo de verificaci\'on de redundancia c\'iclica (\textit{CRC: Cyclic 
+    Redundance Check}) para que una interfaz receptora concluya sobre si la trama recibida, \(T'\) contiene o no errores. Suponga que el mensaje
+    a transmitir es \(M=1101011011\) y que el generador es \(G=10011\).
+    \begin{enumerate}
+        \item Encuentre la trama, \(T\) que env\'ia el transmisor.
+        \item Realice la operaci\'on que ejecuta la interfaz receptora si el patr\'on de error inducido en el canal \(e=00000000000000\), ¿cu\'al 
+        es la conclusi\'on del receptor?
+        \item Realice lo mismo que en (b), pero ahora con un error inducido en el canal f\'isico \(e=00100000010011\), ¿cu\'al es la conclusi\'on
+        del receptor?
+        \item ¿Existe la posibilidad de que habiendo errores en \(T'\), la trama recibida, el receptor sea incapaz de detectarlos? Explique.
+        \item Finalmente, realice (a)-(c) operando polinimialmente.
     \end{enumerate}
 \end{enumerate}
