@@ -4,6 +4,46 @@
     \item Aplique el algoritmo de encaminamiento de vector-distancia a la siguiente topolog\'ia de red.
     \begin{enumerate}
         \item Indique el estado de las tablas de ruteo para las etapas de cold-start y luego para el env\'io de los primeros dos mensajes.
+        \begin{table}[H]
+            \begin{tabular}{@{}clcll@{}}
+            \toprule
+            From A to            & \multicolumn{1}{c}{Link} & Cost                 \\ \midrule
+            A                    & local                    & 0                    \\ \bottomrule
+            \end{tabular}
+            \hfill
+            \begin{tabular}{@{}clcll@{}}
+                \toprule
+                From B to            & \multicolumn{1}{c}{Link} & Cost                 \\ \midrule
+                B                    & local                    & 0                    \\ \bottomrule
+            \end{tabular}
+            \hfill
+            \begin{tabular}{@{}clcll@{}}
+                \toprule
+                From C to            & \multicolumn{1}{c}{Link} & Cost                 \\ \midrule
+                C                    & local                    & 0                    \\ \bottomrule
+            \end{tabular}
+            \vfill
+            \begin{tabular}{@{}clcll@{}}
+                \toprule
+                From D to            & \multicolumn{1}{c}{Link} & Cost                 \\ \midrule
+                D                    & local                    & 0                    \\ \bottomrule
+            \end{tabular}
+            \hfill
+            \begin{tabular}{@{}clcll@{}}
+                \toprule
+                From E to            & \multicolumn{1}{c}{Link} & Cost                 \\ \midrule
+                E                    & local                    & 0                    \\ \bottomrule
+            \end{tabular}
+            \hfill
+            \begin{tabular}{@{}clcll@{}}
+                \toprule
+                From F to            & \multicolumn{1}{c}{Link} & Cost                 \\ \midrule
+                F                    & local                    & 0                    \\ \bottomrule
+            \end{tabular}
+            \vfill
+        \end{table}
+
+
         \item Luego, indique el estado de las tablas de ruteo para el estado estacionario.
         \item Una vez alcanzado el estado estacionario , el enlace 6 se rompe. Descria la manera en c\'omo procede el protocolo hasta retomar
         un nuevo estado estacionario.
