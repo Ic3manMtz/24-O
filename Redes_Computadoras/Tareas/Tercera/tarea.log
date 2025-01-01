@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.12.30)  30 DEC 2024 22:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.12.31)  31 DEC 2024 20:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -478,21 +478,24 @@ Package srcltx Info: Expanded filename `ejercicios' to `ejercicios.tex' on input
 
 :<+ ejercicios.tex
 (./ejercicios.tex
-<img/Vector-distancia.png, id=74, 154.32657pt x 114.4275pt>
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+ [8]
+<img/Vector-distancia.png, id=81, 154.32657pt x 114.4275pt>
 File: img/Vector-distancia.png Graphic file (type png)
 <use img/Vector-distancia.png>
-Package pdftex.def Info: img/Vector-distancia.png  used on input line 56.
+Package pdftex.def Info: img/Vector-distancia.png  used on input line 215.
 (pdftex.def)             Requested size: 139.42093pt x 103.38362pt.
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
- [8 <./img/Vector-distancia.png>])
+LaTeX Info: Redefining \. on input line 224.
+LaTeX Info: Redefining \% on input line 224.
+ [9 <./img/Vector-distancia.png>]
+LaTeX Info: Redefining \. on input line 263.
+LaTeX Info: Redefining \% on input line 263.
+ [10])
 :<-
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
-[9]
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
- [10] (./tarea.aux
+[11] (./tarea.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
@@ -500,18 +503,18 @@ Package rerunfilecheck Info: File `tarea.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13224 strings out of 478287
- 205404 string characters out of 5849288
- 509846 words of memory out of 5000000
+ 13225 strings out of 478287
+ 205411 string characters out of 5849288
+ 517847 words of memory out of 5000000
  31158 multiletter control sequences out of 15000+600000
  477478 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,15n,63p,336b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,63p,336b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on tarea.pdf (10 pages, 405742 bytes).
+Output written on tarea.pdf (11 pages, 407948 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
+ 69 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
