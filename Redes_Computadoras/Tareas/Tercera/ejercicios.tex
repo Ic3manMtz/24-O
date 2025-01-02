@@ -206,9 +206,19 @@
 
         \item Una vez alcanzado el estado estacionario , el enlace 6 se rompe. Describa la manera en c\'omo procede el protocolo
         hasta retomar un nuevo estado estacionario.
+        \item[] Lo primero que hace el protocolo es actualizar las tablas de ruteo de los nodos que se encuentran en los extremos del enlace 6.
+        El costo que se actulizar\'a con el valor \textit{''Infinito''}. Con las tablas de ruteo actualizadas los nodos notifican a sus vecinos
+        sobre el cambio en tabla de ruteo. Los vecinos, al recibir esta actualizaci\'on, ajustan sus propias tablas de ruteo y recalculan las rutas
+        alternativas utilizando la informaci\'on que tienen de otros vecinos.
+
         \item ¿Qu\'e fen\'omeno podr\'ia causar un bucle de ruteo?
+        \item[] Es el problema \textit{''Conteo a infinito"}, esto ocurre cuando un enlace falla y los nodos tardan mucho en actualizar correctamente
+        sus tablas de ruteo, propagando informaci\'on err\'onea de forma indefinida o por un tiempo prolongado. Esto puede llevar a bucles de ruteo.
+
         \item Finalmente, ¿cu\'al protocolo en la pr\'actica implementa el algoritmo de vector-distancia? ¿cu\'al es la frecuencia
         de los mensajes de refresco y cu\'al es la finalidad de los mismos?
+        \item[] En la pr\'actica, el protocolo que implementa el algoritmo de vector-distancia es el \textbf{Routing Information Protocol \textit{RIP}}. Los
+        mensajes de refresco se env\'ian cada 30 segundos. La finalidad de estos mensajes es mantener la consistencia de las tablas de enrutamiento en toda la red.
 
         \begin{figure}[H]
             \centering
