@@ -238,7 +238,7 @@
         
         \item Exprese las direcciones de subred en formato binario y decimal.
         \item[] Red de base: 132.46.0.0/16
-        \begin{enumerate}
+        \begin{description}
             \item[Subred \#0] : 10000100.00101110.00000000.00000000 = 132.46.0.0/19 
             \item[Subred \#1] : 10000100.00101110.00100000.00000000 = 132.46.32.0/19
             \item[Subred \#2] : 10000100.00101110.01000000.00000000 = 132.46.64.0/19
@@ -247,7 +247,7 @@
             \item[Subred \#5] : 10000100.00101110.10100000.00000000 = 132.46.160.0/19
             \item[Subred \#6] : 10000100.00101110.11000000.00000000 = 132.46.192.0/19
             \item[Subred \#7] : 10000100.00101110.11100000.00000000 = 132.46.224.0/19     
-        \end{enumerate}
+        \end{description}
 \newpage
         \item Enliste el rango de direcciones IP que pueden asignarse a la subred n\'umero 4.
         \item[] La subred n\'umero 4 es 132.46.128.0/19. El rango de direciones ser\'a:
@@ -275,7 +275,7 @@
     
         \item Especifique las subredes de 200.30.1.0/24 en formatos binario y decimal.
         \item[] Red de base: 200.30.1.0/24
-        \begin{enumerate}
+        \begin{description}
             \item[Subred \#0] : 11001000.00011110.00000001.00000000 = 200.30.1.0/29
             \item[Subred \#1] : 11001000.00011110.00000001.00001000 = 200.30.1.8/29
             \item[Subred \#2] : 11001000.00011110.00000001.00010000 = 200.30.1.16/29
@@ -308,7 +308,7 @@
             \item[Subred \#29] : 11001000.00011110.00000001.11101000 = 200.30.1.232/29
             \item[Subred \#30] : 11001000.00011110.00000001.11110000 = 200.30.1.240/29
             \item[Subred \#31] : 11001000.00011110.00000001.11111000 = 200.30.1.248/29
-        \end{enumerate}
+        \end{description}
 
         \item Enliste las direcciones de estaci\'on que pueden asignarse a la subred 6.
         \item[] La subred n\'umero 6 es 200.30.1.48/29. El rango de direciones ser\'a:
@@ -321,18 +321,97 @@
         \item[] La direcci\'on de la subred 2 es 200.30.1.16/29 por lo tanto la direcci\'on de difusi\'on es
         \textbf{200.30.1.23}.
     \end{enumerate}
-
+\newpage
     \item Se le ha asignado a una organizaci\'on el n\'umero de red 140.20.0.0/16 y \'esta planea desarrollar VLSM. En el primer
     nivel de jerarqu\'ia, se necesitan configurar ocho subredes. La subred 1 necesita configurar 32 sub-redes y la subred 6
     necesita configurar 16 sub-redes. Finalmente, la sub-red 6-14 necesita configurar 8 \(sub^2-subredes\).
     \begin{enumerate}
         \item Dibuje el \'arbol que ilustre la jerarqu\'ia necesaria para implementar VLSM.
+        \begin{figure}[H]
+            \centering
+            \begin{minipage}{11cm}
+                \dirtree{%
+                .1 140.20.0.0/16.
+                .2 Subred 1 (140.20.0.0/19).
+                .3 Subred 1-1 (140.20.0.0/24).
+                .3 Subred 1-2 (140.20.1.0/24).
+                .3 \vdots.
+                .3 Subred 1-32 (140.20.31.0/24).
+                .2 Subred 2 (140.20.32.0/19).
+                .2 Subred 3 (140.20.64.0/19).
+                .2 Subred 4 (140.20.96.0/19).
+                .2 Subred 5 (140.20.128.0/19).
+                .2 Subred 6 (140.20.160.0/19).
+                .3 Subred 6-1 (140.20.160.0/24).
+                .3 Subred 6-2 (140.20.161.0/24).
+                .3 \vdots.
+                .3 Subred 6-14 (140.20.174.0/24).
+                .4 Subred 6-14-1 (140.20.174.0/27) \newline --> Hosts: 140.20.174.1 - 140.20.174.30.
+                .4 Subred 6-14-2 (140.20.174.32/27) \newline --> Hosts: 140.20.174.33 - 140.20.174.62.
+                .4 \vdots.
+                .4 Subred 6-14-8 (140.20.174.224/27) \newline --> Hosts: 140.20.174.225 - 140.20.174.254.
+                .3 Subred 6-16 (140.20.175.0/24).
+                .2 Subred 7 (140.20.192.0/19).
+                .2 Subred 8 (140.20.224.0/19).
+                }
+            \end{minipage}
+        \end{figure}
+        \noindent La subred 1 tiene direcci\'on base \textbf{140.20.0.0/19} y se divide en 32 sub-redes de tamaño /24.
+        La subred 6 tiene direcci\'on base \textbf{140.20.160.0/19} y se divide en 16 sub-redes de tamaño /24.
+        La subred 6-14 tiene direcci\'on base \textbf{140.20.174.0/24} y se divide en 8 sub-sub-redes de tamaño /27.        
+\newpage
         \item Especifique las ocho subredes 140.20.0.0/16.
+        \begin{description}
+            \item[Subred \#1] : 140.20.0.0 -- Rango [140.20.0.1 - 140.20.31.254]
+            \item[Subred \#2] : 140.20.32.0 -- Rango [140.20.32.1 - 140.20.63.254]
+            \item[Subred \#3] : 140.20.64.0 -- Rango [140.20.64.1 - 140.20.95.254]
+            \item[Subred \#4] : 140.20.96.0 -- Rango [140.20.96.1 - 140.20.127.254]
+            \item[Subred \#5] : 140.20.128.0 -- Rango [140.20.128.1 - 140.20.159.254]   
+            \item[Subred \#6] : 140.20.160.0 -- Rango [140.20.160.1 - 140.20.191.254]
+            \item[Subred \#7] : 140.20.192.0 -- Rango [140.20.192.1 - 140.20.223.254]
+            \item[Subred \#8] : 140.20.224.0 -- Rango [140.20.224.1 - 140.20.255.254]
+        \end{description}
+
         \item Enliste las direcciones de estaci\'on que pueden asignarse a la subred 3.
+        \item[] Direcci\'on de la subred 3: 140.20.64.19
+        \begin{description}
+            \item[Direcci\'on de red] : 140.20.64.0
+            \item[Rango usable] : 140.20.64.1 - 140.20.95.254 
+        \end{description}
+
         \item Indique la direcci\'on de difusi\'on de la subred 3.
+        \item [] Direcci\'on de difusi\'on de la subred 3: 140.20.95.255.
+        
         \item Indique las 16 sub-redes de la subred 6.
+        \begin{description}
+            \item[Subred \#1] : 140.20.160.0/24
+            \item[Subred \#2] : 140.20.161.0/24
+            \item[Subred \#3] : 140.20.162.0/24
+            \item[Subred \#4] : 140.20.163.0/24
+            \item[Subred \#5] : 140.20.164.0/24
+            \item[Subred \#6] : 140.20.165.0/24
+            \item[Subred \#7] : 140.20.166.0/24
+            \item[Subred \#8] : 140.20.167.0/24
+            \item[Subred \#9] : 140.20.168.0/24
+            \item[Subred \#10] : 140.20.169.0/24
+            \item[Subred \#11] : 140.20.170.0/24
+            \item[Subred \#12] : 140.20.171.0/24
+            \item[Subred \#13] : 140.20.172.0/24
+            \item[Subred \#14] : 140.20.173.0/24
+            \item[Subred \#15] : 140.20.174.0/24
+            \item[Subred \#16] : 140.20.175.0/24
+        \end{description}
+
         \item Enliste las direcciones de estaci\'on que pueden asignarse a la sub-subred 6-3.
+        \item[] Direcci\'in de la sub-subred 6-3: 140.20.162.0/24
+        \begin{description}
+            \item[Direcci\'on de red] : 140.20.162.0
+            \item[Rango usable] : 140.20.162.1 - 140.20.162.254 
+        \end{description}
+        
         \item Indentifique la direcci\'on de broadcast para la sub-subred 6-3.
+        \item [] Direcci\'on de difusi\'on de la sub-subred 6-3: 140.20.162.255
+        
         \item Especifique las ocho \(sub^2-subredes\) de la sub-subred 6-14.
         \item Enliste las direcciones de estaci\'on que pueden asignarse en la \(sub^2-subred\) 6-14-2.
         \item Indentifique la direcci\'on de broadcast de la \(sub^2-subred\) 6-14-2.
@@ -343,8 +422,26 @@
     o no errores. Suponga que el mensaje a transmitir es \(M=1101011011\) y que el generador es \(G=10011\).
     \begin{enumerate}
         \item Encuentre la trama, \(T\) que env\'ia el transmisor.
+        \item[] Para poder encontrar la trama hay que denotar la siguiente informaci\'on 
+        \[
+            M = 10 bits, G = n-k+1 = 5 bits
+        \]
+        \[
+            \Rightarrow M \times 2^{n-k} = M \times 2^{5+10-1} \Rightarrow M \times 2^4 = 11010110110000
+        \]
+
+        Ahora vamos a tomar este resultado y lo dividimos entre el generador. El residuo nos da la secuencia de verificaci\'on de trama
+        En este caso es \textbf{1101}. Con este paso obtenido le sumamos estos bits al mensaje para obtener la trama
+
+        \[
+            11010110110000+1101=11010110101101
+        \]
+
         \item Realice la operaci\'on que ejecuta la interfaz receptora si el patr\'on de error inducido en el canal
         \(e=00000000000000\), ¿cu\'al es la conclusi\'on del receptor?
+        \item[] Ya que el error es 0 lo primero que hace el receptor el dividir la trama recivida entre el generador
+        
+
         \item Realice lo mismo que en (b), pero ahora con un error inducido en el canal f\'isico \(e=00100000010011\), 
         ¿cu\'al es la conclusi\'on del receptor?
         \item ¿Existe la posibilidad de que habiendo errores en \(T'\), la trama recibida, el receptor sea incapaz de detectarlos?
