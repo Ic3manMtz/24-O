@@ -214,7 +214,7 @@
         \item ¿Qu\'e fen\'omeno podr\'ia causar un bucle de ruteo?
         \item[] Es el problema \textit{''Conteo a infinito"}, esto ocurre cuando un enlace falla y los nodos tardan mucho en actualizar correctamente
         sus tablas de ruteo, propagando informaci\'on err\'onea de forma indefinida o por un tiempo prolongado. Esto puede llevar a bucles de ruteo.
-
+\newpage
         \item Finalmente, ¿cu\'al protocolo en la pr\'actica implementa el algoritmo de vector-distancia? ¿cu\'al es la frecuencia
         de los mensajes de refresco y cu\'al es la finalidad de los mismos?
         \item[] En la pr\'actica, el protocolo que implementa el algoritmo de vector-distancia es el \textbf{Routing Information Protocol \textit{RIP}}. Los
@@ -228,28 +228,105 @@
 
     \item Suponga que le han asignado el bloque de red 132.46.0.0/16 y que necesita configurar ocho subredes.
     \begin{enumerate}
-        \item ¿Cu\'antos d\'igitos binarios se requieren para definir ocho subredes?
+        \item ¿Cu\'antos d\'igitos binarios se requieren para definir ocho subredes? 
+        \item[] Recordando que el n\'umero de d\'igitos necesarios vienen en potencias de dos, y que se requieren
+        configurar ocho subredes. Necesitamos \(2^3=8\), es decir que necesitamos \textbf{tres d\'igitos binarios}.
+
         \item Especifique el prefijo de red extendido que permite la creaci\'on de las 8 subredes.
+        \item[] Sabemos que el prefijo de red es de 16 d\'igitos y vamos a tomar tres d\'igitos prestados. Por lo
+        que el prefijo de red extendido ser\'a \textbf{/19}.
+        
         \item Exprese las direcciones de subred en formato binario y decimal.
+        \item[] Red de base: 132.46.0.0/16
+        \begin{enumerate}
+            \item[Subred \#0] : 10000100.00101110.00000000.00000000 = 132.46.0.0/19 
+            \item[Subred \#1] : 10000100.00101110.00100000.00000000 = 132.46.32.0/19
+            \item[Subred \#2] : 10000100.00101110.01000000.00000000 = 132.46.64.0/19
+            \item[Subred \#3] : 10000100.00101110.01100000.00000000 = 132.46.96.0/19
+            \item[Subred \#4] : 10000100.00101110.10000000.00000000 = 132.46.128.0/19
+            \item[Subred \#5] : 10000100.00101110.10100000.00000000 = 132.46.160.0/19
+            \item[Subred \#6] : 10000100.00101110.11000000.00000000 = 132.46.192.0/19
+            \item[Subred \#7] : 10000100.00101110.11100000.00000000 = 132.46.224.0/19     
+        \end{enumerate}
+\newpage
         \item Enliste el rango de direcciones IP que pueden asignarse a la subred n\'umero 4.
+        \item[] La subred n\'umero 4 es 132.46.128.0/19. El rango de direciones ser\'a:
+        \begin{itemize}
+            \item Primer direcci\'on : 132.46.128.1
+            \item \'Ultima direcci\'on : 132.46.159.254
+        \end{itemize}
+
         \item ¿Cu\'al es la direcci\'on de difusi\'on (\textit{broadcast}) de la subred n\'umero 4?
+        \item[] La direcci\'on de difusi\'on de la subred n\'umero 4 es \textbf{132.46.159.255}.
     \end{enumerate}
 
     \item Suponga que se le ha asignado el bloque de direcciones de red 200.30.1.0/24.
     \begin{enumerate}
         \item Defina un prefijo de red extendido que permita crear 20 estaciones en cada subred.
+        \item[] Para tener 20 estaciones en cada subred, necesitamos usar 5 bits para la subred, ya que \(2^5=32\).
+        Esto significa que usaremos un prefijo de \textbf{/29}
+
         \item ¿Cu\'al es el n\'umero m\'aximo de estaciones que pueden asignarse a cada subred?
+        \item[] Con 5 bits para cada subred, tenemos \textbf{30} direcciones \'utiles por subred. Ya que \(2^50=32\)
+        y excluimos la direcci\'on de red y la de difusi\'on.
+
         \item ¿Cu\'al es el n\'umero m\'aximo de subredes que pueden definirse?
+        \item[] Usando 5 bits podemos tener \(2^5=32\) subredes en total.
+    
         \item Especifique las subredes de 200.30.1.0/24 en formatos binario y decimal.
+        \item[] Red de base: 200.30.1.0/24
+        \begin{enumerate}
+            \item[Subred \#0] : 11001000.00011110.00000001.00000000 = 200.30.1.0/29
+            \item[Subred \#1] : 11001000.00011110.00000001.00001000 = 200.30.1.8/29
+            \item[Subred \#2] : 11001000.00011110.00000001.00010000 = 200.30.1.16/29
+            \item[Subred \#3] : 11001000.00011110.00000001.00011000 = 200.30.1.24/29
+            \item[Subred \#4] : 11001000.00011110.00000001.00100000 = 200.30.1.32/29
+            \item[Subred \#5] : 11001000.00011110.00000001.00101000 = 200.30.1.40/29
+            \item[Subred \#6] : 11001000.00011110.00000001.00110000 = 200.30.1.48/29
+            \item[Subred \#7] : 11001000.00011110.00000001.00111000 = 200.30.1.56/29
+            \item[Subred \#8] : 11001000.00011110.00000001.01000000 = 200.30.1.64/29
+            \item[Subred \#9] : 11001000.00011110.00000001.01001000 = 200.30.1.72/29
+            \item[Subred \#10] : 11001000.00011110.00000001.01010000 = 200.30.1.80/29
+            \item[Subred \#11] : 11001000.00011110.00000001.01011000 = 200.30.1.88/29
+            \item[Subred \#12] : 11001000.00011110.00000001.01100000 = 200.30.1.96/29
+            \item[Subred \#13] : 11001000.00011110.00000001.01101000 = 200.30.1.104/29
+            \item[Subred \#14] : 11001000.00011110.00000001.01110000 = 200.30.1.112/29
+            \item[Subred \#15] : 11001000.00011110.00000001.01111000 = 200.30.1.120/29
+            \item[Subred \#16] : 11001000.00011110.00000001.10000000 = 200.30.1.128/29
+            \item[Subred \#17] : 11001000.00011110.00000001.10001000 = 200.30.1.136/29
+            \item[Subred \#18] : 11001000.00011110.00000001.10010000 = 200.30.1.144/29
+            \item[Subred \#19] : 11001000.00011110.00000001.10011000 = 200.30.1.152/29
+            \item[Subred \#20] : 11001000.00011110.00000001.10100000 = 200.30.1.160/29
+            \item[Subred \#21] : 11001000.00011110.00000001.10101000 = 200.30.1.168/29
+            \item[Subred \#22] : 11001000.00011110.00000001.10110000 = 200.30.1.176/29
+            \item[Subred \#23] : 11001000.00011110.00000001.10111000 = 200.30.1.184/29
+            \item[Subred \#24] : 11001000.00011110.00000001.11000000 = 200.30.1.192/29
+            \item[Subred \#25] : 11001000.00011110.00000001.11001000 = 200.30.1.200/29
+            \item[Subred \#26] : 11001000.00011110.00000001.11010000 = 200.30.1.208/29
+            \item[Subred \#27] : 11001000.00011110.00000001.11011000 = 200.30.1.216/29
+            \item[Subred \#28] : 11001000.00011110.00000001.11100000 = 200.30.1.224/29
+            \item[Subred \#29] : 11001000.00011110.00000001.11101000 = 200.30.1.232/29
+            \item[Subred \#30] : 11001000.00011110.00000001.11110000 = 200.30.1.240/29
+            \item[Subred \#31] : 11001000.00011110.00000001.11111000 = 200.30.1.248/29
+        \end{enumerate}
+
         \item Enliste las direcciones de estaci\'on que pueden asignarse a la subred 6.
+        \item[] La subred n\'umero 6 es 200.30.1.48/29. El rango de direciones ser\'a:
+        \begin{itemize}
+            \item Primer direcci\'on : 200.30.1.49
+            \item \'Ultima direcci\'on : 200.30.1.54
+        \end{itemize}
+
         \item ¿Cu\'al es la direcci\'on de difusi\'on para la subred 2?
+        \item[] La direcci\'on de la subred 2 es 200.30.1.16/29 por lo tanto la direcci\'on de difusi\'on es
+        \textbf{200.30.1.23}.
     \end{enumerate}
 
     \item Se le ha asignado a una organizaci\'on el n\'umero de red 140.20.0.0/16 y \'esta planea desarrollar VLSM. En el primer
     nivel de jerarqu\'ia, se necesitan configurar ocho subredes. La subred 1 necesita configurar 32 sub-redes y la subred 6
     necesita configurar 16 sub-redes. Finalmente, la sub-red 6-14 necesita configurar 8 \(sub^2-subredes\).
     \begin{enumerate}
-        \item Dibuje el \'arbil que ilustre la jerarqu\'ia necesaria para implementar VLSM.
+        \item Dibuje el \'arbol que ilustre la jerarqu\'ia necesaria para implementar VLSM.
         \item Especifique las ocho subredes 140.20.0.0/16.
         \item Enliste las direcciones de estaci\'on que pueden asignarse a la subred 3.
         \item Indique la direcci\'on de difusi\'on de la subred 3.
