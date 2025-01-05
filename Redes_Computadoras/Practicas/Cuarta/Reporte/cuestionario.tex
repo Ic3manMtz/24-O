@@ -4,9 +4,213 @@
 capas del Modelo TCP/IP.}
 
 \subsubsection*{Script 1}
-\noindent Ya que este script no incluye nodos, enlaces, o tr\'afico de paquetes, vamos a describir cada parte del script
+\noindent Ya que este script no incluye nodos, enlaces, o tr\'afico de paquetes, vamos a describir cada parte del script.
+
+\noindent Crea una instancia del simulador NS-2 y la asigna a la variable ns. Este objeto es el n\'ucleo de la simulaci\'on, permitiendo
+condigurar nodos, tr\'afico, y otros elementos.
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    set ns [new Simulator]
+  \end{lstlisting}
+\end{figure}
+
+Crea un archivo \textbf{out.nam} en modo escritura. Este archivo registrar\'a todos los eventos de simulaci\'on, como el env\'io/recepci\'on
+de paquetes y otros eventos relevantes
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    set nf [open out.nam w]
+  \end{lstlisting}
+\end{figure}
+
+Le indica al simulador que registre todos los eventos de simulaci\'on en el archivo \textbf{out.nam} previamente creado.
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    $ns namtrace-all $nf
+  \end{lstlisting}
+\end{figure}
+
+\newpage
+
+Define una funci\'on llamada \textbf{finish} que:
+\begin{description}
+  \item[global ns nf] : Declara las variables \textbf{ns} y \textbf{nf} como globales para usarlas dentro de la funci\'on.
+  \item[\$ns flush-trace] : Asegura que toda la informaci\'on de traza se escriba en el archivo antes de cerrarlo.
+  \item[close \$nf] : Cierra el archivo de traza \textbf{out.nam}
+  \item[exec nam out.nam \&] : Ejecuta NAM y abre el archivo \textbf{out.nam} para visualizar la simulaci\'on.
+  \item[exit 0] : Finaliza la ejecuci\'on del script de manera exitosa.      
+\end{description}
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    proc finish {} {
+      global ns nf
+      $ns flush-trace
+      close $nf
+      exec nam out.nam &
+      exit 0
+    }
+  \end{lstlisting}
+\end{figure}
+
+Programa la ejecuci\'on del procedimiento \textbf{finish} despu\'es de 5 segundos de tiempo simulado. Esto significa, que 
+independientemente de la configuraci\'on adicional, la simulaci\'on terminar\'a a los 5 segundos.
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    $ns at 5.0 "finish"
+  \end{lstlisting}
+\end{figure}
+
+Inicia la ejecuci\'on de la simulaci\'on. A partir de este punto, todos los eventos configurados en el simulador 
+se procesan secuencialmente.
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    $ns run
+  \end{lstlisting}
+\end{figure}
+
+\newpage
 
 \subsubsection*{Script 2}
+
+\noindent Como vimos en el punto anterior las siguientes l\'ineas del script son parte de la configuraci\'on general y la
+creaci\'on del procedimiento de finalizaci\'on.
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    set ns [new Simulator]
+    set nf [open out.nam w]
+    $ns namtrace-all $nf
+    proc finish {} {
+      global ns nf
+      $ns flush-trace
+      close $nf
+      exec nam out.nam &
+      exit 0
+    }
+  \end{lstlisting}
+\end{figure}
+
+\noindent Crea dos nodos (\textit{n0 y n1}) que actuar\'an como origen y destino en la simulaci\'on. Esta parte del script corresponde a la
+\textbf{Capa de Enlace de Datos}, ya que los nodos representan interfaces de red.
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    set n0 [$ns node]
+    set n1 [$ns node]
+  \end{lstlisting}
+\end{figure}
+
+\noindent Crea un enlace d\'uplex entre los nodos \textbf{n0} y \textbf{n1} con:
+\begin{description}
+  \item[Ancho de banda] : 1 Mbps
+  \item[Retardo] : 10 ms
+  \item[Cola] : DropTail (cola FIFO)   
+\end{description}
+La relaci\'on con el modelo TCP/IP es con la \textbf{Capa de Enlace de Datos} ya que representa el enlace f\'isico y la cola de paquetes.
+As\'i como la \textbf{Capa de Red} ya que el retardo y el ancho de banda afectan la entrega de paquetes.
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    $ns duplex-link $n0 $n1 1Mb 10ms DropTail
+  \end{lstlisting}
+\end{figure}
+
+\noindent Crea un agente UDP (\textit{udp0}) y lo asocia al nodo \textbf{n0}. Se relaciona con el modelo TCP/IP ya que representa la \textbf{Capa de Transporte}, 
+ya que el protocolo UDP es un protocolo en esta capa.
+\begin{figure}[H]
+  \centering
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    set udp0 [new Agent/UDP]
+    $ns attach-agent $n0 $udp0    
+  \end{lstlisting}
+\end{figure}
+
+\newpage
+
+\noindent Crea una  fuente de tr\'afico CBR (\textit{cbr0}) con:
+\begin{description}
+  \item[Tamaño de paquete] : 1000 bytes
+  \item[Intervalo entre paquetes] : 0.005 segundos
+  \item[Se conecta al agente UDP \textit{udp0}]  
+\end{description}
+Representa la \textbf{Capa de Aplicaci\'on}, ya que genera tr\'afico constante para enviar a trav\'es de la red.
+\begin{figure}[H]
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    set cbr0 [new Application/Traffic/CBR]
+    $cbr0 set packetSize_ 1000
+    $cbr0 set interval_ 0.005
+    $cbr0 attach-agent $udp0
+  \end{lstlisting}
+\end{figure}
+
+\noindent Crea un agente Null (\textit{null0}) que act\'ua como receptor de tr\'afico en el nodo \textbf{n1}. Representa la \textbf{Capa de Transporte}, ya
+que recibe y descarta paquetes sin procesarlos.
+\begin{figure}[H]
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    set null0 [new Agent/Null]
+    $ns attach-agent $n1 $null0    
+  \end{lstlisting}
+\end{figure}
+
+\noindent Conecta el agente UDP (\textit{udp0}) en el nodo \textbf{n0} con el agente Null (\textit{null0}) en el nodo \textbf{n1}. Relaciona las 
+\textbf{Capas de Transporte y Red}, al definir una ruta l\'ogica entre el origen y el destino.
+\begin{figure}[H]
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    $ns connect $udp0 $null0
+  \end{lstlisting}
+\end{figure}
+
+\noindent Programa el inicio del tr\'afico CBR a los 0.5 segundos y su detenci\'on a los 4.5 segundos de tiempo de simulaci\'on. Impacta la
+\textbf{Capa de Aplicaci\'on}, ya que controla cu\'ando se env\'ian los datos.
+\begin{figure}[H]
+  \begin{lstlisting}[frame=single, breaklines=true, basicstyle=\footnotesize\ttfamily, breakatwhitespace=false, 
+    columns=flexible, tabsize=2, showstringspaces=false]
+    $ns at 0.5 "$cbr0 start"
+    $ns at 4.5 "$cbr0 stop"    
+  \end{lstlisting}
+\end{figure}
+
+\begin{enumerate}
+  \item Capa de Enlace de Datos
+  \begin{itemize}
+    \item Creaci\'on de nodos.
+    \item Configuraci\'on del enlace d\'uplex.
+  \end{itemize}
+
+  \item Capa de Red
+  \begin{itemize}
+    \item Configuraci\'on del enlace afecta el enrutamiento y entrega de paquetes.
+  \end{itemize}
+
+  \item Capa de Transporte
+  \begin{itemize}
+    \item Configuraci\'on del agente UDP y receptor Null.
+  \end{itemize}
+
+  \item Capa de Aplicaci\'on
+  \begin{itemize}
+    \item Generaci\'on de tr\'afico constante (\textit{CBR}).
+    \item Programaci\'on del inicio y finalizaci\'on del tr\'afico.
+  \end{itemize}
+\end{enumerate}
 
 \subsubsection*{Script 3}
 
