@@ -214,6 +214,195 @@ que recibe y descarta paquetes sin procesarlos.
 
 \subsubsection*{Script 3}
 
+Este script en Tcl configura una simulación de red usando NS-2, que incluye enlaces simplex y duplex, protocolos TCP y UDP, y aplicaciones FTP y CBR (Constant Bit Rate). Aquí describo cómo el script se relaciona con las capas del modelo TCP/IP:
+
+---
+
+### **Descripción General**
+
+El script configura:
+1. Enlaces entre nodos con diferentes características (ancho de banda, retraso).
+2. Protocolos TCP y UDP con configuraciones específicas.
+3. Aplicaciones FTP y CBR que generan tráfico de red.
+4. Trazas para analizar el comportamiento de la red y su visualización en NAM.
+
+---
+
+### **Partes del Script y su Relación con el Modelo TCP/IP**
+
+#### **1. Configuración General**
+```tcl
+set ns [new Simulator]
+$ns color 1 Blue
+$ns color 2 Red
+```
+- **Función:**
+  Crea un simulador NS-2 (`Simulator`) y asigna colores para distinguir flujos de datos en NAM.
+- **Relación con el Modelo TCP/IP:**
+  No interactúa directamente con las capas, pero facilita la configuración y visualización.
+
+---
+
+#### **2. Archivos de Traza**
+```tcl
+set file1 [open out.tr w]
+set winfile [open WinFile w]
+$ns trace-all $file1
+set file2 [open out.nam w]
+$ns namtrace-all $file2
+```
+- **Función:**
+  Abre archivos para registrar trazas generales (`out.tr`) y específicas para NAM (`out.nam`).
+- **Relación con el Modelo TCP/IP:**
+  Permite registrar eventos de todas las capas involucradas.
+
+---
+
+#### **3. Procedimiento `finish`**
+```tcl
+proc finish {} {
+  global ns file1 file2
+  $ns flush-trace
+  close $file1
+  close $file2
+  exec nam out.nam &
+  exit 0
+}
+```
+- **Función:**
+  Finaliza la simulación, cierra los archivos de traza y lanza NAM para visualización.
+- **Relación con el Modelo TCP/IP:**
+  No interactúa con las capas, pero organiza el cierre de la simulación.
+
+---
+
+#### **4. Configuración de Nodos y Enlaces (Capa de Enlace de Datos y Red)**
+```tcl
+set n0 [$ns node]
+set n1 [$ns node]
+# ...
+$ns duplex-link $n0 $n2 2Mb 10ms DropTail
+$ns simplex-link $n2 $n3 0.3Mb 100ms DropTail
+$ns queue-limit $n2 $n3 20
+```
+- **Función:**
+  - Crea nodos (`n0` a `n5`) y define enlaces entre ellos con:
+    - **Ancho de banda** (e.g., `2Mb`).
+    - **Retraso** (e.g., `10ms`).
+    - **Colas** (e.g., `DropTail` con tamaño 20).
+  - Orienta visualmente los enlaces en NAM.
+- **Relación con el Modelo TCP/IP:**
+  - **Capa de Enlace de Datos:** Configura enlaces físicos y colas.
+  - **Capa de Red:** Modela el retardo y el ancho de banda.
+
+---
+
+#### **5. Configuración de TCP (Capa de Transporte)**
+```tcl
+set tcp [new Agent/TCP/Newreno]
+$ns attach-agent $n0 $tcp
+set sink [new Agent/TCPSink/DelAck]
+$ns attach-agent $n4 $sink
+$ns connect $tcp $sink
+$tcp set fid_ 1
+$tcp set window_ 8000
+$tcp set packetSize_ 552
+```
+- **Función:**
+  - Configura un agente TCP NewReno en `n0` y un receptor (TCPSink) en `n4`.
+  - Ajusta parámetros como tamaño de ventana y tamaño de paquetes.
+- **Relación con el Modelo TCP/IP:**
+  Implementa la **Capa de Transporte** con un protocolo confiable (TCP).
+
+---
+
+#### **6. Configuración de FTP (Capa de Aplicación)**
+```tcl
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ftp set type_ FTP
+```
+- **Función:**
+  - Configura una aplicación FTP sobre TCP para generar tráfico.
+- **Relación con el Modelo TCP/IP:**
+  Implementa la **Capa de Aplicación**, emulando una transferencia de archivos.
+
+---
+
+#### **7. Configuración de UDP (Capa de Transporte)**
+```tcl
+set udp [new Agent/UDP]
+$ns attach-agent $n1 $udp
+set null [new Agent/Null]
+$ns attach-agent $n5 $null
+$ns connect $udp $null
+$udp set fid_ 2
+```
+- **Función:**
+  - Configura un agente UDP en `n1` y un receptor (Null) en `n5`.
+- **Relación con el Modelo TCP/IP:**
+  Implementa la **Capa de Transporte** con un protocolo no confiable (UDP).
+
+---
+
+#### **8. Configuración de CBR (Capa de Aplicación)**
+```tcl
+set cbr [new Application/Traffic/CBR]
+$cbr attach-agent $udp
+$cbr set type_ CBR
+$cbr set packet_size_ 1000
+$cbr set rate_ 0.01mb
+$cbr set random_ false
+```
+- **Función:**
+  - Configura una fuente CBR para generar tráfico constante sobre UDP.
+- **Relación con el Modelo TCP/IP:**
+  Implementa la **Capa de Aplicación**, simulando tráfico constante.
+
+---
+
+#### **9. Planificación de Eventos**
+```tcl
+$ns at 0.1 "$cbr start"
+$ns at 1.0 "$ftp start"
+$ns at 124.0 "$ftp stop"
+$ns at 124.5 "$cbr stop"
+```
+- **Función:**
+  - Inicia y detiene las aplicaciones FTP y CBR en momentos específicos.
+- **Relación con el Modelo TCP/IP:**
+  Controla la **Capa de Aplicación**, definiendo tiempos de inicio y fin.
+
+---
+
+#### **10. Monitoreo de TCP**
+```tcl
+proc plotWindow {tcpSource file} {
+  global ns
+  set time 0.1
+  set now [$ns now]
+  set cwnd [$tcpSource set cwnd_]
+  puts $file "$now $cwnd"
+  $ns at [expr $now+$time] "plotWindow $tcpSource $file"
+}
+$ns at 0.1 "plotWindow $tcp $winfile"
+```
+- **Función:**
+  - Monitorea el tamaño de ventana de congestión (`cwnd`) de TCP.
+  - Registra los valores en un archivo para análisis posterior.
+- **Relación con el Modelo TCP/IP:**
+  Relacionado con la **Capa de Transporte**, ya que mide el comportamiento de TCP.
+
+---
+
+### **Resumen de Capas del Modelo TCP/IP**
+1. **Capa de Enlace de Datos:** Configuración de nodos, enlaces y colas.
+2. **Capa de Red:** Parámetros de retardo y ancho de banda de los enlaces.
+3. **Capa de Transporte:** Configuración de TCP y UDP.
+4. **Capa de Aplicación:** Configuración de FTP y CBR.
+
+El script modela la interacción entre múltiples nodos y protocolos, proporcionando una simulación detallada de red.
+
 \subsection*{¿C\'omo podr\'ia usarse NS-2 para explicar la relaci\'on entre el retardo de propagaci\'on y el de transmisi\'on en un
 enlace?¿Qu\'e parte de un script TCL deber\'ia modifical para ejemplificar esto?}
 
@@ -222,3 +411,40 @@ enlace?¿Qu\'e parte de un script TCL deber\'ia modifical para ejemplificar esto
 
 \subsection*{Investigue la disponibilidad de simuladores de red y realice una tabla con al menos cinco simuladores que compare sus
 caracter\'isticas b\'asicas.}
+
+Aquí tienes una tabla que compara cinco simuladores de red ampliamente utilizados, con sus características clave:
+
+| **Simulador**       | **Lenguaje principal** | **Modelos soportados**              | **Interfaz**         | **Escalabilidad**   | **Licencia**           | **Ventajas**                                             | **Desventajas**                                                |
+|---------------------|-----------------------|-------------------------------------|----------------------|---------------------|-------------------------|---------------------------------------------------------|----------------------------------------------------------------|
+| **NS-2**            | C++ y Tcl            | TCP, UDP, Multicast, Routing, etc. | Basada en scripts    | Moderada            | Open Source (GPL)       | Extensibilidad, biblioteca de modelos rica             | Complejidad en configuración y falta de mantenimiento activo. |
+| **NS-3**            | C++ y Python         | TCP, UDP, IPv4/IPv6, WiFi, LTE, etc.| Basada en scripts    | Alta                | Open Source (GPLv2)     | Moderno, soporte IPv6 y simulación más precisa         | Mayor curva de aprendizaje para principiantes.                |
+| **OMNeT++**         | C++                  | Redes cableadas, inalámbricas, IoT | Gráfica y scripts    | Alta                | Open Source (Academic)  | Interfaz gráfica, flexibilidad en simulaciones complejas | Más orientado a investigación académica.                      |
+| **Mininet**         | Python               | Redes definidas por software (SDN) | Línea de comandos    | Alta (a nivel SDN)  | Open Source (MIT)       | Simulación rápida de redes SDN, fácil de usar          | Limitado para redes físicas no-SDN.                           |
+| **Packet Tracer**   | Propietario          | Modelos de Cisco (RIP, OSPF, STP)  | Gráfica              | Baja/Moderada       | Propietario (Cisco)     | Fácil de usar, ideal para educación                    | Limitado a protocolos y equipos de Cisco.                     |
+| **GNS3**            | Python               | Redes virtualizadas y físicas      | Gráfica              | Alta (con virtualización)| Open Source (GNU GPLv3) | Integración con dispositivos reales y virtualización   | Requiere hardware potente para simulaciones grandes.          |
+
+---
+
+### **Detalles destacados:**
+
+1. **NS-2:**  
+   - Ventaja: Una gran cantidad de documentación y ejemplos debido a su uso histórico.  
+   - Desventaja: Es más antiguo y menos actualizado que NS-3.
+
+2. **NS-3:**  
+   - Ventaja: Mejor soporte para redes modernas como WiFi y LTE.  
+   - Desventaja: Es más complejo que NS-2.
+
+3. **OMNeT++:**  
+   - Ventaja: Perfecto para simulaciones gráficas detalladas.  
+   - Desventaja: No es tan popular para simulaciones prácticas como NS-3.
+
+4. **Mininet:**  
+   - Ventaja: Ideal para probar redes definidas por software (SDN).  
+   - Desventaja: No es tan adecuado para redes físicas tradicionales.
+
+5. **Packet Tracer:**  
+   - Ventaja: Excelente herramienta educativa para estudiantes de redes.  
+   - Desventaja: No es adecuado para simulaciones avanzadas fuera del ecosistema Cisco.
+
+Espero que esta tabla te sea útil para seleccionar un simulador adecuado según tus necesidades. Si necesitas más información sobre alguno de ellos, ¡puedes pedírmelo!
