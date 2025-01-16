@@ -125,7 +125,13 @@
 \end{figure}
 
 \item ¿C\'uales son los fen\'omenos particulares que observa usted en las gr\'aficas que acaba de obtener?
-\noindent 
+\noindent Se observan tendencias generales en el comportamiento del retardo extremo a extremo, como una pendiente negativa consistente, lo cual
+podría indicar una desincronización entre las estampas de tiempo del receptor y el emisor. También se observan se aprecian fluctuaciones grandes
+en el retardo extremo a extremo, lo cual podría indicar una congestión en la red. 
+
+\noindent En las gr\'aficas a pequeña escala se observa un an\'alisis m\'as detallado de los eventos individuales, incluyendo las transiciones
+entre las frases (\textit{talkspurts}) y los periodos de silencio. Estas gr\'aficas permiten observar el comportamiento más preciso del retardo
+entre paquetes conscutivos.
 
 \item Tabla con las estad\'isticas obtenidas
 \begin{table}[H]
@@ -142,5 +148,13 @@
   \end{tabular}
   \end{table}
 
-  \item 
+  \item Empecemos respondiendo a que nos referimos al hablar de \textit{pendiente en el retardo}. Este t\'ermnmino re refiere a una tendencia
+  sistem\'atica en los valores del retardo extremo a extremo a lo largo de una sesi\'on. Esta desviaci\'on puede deberse a problemas de sincronizaci\'on
+  entre el emisor y el receptor. Los dos métodos que se pueden utilizar para corregir este problema son:
+  \begin{description}
+    \item[M\'etodo de regresi\'on lineal] - Este m\'etodo ajusta una l\'inea de regresi\'on al conjunto de datos del retardo extremo a extremo y se restan
+    los valores ajustados de la pendiente de los valores reales del retardo. Esto permite eliminar cualquier tendencia sistem\'atica en los datos.
+    \item[M\'etodo de Ajuste Basado en Referencias Temporales Externas] - Este m\'etodo elimina la dependencia de las estampas de tiempo locales del emisor
+    y receptor al sincronizarlas con un reloj externo. Esto permite que los valores del retardo extremo a extremo sean independientes de las estampas de tiempo locales.
+  \end{description} 
 \end{enumerate}

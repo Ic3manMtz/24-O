@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1735375071.74888 "d:/UAM/24-O/24-O/Redes_Computadoras/Practicas/Tercera/Reporte/portada.tex" "portada.pdf" "portada" 1735375075.96254 0
+["pdflatex"] 1736358638.70059 "d:/UAM/24-O/24-O/Redes_Computadoras/Practicas/Tercera/Reporte/portada.tex" "portada.pdf" "portada" 1736358641.44943 0
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tctt0900.tfm" 993062564 1284 f8b60d5840783b0ee9876d4a535f8f09 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -120,7 +120,7 @@
   "C:/Users/molap/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730768229 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/molap/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tctt0900.pk" 1733292749 8332 ef248bf9f474eb4c4c0232a30409924d ""
   "C:/Users/molap/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730768519 24215272 32a051b7e405a488cd8ef04fa7b9bca5 ""
-  "comportamiento.tex" 1735375070 6705 c7316b26a985d23fe2bc9f0039f8290e ""
+  "comportamiento.tex" 1736358638 8465 380c9ea69a6ad5505de92f521208d464 ""
   "d:/UAM/24-O/24-O/Redes_Computadoras/Practicas/Tercera/Reporte/portada.tex" 1735370084 1416 c06b08a86500620869faa47a5920e07b ""
   "img/traza1_GE.png" 1735372872 110835 6f22fb5d23783b9e4fc85385ae4068c0 ""
   "img/traza1_PE.png" 1735374218 164803 723bd1a10bce65b265c4f50057822d44 ""
@@ -134,8 +134,8 @@
   "img/traza5_PE.png" 1735374334 112758 e7c9248edbcd35939ffc952c3b673856 ""
   "img/traza6_GE.png" 1735373022 96176 a5182076bfb752239370ae00df87d0dc ""
   "img/traza6_PE.png" 1735374360 188987 2209b23822c42acdceb8b66d1d409ba8 ""
-  "portada.aux" 1735375076 1502 73361ef8a8a7dda1c570fb59b2aaae6a "pdflatex"
-  "portada.out" 1735375076 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "portada.aux" 1736358642 1502 73361ef8a8a7dda1c570fb59b2aaae6a "pdflatex"
+  "portada.out" 1736358642 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "portada.tex" 1735370084 1416 c06b08a86500620869faa47a5920e07b ""
   "procedimiento.tex" 1735375070 10541 fce723692ef1e970cf830e9b625c72cf ""
   (generated)
